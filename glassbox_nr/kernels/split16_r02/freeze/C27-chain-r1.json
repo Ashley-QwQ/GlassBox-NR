@@ -1,0 +1,146 @@
+{
+  "format": "opus-split16-freeze/1",
+  "stage": "C27",
+  "samples": [
+    "c1-C-img-full"
+  ],
+  "files": [
+    {
+      "role": "predictor",
+      "base": "round",
+      "path": "predict_chain.py",
+      "bytes": 14563,
+      "sha256": "73e1124ab85cb05e88ede466dddb96eeb7f49caeb7a57fe7cde4fca43ddc60de"
+    },
+    {
+      "role": "comparator",
+      "base": "round",
+      "path": "compare_chain.py",
+      "bytes": 33648,
+      "sha256": "b59560b302dfd8c3e8877d7dca2e8c1692d1b7b311f9595d99b7aa853bb8d7d3"
+    },
+    {
+      "role": "driver",
+      "base": "round",
+      "path": "run_chain.py",
+      "bytes": 6226,
+      "sha256": "d5f0d0c31047c3c2175fa4ca83b088471fc20b88ebf20c718d54d9532ae83910"
+    },
+    {
+      "role": "arith",
+      "base": "round",
+      "path": "arith.py",
+      "bytes": 11945,
+      "sha256": "9d0a6833ab540e6d72a5a7969dccafc6bf53e72fbae70af8eb0d570a7c9b57ed"
+    },
+    {
+      "role": "arith2",
+      "base": "round",
+      "path": "arith2.py",
+      "bytes": 3113,
+      "sha256": "b68ac7503dde6d464a9a7f11d76b542359366a35eadd0d6f7744a8e2d9f99d68"
+    },
+    {
+      "role": "mapexec2",
+      "base": "round",
+      "path": "mapexec2.py",
+      "bytes": 8422,
+      "sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+    },
+    {
+      "role": "mlxdlss_init",
+      "base": "project",
+      "path": "mlxdlss/__init__.py",
+      "bytes": 210,
+      "sha256": "5836131c5553328f6572b154af71ac767c40497afb6ebec3cd380c70324b88bd"
+    },
+    {
+      "role": "mlxdlss_sm120_b1",
+      "base": "project",
+      "path": "mlxdlss/sm120_b1.py",
+      "bytes": 33659,
+      "sha256": "f4ada69da4ec60be36f09b05560a0fd0240a147721a20a0b51d7001518089d31"
+    },
+    {
+      "role": "mlxdlss_model",
+      "base": "project",
+      "path": "mlxdlss/model.py",
+      "bytes": 53257,
+      "sha256": "87ad06c4337d75543ad8257141164e94272a356173295e7abb6508f9a0891b8f"
+    },
+    {
+      "role": "stage_spec",
+      "base": "round",
+      "path": "stages/C27.json",
+      "bytes": 734,
+      "sha256": "2278923f4bfefae15a0640594ecd7cfa0ee67f26b18d1f5bc5f532e91f0d4b23"
+    },
+    {
+      "role": "map_json",
+      "base": "round",
+      "path": "maps/L27-lane.json",
+      "bytes": 4791,
+      "sha256": "2a926643379a2130adc8ae42d944bb737d66521407056b562d77835bdbd761af"
+    },
+    {
+      "role": "map_npz",
+      "base": "round",
+      "path": "maps/L27-lane.npz",
+      "bytes": 2365535,
+      "sha256": "d39db3050a589b16206d427f78503c8bcb601c3b744492d447881df9c7757763"
+    },
+    {
+      "role": "map_wiring",
+      "base": "round",
+      "path": "maps/L27-lane.wiring.json",
+      "bytes": 304721,
+      "sha256": "e9f851e2df2ecbaf01cabf635ddf0d72b8713b5ac4fa3e4eeda140ad2ac07dea"
+    },
+    {
+      "role": "contraction",
+      "base": "round",
+      "path": "maps/L27-sass-contraction.json",
+      "bytes": 33426,
+      "sha256": "0173a7e0fdf5de0a9cc50b0203c7c7e7a5e81461290a42ce4a8d960768dc1d0f"
+    },
+    {
+      "role": "table_rsq",
+      "base": "project",
+      "path": "mlxdlss/resources/rsq-domain.npz",
+      "bytes": 246454,
+      "sha256": "06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62"
+    },
+    {
+      "role": "table_rcp",
+      "base": "project",
+      "path": "mlxdlss/resources/rcp-domain.npz",
+      "bytes": 246446,
+      "sha256": "055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59"
+    },
+    {
+      "role": "weights:block23.layer2.layer",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/weights/block23.layer2.layer.bin",
+      "bytes": 917568,
+      "sha256": "4418029920032fe9b68e7757bd7fc83f87c1fa56ee714db5a015f7cfef12e3a7"
+    },
+    {
+      "role": "input:c1-C-img-full:C27-word0",
+      "base": "round",
+      "path": "chain-inputs/C27/c1-C-img-full/word0-from-C26.bin",
+      "bytes": 73728,
+      "sha256": "8199ac45c7b57ecea64122ced0a1e6b00c079e8b3e68eaeea135b294e7e5c5e2"
+    }
+  ],
+  "hypotheses": [
+    "all hypotheses of the accepted L27 segment freeze (map, arithmetic, executor semantics) unchanged; executed through mapexec2 / arith2, whose segment node kinds evaluate identically",
+    "CHAIN mode: inputs are the native B23 X or sealed CPU chain predictions linked with receipts (chain_link.py); no native intermediate is read"
+  ],
+  "notes": [
+    "chain stage C27 of the full B23 chain C25 -> C26 -> C27 -> C28 started from the native B23 input X only",
+    "the target bytes are not opened by the predictor; the comparator re-derives them from the capture package"
+  ],
+  "plan": "plans/C27-chain-r1.json",
+  "plan_sha256": "fd28c6de0308c0c5eec06932de720b33dcf36076af3b5a05358b3f1ca26fb4cd",
+  "created_utc": "2026-09-13T17:31:47.994014+00:00"
+}

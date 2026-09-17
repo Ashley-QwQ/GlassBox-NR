@@ -1,0 +1,17 @@
+{
+  "file_sha256": {
+    "check": "2f3a380c0df553e9b71f42d555c7b11b8ba3197b69257cbda5fc2738cc3a4238",
+    "json": "3ed648f81bb2a1bc55f2f31a6bfb04a8703227ed857ae063e4765ba090b0bb40",
+    "npz": "1e2a5b8932688987e8dd973325999c50fdd39b2cb7cfe084eff64a782898d88e"
+  },
+  "files": {
+    "check": "maps/L96/L96-l61-sass-numeric-check.json",
+    "json": "maps/L96/L96-l61-templates-and-checks.json",
+    "npz": "maps/L96/L96-l61-address-map.npz"
+  },
+  "function": "cc_vit_1d_qkv_chained_fp8",
+  "interp_sha256": "c4285c0b1939c7a58fc025d8f74a3309342fcb2833736a6d61ae73deb7f22a0b",
+  "launch": 96,
+  "shim_sha256": "5d841b25a3293a1d743514f1a8d6a9aaa4d0736ece359f535cde2430b3686f2a",
+  "status": "PASS_FAMILY_EQUAL"
+}

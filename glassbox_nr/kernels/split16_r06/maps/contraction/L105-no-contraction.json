@@ -1,0 +1,15 @@
+{
+ "format": "opus-split16-no-contraction-check/1",
+ "status": "PASS_NO_SUM_OF_SQUARES_SITES",
+ "match": null,
+ "sass_sha256": "e0cfc7668ecdd42e0cc37c1de8179dba2af414f82d3a8ed635e222331e2eb2d0",
+ "map_wiring_sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639",
+ "map_npz_sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4",
+ "ptx_sum_of_squares_half_sites": 0,
+ "ptx_f_add": 0,
+ "ptx_f_fma_halves": 512,
+ "sass_hfma2": 32,
+ "hfma2_only_where_ptx_has_explicit_fma": true,
+ "contract": {},
+ "what_a_false_pass_would_look_like": "an SASS contraction of a pattern other than add(mul,mul) (e.g. mul then a PTX add that the map spells differently) is not searched for; here F.add == 0 in the map"
+}

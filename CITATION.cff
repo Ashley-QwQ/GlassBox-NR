@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use or build on GlassBox-NR, please cite it as below."
+title: "GlassBox-NR: byte-exact CPU reproduction of a neural rendering inference chain (runnable package)"
+type: software
+authors:
+  - name: "GlassBox-NR contributors"   # TODO: mirror release/p0-priority-note/CITATION.cff once the author name is set there
+version: "0.1.0-preview"
+date-released: "2026-09-15"
+license: CC-BY-4.0
+repository-code: "https://github.com/OWNER/GlassBox-NR"   # TODO: replace OWNER after the repository is created
+# doi: "10.5281/zenodo.XXXXXXX"   # TODO: add after the first Zenodo release
+keywords:
+  - byte-exact
+  - CPU reimplementation
+  - neural rendering
+  - reverse engineering

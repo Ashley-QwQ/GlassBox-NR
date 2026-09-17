@@ -1,0 +1,38 @@
+{
+  "derived_from": {
+    "s0": "481012435d19ab7a6132654617228d89467019b3cd70b83f475254a01dd6fa1b",
+    "slices": "4a94746f191593cb199a13644263ed3b005cd9687166a81b3f8d235a3fdb47f9"
+  },
+  "format": "claude-b32-b38-s0-shim/1",
+  "function": "cc_vit_1d_attention_chained_fp8",
+  "launch": 82,
+  "launch_rows": {
+    "c1-C-img-full": {
+      "block_dim": [
+        32,
+        4,
+        1
+      ],
+      "function": "cc_vit_1d_attention_chained_fp8",
+      "grid": [
+        32,
+        1,
+        1
+      ],
+      "param_bytes": 64
+    }
+  },
+  "params": {
+    "c1-C-img-full": {
+      "hex": "00bc59190000000000bc58190000000000bc5a190000000000bc5b190000000000c6cf0b0000000000be80180000000000c08018000000000800000008000000"
+    }
+  },
+  "static": {
+    "ptx_file": "static/cc_vit_1d_attention_chained_fp8.ptx.txt",
+    "ptx_sha256": "a5190b6c35cd3719e082953031c4994aa28f96f140bbf34cbb32ba1242b1e6f0",
+    "sass_file": "static/cc_vit_1d_attention_chained_fp8.sass.txt",
+    "sass_sha256": "c137d53a85142a7b1a312dbf5153f4c4fade4db057c299989b542220494d1e82"
+  },
+  "status": "PASS_IDENTITY",
+  "weights": {}
+}

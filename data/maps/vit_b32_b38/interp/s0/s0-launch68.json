@@ -1,0 +1,42 @@
+{
+  "derived_from": {
+    "s0": "481012435d19ab7a6132654617228d89467019b3cd70b83f475254a01dd6fa1b",
+    "slices": "4a94746f191593cb199a13644263ed3b005cd9687166a81b3f8d235a3fdb47f9"
+  },
+  "format": "claude-b32-b38-s0-shim/1",
+  "function": "cc_vit_1d_projection_chained_fp8",
+  "launch": 68,
+  "launch_rows": {
+    "c1-C-img-full": {
+      "block_dim": [
+        32,
+        4,
+        1
+      ],
+      "function": "cc_vit_1d_projection_chained_fp8",
+      "grid": [
+        8,
+        1,
+        4
+      ],
+      "param_bytes": 72
+    }
+  },
+  "params": {
+    "c1-C-img-full": {
+      "hex": "00bc49190000000000bc45190000000000bc4a190000000000868f09000000000092801800000000000c2b1900000000009080180000000000948018000000000800000008000000"
+    }
+  },
+  "static": {
+    "ptx_file": "static/cc_vit_1d_projection_chained_fp8.ptx.txt",
+    "ptx_sha256": "3cbc220370c7f0bce46affc13dc3be9ad61ffde6e4b330ae62becf58a66aba41",
+    "sass_file": "static/cc_vit_1d_projection_chained_fp8.sass.txt",
+    "sass_sha256": "70698cdd100dfe53ddbefb130f517c1cbc783c2fba7eec91a14658a8dc92fd10"
+  },
+  "status": "PASS_IDENTITY",
+  "weights": {
+    "bytes": 1050624,
+    "file": "weights/block32.layer4.layer.bin",
+    "tensor": "block32.layer4.layer"
+  }
+}

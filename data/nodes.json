@@ -1,0 +1,2520 @@
+[
+  {
+    "stage": "E1",
+    "node": "B00",
+    "launches": [
+      2
+    ],
+    "function": "cc_tinlayout_fused_pre_block_swin_1h_32_1_ds_fp8",
+    "inputs": [
+      {
+        "role": "colour",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/colour.rgba16",
+        "bytes": 614400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/pre.params",
+        "bytes": 264
+      }
+    ],
+    "outputs": [
+      {
+        "name": "b0_full.tin",
+        "bytes": 3276800,
+        "word": 27,
+        "role": "skip_b0_to_b70",
+        "codec": "tin320x320x32"
+      },
+      {
+        "name": "b0_pooled.inpview",
+        "bytes": 819200,
+        "word": 31,
+        "role": "main_to_b01",
+        "codec": "inpview160x160x32"
+      }
+    ],
+    "evidence": "Launch 2 w27=full 320x320x32 (3.2MB, B70 skip at L155 w1); w31=pooled 160x160x32 (819.2KB, B1 main)",
+    "predictor": "experiments/parity-astra-d20-b0-reset-cpu-20260912/scripts/d20_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "204a7b85051c84af7735157305b5ec8d3a65753e90f3b5d274961696e6d511a0"
+  },
+  {
+    "stage": "E1",
+    "node": "B01",
+    "launches": [
+      3
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_inpview_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B00",
+        "file": "b0_pooled.inpview",
+        "bytes": 819200
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B1-Y.TIN",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_b02",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 3 w1=output (819.2KB)",
+    "predictor": "experiments/parity-astra-d13-b234-sm120-cpu-chain-20260912/scripts/d13_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "sample_inputs": {},
+    "predictor_sha256": "7bab5886d2d8f9f430bd1a986f4a444404cb2f10f34eb0d7034654c2800de41d"
+  },
+  {
+    "stage": "E1",
+    "node": "B02",
+    "launches": [
+      4
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B01",
+        "file": "B1-Y.TIN",
+        "bytes": 819200
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B2-Y.TIN",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_b03",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 4 w1=output (819.2KB)",
+    "predictor": "experiments/parity-astra-d13-b234-sm120-cpu-chain-20260912/scripts/d13_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "7bab5886d2d8f9f430bd1a986f4a444404cb2f10f34eb0d7034654c2800de41d"
+  },
+  {
+    "stage": "E1",
+    "node": "B03",
+    "launches": [
+      5
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B02",
+        "file": "B2-Y.TIN",
+        "bytes": 819200
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B3-Y.TIN",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_b04",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 5 w1=output (819.2KB)",
+    "predictor": "experiments/parity-astra-d13-b234-sm120-cpu-chain-20260912/scripts/d13_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "7bab5886d2d8f9f430bd1a986f4a444404cb2f10f34eb0d7034654c2800de41d"
+  },
+  {
+    "stage": "E1",
+    "node": "B04",
+    "launches": [
+      6
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_outview_ds_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B03",
+        "file": "B3-Y.TIN",
+        "bytes": 819200
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B4-full.TIN",
+        "bytes": 819200,
+        "word": 1,
+        "role": "skip_b4_to_b66",
+        "codec": "tin160x160x32"
+      },
+      {
+        "name": "B4-pooled.raw",
+        "bytes": 409600,
+        "word": 8,
+        "role": "main_to_b05",
+        "codec": "inpview80x80x64"
+      }
+    ],
+    "evidence": "Launch 6 w1=full 160x160x32 (819.2KB, B66 skip at L151 w10); w8=pooled 80x80x64 (409.6KB, B5 main)",
+    "predictor": "experiments/parity-astra-d13-b234-sm120-cpu-chain-20260912/scripts/d13_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "7bab5886d2d8f9f430bd1a986f4a444404cb2f10f34eb0d7034654c2800de41d"
+  },
+  {
+    "stage": "E1",
+    "node": "B05",
+    "launches": [
+      7
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_inpview_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B04",
+        "file": "B4-pooled.raw",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B5-Y.tin64",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_b06",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 7 w1=output (409.6KB)",
+    "predictor": "experiments/parity-astra-d17-b5-sm120-cpu-chain-20260912/scripts/d17_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "e8a90bbaa6caf58a68c5a7ddfdc23c67d9069abeb7971525c7fd7d740bc5f64f"
+  },
+  {
+    "stage": "E1",
+    "node": "B06",
+    "launches": [
+      8
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B05",
+        "file": "B5-Y.tin64",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B6-Y.tin64",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_b07",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 8 w1=output (409.6KB)",
+    "predictor": "experiments/parity-astra-d19-b67-sm120-cpu-chain-20260912/scripts/d19_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "2d55f9ac070b99b1fc7acb9e36c12b5679b37581c3d339f3666c391c748026d3"
+  },
+  {
+    "stage": "E1",
+    "node": "B07",
+    "launches": [
+      9
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B06",
+        "file": "B6-Y.tin64",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B7-Y.tin64",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_b08",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 9 w1=output (409.6KB)",
+    "predictor": "experiments/parity-astra-d19-b67-sm120-cpu-chain-20260912/scripts/d19_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "2d55f9ac070b99b1fc7acb9e36c12b5679b37581c3d339f3666c391c748026d3"
+  },
+  {
+    "stage": "E1",
+    "node": "B08",
+    "launches": [
+      10
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_outview_ds_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B07",
+        "file": "B7-Y.tin64",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B8-full.tin64",
+        "bytes": 409600,
+        "word": 1,
+        "role": "skip_b8_to_b62",
+        "codec": "tin80x80x64"
+      },
+      {
+        "name": "B8-pooled.inpview128",
+        "bytes": 204800,
+        "word": 9,
+        "role": "main_to_b09",
+        "codec": "inpview40x40x128"
+      }
+    ],
+    "evidence": "Launch 10 w1=full 80x80x64 (409.6KB, B62 skip at L147 w10); w9=pooled 40x40x128 (204.8KB, B9 main)",
+    "predictor": "experiments/parity-astra-d21-b8-downsample-cpu-20260912/scripts/d21_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "12813e26cf1fe2f4ab87ef505720f201177b7afd94027b9215be0393cc7e0b32"
+  },
+  {
+    "stage": "E1",
+    "node": "B09",
+    "launches": [
+      11
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_inpview_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B08",
+        "file": "B8-pooled.inpview128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B9-Y.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b10",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 11 w1=output (204.8KB)",
+    "predictor": "experiments/parity-astra-d22-b9-4h-sm120-cpu-chain-20260912/scripts/d22_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "325ccb0b890f9935b87e2a4294a0f8e4f9081e31897d0fc56ab22ebb9f248f01"
+  },
+  {
+    "stage": "E1",
+    "node": "B10",
+    "launches": [
+      12
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B09",
+        "file": "B9-Y.tin128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B10-Y.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b11",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 12 w1=output (204.8KB)",
+    "predictor": "experiments/parity-astra-d22-b9-4h-sm120-cpu-chain-20260912/scripts/d22_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "325ccb0b890f9935b87e2a4294a0f8e4f9081e31897d0fc56ab22ebb9f248f01"
+  },
+  {
+    "stage": "E1",
+    "node": "B11",
+    "launches": [
+      13
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B10",
+        "file": "B10-Y.tin128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B11-Y.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b12",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 13 w1=output (204.8KB)",
+    "predictor": "experiments/parity-astra-d22-b9-4h-sm120-cpu-chain-20260912/scripts/d22_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "325ccb0b890f9935b87e2a4294a0f8e4f9081e31897d0fc56ab22ebb9f248f01"
+  },
+  {
+    "stage": "E1",
+    "node": "B12",
+    "launches": [
+      14
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B11",
+        "file": "B11-Y.tin128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B12-Y.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b13",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 14 w1=output (204.8KB)",
+    "predictor": "experiments/parity-astra-d22-b9-4h-sm120-cpu-chain-20260912/scripts/d22_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "325ccb0b890f9935b87e2a4294a0f8e4f9081e31897d0fc56ab22ebb9f248f01"
+  },
+  {
+    "stage": "E1",
+    "node": "B13",
+    "launches": [
+      15
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B12",
+        "file": "B12-Y.tin128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B13-Y.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b14",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 15 w1=output (204.8KB)",
+    "predictor": "experiments/parity-astra-d22-b9-4h-sm120-cpu-chain-20260912/scripts/d22_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "325ccb0b890f9935b87e2a4294a0f8e4f9081e31897d0fc56ab22ebb9f248f01"
+  },
+  {
+    "stage": "E1",
+    "node": "B14",
+    "launches": [
+      16
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_outview_ds_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B13",
+        "file": "B13-Y.tin128",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B14-full.tin128",
+        "bytes": 204800,
+        "word": 1,
+        "role": "skip_b14_to_b56",
+        "codec": "tin40x40x128"
+      },
+      {
+        "name": "B14-pooled.inpview256",
+        "bytes": 102400,
+        "word": 9,
+        "role": "main_to_b15",
+        "codec": "inpview20x20x256"
+      }
+    ],
+    "evidence": "Launch 16 w1=full 40x40x128 (204.8KB, B56 skip at L141 w10); w9=pooled 20x20x256 (102.4KB, B15 main)",
+    "predictor": "experiments/parity-astra-d25-b14-downsample-cpu-20260912/scripts/d25_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "7461c68296397432dbd4670625dc176dc8760753a7e8b2c51b47465915231f94"
+  },
+  {
+    "stage": "E1",
+    "node": "B15",
+    "launches": [
+      17
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_inpview_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B14",
+        "file": "B14-pooled.inpview256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B15-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b16",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 17 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d26-b15-8h-cpu-chain-20260912/scripts/d26_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B16",
+    "launches": [
+      18
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B15",
+        "file": "B15-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B16-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b17",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 18 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B17",
+    "launches": [
+      19
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B16",
+        "file": "B16-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B17-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b18",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 19 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B18",
+    "launches": [
+      20
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B17",
+        "file": "B17-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B18-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b19",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 20 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B19",
+    "launches": [
+      21
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B18",
+        "file": "B18-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B19-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b20",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 21 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B20",
+    "launches": [
+      22
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B19",
+        "file": "B19-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B20-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b21",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 22 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B21",
+    "launches": [
+      23
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B20",
+        "file": "B20-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B21-Y.tin256",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b22",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 23 w1=output (102.4KB)",
+    "predictor": "experiments/parity-astra-d29-b16-b21-luna-cpu-20260913/scripts/d29_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "0a70b8182d40b59f0da91df27395791a0198046ada6b067461b61a0cc471cd52"
+  },
+  {
+    "stage": "E1",
+    "node": "B22",
+    "launches": [
+      24
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_outview_ds_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B21",
+        "file": "B21-Y.tin256",
+        "bytes": 102400
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B22-full.bin",
+        "bytes": 102400,
+        "word": 1,
+        "role": "skip_b22_to_b48",
+        "codec": "tin20x20x256"
+      },
+      {
+        "name": "B22-pooled.bin",
+        "bytes": 73728,
+        "word": 9,
+        "role": "main_to_b23",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 24 w1=full 20x20x256 (102.4KB, B48 skip at L133 w10); w9=pooled (73,728 B, B23 main)",
+    "predictor": "experiments/parity-astra-d31-b22-downsample-luna-20260913/scripts/d31_backend.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "269298d7eba0ff00b4f1e3590fb4d9d032af30f409af42314d503e953f1a9802"
+  },
+  {
+    "stage": "E2",
+    "node": "B23",
+    "launches": [
+      25,
+      26,
+      27,
+      28
+    ],
+    "function": "split16_c25_c28_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B22",
+        "file": "B22-pooled.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B23-C28-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_b24",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 28 w2=C28 output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r02-l27-l28/mapexec2.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B24",
+    "launches": [
+      29,
+      30,
+      31,
+      32
+    ],
+    "function": "split16_k29_k32_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B23",
+        "file": "B23-C28-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B24-K32-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 32 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r03-b24-b30/mapexec2.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B25",
+    "launches": [
+      33,
+      34,
+      35,
+      36
+    ],
+    "function": "split16_k33_k36_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B24",
+        "file": "B24-K32-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B25-K36-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 36 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r03-b24-b30/mapexec2.py",
+    "audit": "parity-claude-b0-b25-repair-audit-20260913",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B26",
+    "launches": [
+      37,
+      38,
+      39,
+      40
+    ],
+    "function": "split16_k37_k40_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B25",
+        "file": "B25-K36-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B26-K40-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 40 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r03-b24-b30/mapexec2.py",
+    "audit": "b26-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B27",
+    "launches": [
+      41,
+      42,
+      43,
+      44
+    ],
+    "function": "split16_k41_k44_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B26",
+        "file": "B26-K40-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B27-K44-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 44 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r04-b27-b29/mapexec2.py",
+    "audit": "b27-b29-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B28",
+    "launches": [
+      45,
+      46,
+      47,
+      48
+    ],
+    "function": "split16_k45_k48_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B27",
+        "file": "B27-K44-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B28-K48-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 48 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r04-b27-b29/mapexec2.py",
+    "audit": "b27-b29-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B29",
+    "launches": [
+      49,
+      50,
+      51,
+      52
+    ],
+    "function": "split16_k49_k52_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B28",
+        "file": "B28-K48-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B29-K52-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 52 w2=output (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r04-b27-b29/mapexec2.py",
+    "audit": "b27-b29-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E2",
+    "node": "B30",
+    "launches": [
+      53,
+      54,
+      55,
+      56,
+      57
+    ],
+    "function": "split16_k53_k57_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B29",
+        "file": "B29-K52-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B30-L56-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "skip_b30_to_b39",
+        "codec": "raw73728"
+      },
+      {
+        "name": "B30-L57-word1.bin",
+        "bytes": 65536,
+        "word": 1,
+        "role": "main_to_b31",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 56 w2=spatial skip (73,728 B, B39 skip at L100 w2); Launch 57 w1=L57 output (65,536 B, B31 main)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r05-b30/mapexec2.py",
+    "audit": "b30-audit-20260914",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E3",
+    "node": "B31",
+    "launches": [
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "function": "cc_vit_1d_b31_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B30",
+        "file": "B30-L57-word1.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B31-L63-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_b32",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 63 w2=B31 exit, consumed as launch 64 w0 (65,536 B). F17: w1 at this launch is an in-block residual written earlier by launch 60, NOT the exit -- see FAILURE_LEDGER F17.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_repack.py",
+    "audit": "Astra B31 audit",
+    "predictor_sha256": "8c010932bbad9638fa225e6829beba4224b73b21bda90402354ae2b3b652e85f"
+  },
+  {
+    "stage": "E3",
+    "node": "B32",
+    "launches": [
+      64,
+      65,
+      66,
+      67,
+      68
+    ],
+    "function": "cc_vit_1d_b32_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B31",
+        "file": "B31-L63-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B32-L68-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 68 w2=B32 exit, consumed as launch 69 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B33",
+    "launches": [
+      69,
+      70,
+      71,
+      72,
+      73
+    ],
+    "function": "cc_vit_1d_b33_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B32",
+        "file": "B32-L68-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B33-L73-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 73 w2=B33 exit, consumed as launch 74 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B34",
+    "launches": [
+      74,
+      75,
+      76,
+      77,
+      78
+    ],
+    "function": "cc_vit_1d_b34_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B33",
+        "file": "B33-L73-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B34-L78-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 78 w2=B34 exit, consumed as launch 79 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B35",
+    "launches": [
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "function": "cc_vit_1d_b35_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B34",
+        "file": "B34-L78-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B35-L83-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 83 w2=B35 exit, consumed as launch 84 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B36",
+    "launches": [
+      84,
+      85,
+      86,
+      87,
+      88
+    ],
+    "function": "cc_vit_1d_b36_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B35",
+        "file": "B35-L83-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B36-L88-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 88 w2=B36 exit, consumed as launch 89 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B37",
+    "launches": [
+      89,
+      90,
+      91,
+      92,
+      93
+    ],
+    "function": "cc_vit_1d_b37_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B36",
+        "file": "B36-L88-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B37-L93-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 93 w2=B37 exit, consumed as launch 94 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "B38",
+    "launches": [
+      94,
+      95,
+      96,
+      97,
+      98
+    ],
+    "function": "cc_vit_1d_b38_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B37",
+        "file": "B37-L93-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B38-L98-word2.bin",
+        "bytes": 65536,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 98 w2=B38 exit, consumed as launch 99 w0 (65,536 B). F17: w1 is an earlier in-block residual, not the exit.",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_projection.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "ed50b9de5dd37fc03380938d3da22a51f8d4085d25c135070bc40f68a3e73b72"
+  },
+  {
+    "stage": "E3",
+    "node": "L99",
+    "launches": [
+      99
+    ],
+    "function": "cc_vit_1d_repack_1d_to_2d_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B38",
+        "file": "B38-L98-word2.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "launch_functions",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/launch-functions.json",
+        "bytes": 7697
+      }
+    ],
+    "outputs": [
+      {
+        "name": "L99-word0.bin",
+        "bytes": 65536,
+        "word": 1,
+        "role": "main_to_b39",
+        "codec": "raw65536"
+      }
+    ],
+    "evidence": "Launch 99 w1=output (65,536 B, main input to B39; Note: filename is L99-word0.bin for historical consistency, actual buffer is launch 99 word 1)",
+    "predictor": "experiments/parity-claude-b32-b38-vit-20260913/exec/kern_repack.py",
+    "audit": "b32-b38-audit-20260914",
+    "predictor_sha256": "8c010932bbad9638fa225e6829beba4224b73b21bda90402354ae2b3b652e85f"
+  },
+  {
+    "stage": "E4",
+    "node": "B39",
+    "launches": [
+      100
+    ],
+    "function": "cc_tinlayout_fused_decoder_bridge_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "L99",
+        "file": "L99-word0.bin",
+        "bytes": 65536
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B30",
+        "file": "B30-L56-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B39-Y.raw",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_b40",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 100 w2=output (73,728 B, c[0x390]; main from L99 w1, skip from B30 L56 w2)",
+    "predictor": "experiments/parity-astra-opus-b39-bridge-20260913/predict_b39.py",
+    "audit": "B39 round / b30-audit-20260914",
+    "predictor_sha256": "70c002e7c0cb2245b88a9a0eb2b873c7843c93194d4fcfa91a2c9537bf08e238"
+  },
+  {
+    "stage": "E4",
+    "node": "B40",
+    "launches": [
+      101,
+      102,
+      103,
+      104
+    ],
+    "function": "split16_k101_k104_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B39",
+        "file": "B39-Y.raw",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B40-K104-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 104 w2=B40 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B41",
+    "launches": [
+      105,
+      106,
+      107,
+      108
+    ],
+    "function": "split16_k105_k108_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B40",
+        "file": "B40-K104-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B41-K108-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 108 w2=B41 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B42",
+    "launches": [
+      109,
+      110,
+      111,
+      112
+    ],
+    "function": "split16_k109_k112_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B41",
+        "file": "B41-K108-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B42-K112-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 112 w2=B42 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B43",
+    "launches": [
+      113,
+      114,
+      115,
+      116
+    ],
+    "function": "split16_k113_k116_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B42",
+        "file": "B42-K112-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B43-K116-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 116 w2=B43 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B44",
+    "launches": [
+      117,
+      118,
+      119,
+      120
+    ],
+    "function": "split16_k117_k120_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B43",
+        "file": "B43-K116-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B44-K120-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 120 w2=B44 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B45",
+    "launches": [
+      121,
+      122,
+      123,
+      124
+    ],
+    "function": "split16_k121_k124_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B44",
+        "file": "B44-K120-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B45-K124-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 124 w2=B45 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B46",
+    "launches": [
+      125,
+      126,
+      127,
+      128
+    ],
+    "function": "split16_k125_k128_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B45",
+        "file": "B45-K124-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B46-K128-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_next",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 128 w2=B46 exit (73,728 B)",
+    "predictor": "experiments/parity-astra-opus-split16-b23-b30-20260913/revisions/r06-b40-b46/mapexec2.py",
+    "audit": "b40-b46-audit",
+    "predictor_sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+  },
+  {
+    "stage": "E4",
+    "node": "B47",
+    "launches": [
+      129,
+      130,
+      131,
+      132
+    ],
+    "function": "split16_k129_k132_chain",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B46",
+        "file": "B46-K128-word2.bin",
+        "bytes": 73728
+      }
+    ],
+    "outputs": [
+      {
+        "name": "K132-word2.bin",
+        "bytes": 73728,
+        "word": 2,
+        "role": "main_to_b48",
+        "codec": "raw73728"
+      }
+    ],
+    "evidence": "Launch 132 w2=K132 exit (73,728 B, B48 main at L133 w0)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/revisions/r07-b47/mapexec2.py",
+    "audit": "b47-b48-audit-20260914",
+    "predictor_sha256": "a454d2ddc6e51f1f8ef445f812e9ec096badfe7f21ed037c339477e04f0e8d0c"
+  },
+  {
+    "stage": "E5",
+    "node": "B48",
+    "launches": [
+      133
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_upsample_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B47",
+        "file": "K132-word2.bin",
+        "bytes": 73728
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B22",
+        "file": "B22-full.bin",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0133.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B48-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_b49",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 133 w0=K132 (73.7KB), w10=B22 full skip (102.4KB); output=102,400 B",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B49",
+    "launches": [
+      134
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B48",
+        "file": "B48-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0134.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B49-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 134 w1=B49 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B50",
+    "launches": [
+      135
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B49",
+        "file": "B49-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0135.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B50-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 135 w1=B50 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B51",
+    "launches": [
+      136
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B50",
+        "file": "B50-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0136.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B51-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 136 w1=B51 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B52",
+    "launches": [
+      137
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B51",
+        "file": "B51-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0137.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B52-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 137 w1=B52 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B53",
+    "launches": [
+      138
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B52",
+        "file": "B52-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0138.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B53-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 138 w1=B53 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B54",
+    "launches": [
+      139
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B53",
+        "file": "B53-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0139.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B54-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin20x20x256"
+      }
+    ],
+    "evidence": "Launch 139 w1=B54 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-claude-b47-b48-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "4b6b1f5e5ded9541fca86d7f130c77daf4bf3db84010c33b1b7bf4af522212e5"
+  },
+  {
+    "stage": "E5",
+    "node": "B55",
+    "launches": [
+      140
+    ],
+    "function": "cc_tinlayout_fused_swin_8h_256_2_outview_wait_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B54",
+        "file": "B54-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0140.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B55-Y.raw",
+        "bytes": 102400,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "outview_p16"
+      }
+    ],
+    "evidence": "Launch 140 w1=B55 output (102.4KB; B55 is P16 outview -> B56 main)",
+    "predictor": "experiments/parity-astra-opus-outview-b55-b61-b65-20260913/scripts/predict_outview.py",
+    "audit": "outview audit / b47-b48-audit-20260914",
+    "predictor_sha256": "cf2040e521c8a698786a3ffee7e2d372be2a6e310de2b3ba9846b2a5df542b19"
+  },
+  {
+    "stage": "E5",
+    "node": "B56",
+    "launches": [
+      141
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_upsample_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B55",
+        "file": "B55-Y.raw",
+        "bytes": 102400
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B14",
+        "file": "B14-full.tin128",
+        "bytes": 204800
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0141.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B56-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_b57",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 141 w0=B55 (102.4KB), w10=B14 full skip (204.8KB); output=204,800 B",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E5",
+    "node": "B57",
+    "launches": [
+      142
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B56",
+        "file": "B56-Y.raw",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B57-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 142 w1=B57 output (204.8KB; B61 is P16 outview -> B62 main)",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E5",
+    "node": "B58",
+    "launches": [
+      143
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B57",
+        "file": "B57-Y.raw",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B58-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 143 w1=B58 output (204.8KB; B61 is P16 outview -> B62 main)",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E5",
+    "node": "B59",
+    "launches": [
+      144
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B58",
+        "file": "B58-Y.raw",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B59-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 144 w1=B59 output (204.8KB; B61 is P16 outview -> B62 main)",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E5",
+    "node": "B60",
+    "launches": [
+      145
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B59",
+        "file": "B59-Y.raw",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B60-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin40x40x128"
+      }
+    ],
+    "evidence": "Launch 145 w1=B60 output (204.8KB; B61 is P16 outview -> B62 main)",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "outview audit / b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E5",
+    "node": "B61",
+    "launches": [
+      146
+    ],
+    "function": "cc_tinlayout_fused_swin_4h_128_2_outview_wait_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B60",
+        "file": "B60-Y.raw",
+        "bytes": 204800
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B61-Y.raw",
+        "bytes": 204800,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "outview_p16"
+      }
+    ],
+    "evidence": "Launch 146 w1=B61 output (204.8KB; B61 is P16 outview -> B62 main)",
+    "predictor": "experiments/parity-astra-opus-outview-b55-b61-b65-20260913/scripts/predict_outview.py",
+    "audit": "outview audit / b56-b62-audit",
+    "predictor_sha256": "cf2040e521c8a698786a3ffee7e2d372be2a6e310de2b3ba9846b2a5df542b19"
+  },
+  {
+    "stage": "E5",
+    "node": "B62",
+    "launches": [
+      147
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_upsample_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B61",
+        "file": "B61-Y.raw",
+        "bytes": 204800
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B08",
+        "file": "B8-full.tin64",
+        "bytes": 409600
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0147.params",
+        "bytes": 88
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B62-Y.raw",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_b63",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 147 w0=B61 (204.8KB), w10=B8 full skip (409.6KB); output=409,600 B",
+    "predictor": "experiments/parity-claude-b56-b62-upsample-20260913/scripts/transition_backend.py",
+    "audit": "b56-b62-audit",
+    "predictor_sha256": "add4fc35577fc440a8e2f590775ff43f228093751290881a00528dca7a5d6220"
+  },
+  {
+    "stage": "E6",
+    "node": "B63",
+    "launches": [
+      148
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B62",
+        "file": "B62-Y.raw",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B63-Y.raw",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 148 w1=B63 output (409.6KB; B65 is P16 outview -> B66 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B64",
+    "launches": [
+      149
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B63",
+        "file": "B63-Y.raw",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B64-Y.raw",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin80x80x64"
+      }
+    ],
+    "evidence": "Launch 149 w1=B64 output (409.6KB; B65 is P16 outview -> B66 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B65",
+    "launches": [
+      150
+    ],
+    "function": "cc_tinlayout_fused_swin_2h_64_2_outview_wait_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B64",
+        "file": "B64-Y.raw",
+        "bytes": 409600
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B65-Y.raw",
+        "bytes": 409600,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "outview_p16"
+      }
+    ],
+    "evidence": "Launch 150 w1=B65 output (409.6KB; B65 is P16 outview -> B66 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B66",
+    "launches": [
+      151
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_upsample_tilesync_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B65",
+        "file": "B65-Y.raw",
+        "bytes": 409600
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B04",
+        "file": "B4-full.TIN",
+        "bytes": 819200
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B66-Y.raw",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_b67",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 151 w0=B65 (409.6KB), w10=B4 full skip (819.2KB); output=819,200 B",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B67",
+    "launches": [
+      152
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B66",
+        "file": "B66-Y.raw",
+        "bytes": 819200
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0152.params",
+        "bytes": 96
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B67-Y.raw",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 152 w1=B67 output (819.2KB; B69 is P16 outview -> B70 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B68",
+    "launches": [
+      153
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_chained_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B67",
+        "file": "B67-Y.raw",
+        "bytes": 819200
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0153.params",
+        "bytes": 96
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B68-Y.raw",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "tin160x160x32"
+      }
+    ],
+    "evidence": "Launch 153 w1=B68 output (819.2KB; B69 is P16 outview -> B70 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B69",
+    "launches": [
+      154
+    ],
+    "function": "cc_tinlayout_fused_swin_1h_32_1_outview_wait_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B68",
+        "file": "B68-Y.raw",
+        "bytes": 819200
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0154.params",
+        "bytes": 96
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B69-Y.raw",
+        "bytes": 819200,
+        "word": 1,
+        "role": "main_to_next",
+        "codec": "outview_p16"
+      }
+    ],
+    "evidence": "Launch 154 w1=B69 output (819.2KB; B69 is P16 outview -> B70 main)",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  },
+  {
+    "stage": "E6",
+    "node": "B70",
+    "launches": [
+      155
+    ],
+    "function": "cc_tinlayout_fused_post_block_swin_1h_32_fp8",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B69",
+        "file": "B69-Y.raw",
+        "bytes": 819200
+      },
+      {
+        "role": "skip",
+        "source": "cpu",
+        "node": "B00",
+        "file": "b0_full.tin",
+        "bytes": 3276800
+      },
+      {
+        "role": "colour",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/colour.rgba16",
+        "bytes": 614400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0155.params",
+        "bytes": 184
+      }
+    ],
+    "outputs": [
+      {
+        "name": "B70-id9.rgba16",
+        "bytes": 614400,
+        "word": 0,
+        "role": "main_to_s157",
+        "codec": "rgba16"
+      }
+    ],
+    "evidence": "Launch 155 w0=B69 (819.2KB), w1=B0 full skip (3.2MB), ID1=colour (614.4KB); output=614,400 B ID9",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/b70_adapter.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "94ebe99032c5ce06709c91bd7a4606d8a94eb1ef2c8eacf58ca657eb27634922"
+  },
+  {
+    "stage": "E6",
+    "node": "S157",
+    "launches": [
+      157
+    ],
+    "function": "cg2r_post_process_kernel",
+    "inputs": [
+      {
+        "role": "main",
+        "source": "cpu",
+        "node": "B70",
+        "file": "B70-id9.rgba16",
+        "bytes": 614400
+      },
+      {
+        "role": "colour",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/colour.rgba16",
+        "bytes": 614400
+      },
+      {
+        "role": "params",
+        "source": "static",
+        "path": "anchors/{sample}/inputs/params/launch-0157.params",
+        "bytes": 376
+      }
+    ],
+    "outputs": [
+      {
+        "name": "S157-id2.rgba16",
+        "bytes": 614400,
+        "word": 0,
+        "role": "final_image",
+        "codec": "rgba16f"
+      }
+    ],
+    "evidence": "Launch 157 in=B70 output (614.4KB), ID10=colour (614.4KB); output=614,400 B RGBA16F final image",
+    "predictor": "experiments/parity-astra-opus-b63-s157-local-chain-20260913/scripts/stage_backends.py",
+    "audit": "b63-own-read-audit-20260914",
+    "predictor_sha256": "33dadacb564ff7942a40f1441c86ac492ed4dda771d467683d3414a863b1e34f"
+  }
+]

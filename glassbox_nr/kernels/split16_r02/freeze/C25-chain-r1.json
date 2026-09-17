@@ -1,0 +1,146 @@
+{
+  "format": "opus-split16-freeze/1",
+  "stage": "C25",
+  "samples": [
+    "c1-C-img-full"
+  ],
+  "files": [
+    {
+      "role": "predictor",
+      "base": "round",
+      "path": "predict_chain.py",
+      "bytes": 14563,
+      "sha256": "73e1124ab85cb05e88ede466dddb96eeb7f49caeb7a57fe7cde4fca43ddc60de"
+    },
+    {
+      "role": "comparator",
+      "base": "round",
+      "path": "compare_chain.py",
+      "bytes": 33648,
+      "sha256": "b59560b302dfd8c3e8877d7dca2e8c1692d1b7b311f9595d99b7aa853bb8d7d3"
+    },
+    {
+      "role": "driver",
+      "base": "round",
+      "path": "run_chain.py",
+      "bytes": 6226,
+      "sha256": "d5f0d0c31047c3c2175fa4ca83b088471fc20b88ebf20c718d54d9532ae83910"
+    },
+    {
+      "role": "arith",
+      "base": "round",
+      "path": "arith.py",
+      "bytes": 11945,
+      "sha256": "9d0a6833ab540e6d72a5a7969dccafc6bf53e72fbae70af8eb0d570a7c9b57ed"
+    },
+    {
+      "role": "arith2",
+      "base": "round",
+      "path": "arith2.py",
+      "bytes": 3113,
+      "sha256": "b68ac7503dde6d464a9a7f11d76b542359366a35eadd0d6f7744a8e2d9f99d68"
+    },
+    {
+      "role": "mapexec2",
+      "base": "round",
+      "path": "mapexec2.py",
+      "bytes": 8422,
+      "sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+    },
+    {
+      "role": "mlxdlss_init",
+      "base": "project",
+      "path": "mlxdlss/__init__.py",
+      "bytes": 210,
+      "sha256": "5836131c5553328f6572b154af71ac767c40497afb6ebec3cd380c70324b88bd"
+    },
+    {
+      "role": "mlxdlss_sm120_b1",
+      "base": "project",
+      "path": "mlxdlss/sm120_b1.py",
+      "bytes": 33659,
+      "sha256": "f4ada69da4ec60be36f09b05560a0fd0240a147721a20a0b51d7001518089d31"
+    },
+    {
+      "role": "mlxdlss_model",
+      "base": "project",
+      "path": "mlxdlss/model.py",
+      "bytes": 53257,
+      "sha256": "87ad06c4337d75543ad8257141164e94272a356173295e7abb6508f9a0891b8f"
+    },
+    {
+      "role": "stage_spec",
+      "base": "round",
+      "path": "stages/C25.json",
+      "bytes": 747,
+      "sha256": "0d415534d312513092bd94d9e465e4f61a69c659fac0d1479ba23b94b89630b4"
+    },
+    {
+      "role": "map_json",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/maps/L25-lane.json",
+      "bytes": 3441,
+      "sha256": "5eaad3a420752fe6e16215203e94e182dc2a2fff2302cbe29bf112420ce3ccea"
+    },
+    {
+      "role": "map_npz",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/maps/L25-lane.npz",
+      "bytes": 1337384,
+      "sha256": "35981a94ee4bd90f2ea403010cfb5b0ee6fc8200a2936b08dc30f2a0094722de"
+    },
+    {
+      "role": "map_wiring",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/maps/L25-lane.wiring.json",
+      "bytes": 417245,
+      "sha256": "4a19d31ece96b382228c0a3c20fbebbe1dd55b144ac9addd58a73db8544d4910"
+    },
+    {
+      "role": "contraction",
+      "base": "round",
+      "path": "maps/chain/C25-no-contraction.json",
+      "bytes": 757,
+      "sha256": "53f47632805d82111393308798a255743bd242bd753f3211f75ed3d98ac43fe7"
+    },
+    {
+      "role": "table_rsq",
+      "base": "project",
+      "path": "mlxdlss/resources/rsq-domain.npz",
+      "bytes": 246454,
+      "sha256": "06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62"
+    },
+    {
+      "role": "table_rcp",
+      "base": "project",
+      "path": "mlxdlss/resources/rcp-domain.npz",
+      "bytes": 246446,
+      "sha256": "055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59"
+    },
+    {
+      "role": "weights:block23.layer0.layer",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/weights/block23.layer0.layer.bin",
+      "bytes": 524288,
+      "sha256": "63399444cd1c361a295167f7958cc707d8e88ec363da1cbf2ada632dcc741df5"
+    },
+    {
+      "role": "input:c1-C-img-full:C25-word0",
+      "base": "project",
+      "path": "experiments/parity-astra-opus-split16-b23-b30-20260913/inputs/c1-C-img-full/L25-word0-before.bin",
+      "bytes": 73728,
+      "sha256": "1ea3e1686904ba594a87d2ac9f0b26db05d1f320c2cc3b701a5dc981871170ec"
+    }
+  ],
+  "hypotheses": [
+    "all hypotheses of the accepted L25 segment freeze (map, arithmetic, executor semantics) unchanged; executed through mapexec2 / arith2, whose segment node kinds evaluate identically",
+    "CHAIN mode: inputs are the native B23 X or sealed CPU chain predictions linked with receipts (chain_link.py); no native intermediate is read"
+  ],
+  "notes": [
+    "chain stage C25 of the full B23 chain C25 -> C26 -> C27 -> C28 started from the native B23 input X only",
+    "the target bytes are not opened by the predictor; the comparator re-derives them from the capture package"
+  ],
+  "plan": "plans/C25-chain-r1.json",
+  "plan_sha256": "0e48c708c3570ab171fdca8b2799ae8d785251d666515af3a4c093052f8f407c",
+  "created_utc": "2026-09-13T17:29:44.390215+00:00"
+}

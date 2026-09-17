@@ -1,0 +1,15 @@
+{
+  "families_equal": true,
+  "format": "opus-b31-l61-sass-numeric-check/1",
+  "map_sha256": "2fdfd0ab105a6a36ae6ed308d2854bd52817fdb0c3b356a8169ceac0c0b45111",
+  "match": null,
+  "ordered_pairs_equal_operand0_fused": true,
+  "ordered_pairs_equal_operand1_fused": false,
+  "paths": 2,
+  "ptx_contraction_sites": 32,
+  "roots": 2,
+  "sass_fma_sites": 32,
+  "sass_sha256": "59ace50c9f709154578abb1571f1c4551e55b87abf5b0ef4147bba46886bf239",
+  "status": "PASS_H_FMA_OPERAND0",
+  "valid": true
+}

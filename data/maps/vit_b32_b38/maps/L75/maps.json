@@ -1,0 +1,15 @@
+{
+  "file_sha256": {
+    "json": "f68bf0fe3981969c70ef49bc28da86e08419ee178a894a09a9d1c44e1204475e",
+    "npz": "d6e2bd4521af1d42081582f2c3ce12f136935c98beb675fbea0e130782cc322a"
+  },
+  "files": {
+    "json": "maps/L75/L75-l60-templates-and-checks.json",
+    "npz": "maps/L75/L75-l60-address-map.npz"
+  },
+  "function": "cc_vit_1d_ffn_contract_chained_fp8",
+  "interp_sha256": "033f4fa229b63a94f40c49c7f020200d141744ac9157bdbe1be36b02d1cdbc3b",
+  "launch": 75,
+  "shim_sha256": "4a5dc5b75317f66f9fe63c712edae9372c9e06384d807d86a6188380a8663699",
+  "status": "PASS_FAMILY_EQUAL"
+}

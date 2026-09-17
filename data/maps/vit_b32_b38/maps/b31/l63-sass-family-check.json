@@ -1,0 +1,8 @@
+{
+  "format": "opus-b31-l63-sass-family-check/1",
+  "match": null,
+  "ptx_sha256": "67f260798090926a039b6142218e656573889f227eebc6dc0127f7e125c8cc8c",
+  "sass_sha256": "70698cdd100dfe53ddbefb130f517c1cbc783c2fba7eec91a14658a8dc92fd10",
+  "status": "PASS_FAMILIES_EQUAL",
+  "valid": true
+}

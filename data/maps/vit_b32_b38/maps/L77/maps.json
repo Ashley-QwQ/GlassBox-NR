@@ -1,0 +1,17 @@
+{
+  "file_sha256": {
+    "check": "3f12659c167be461b10ab78425aac4ccf5596742db0f0d77e786d15dec168024",
+    "json": "94e4b773fa0c1e3f779a7590fcc19bfac11908ac690239321aa5a833dbf5283e",
+    "npz": "f0a06de16c3d568a6861fc13ff6a458f1514cbeacda5c63d63fa0b40604adea0"
+  },
+  "files": {
+    "check": "maps/L77/L77-l62-sass-family-check.json",
+    "json": "maps/L77/L77-l62-templates-and-checks.json",
+    "npz": "maps/L77/L77-l62-address-map.npz"
+  },
+  "function": "cc_vit_1d_attention_chained_fp8",
+  "interp_sha256": "aa0bc28dca07ea94a1d3934df35e5d4d3323cacf4f979f806220e471f2b2a89b",
+  "launch": 77,
+  "shim_sha256": "788319917a00217007d0cd0860c4196a419f887b3452f3deaf767ca219885001",
+  "status": "PASS_FAMILY_EQUAL"
+}

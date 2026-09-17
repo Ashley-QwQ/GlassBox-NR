@@ -1,0 +1,1285 @@
+{
+  "glassbox_nr/kernels/split16_r02/freeze/C25-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r02/maps/chain/C25-no-contraction.json",
+      "sha256": "53f47632805d82111393308798a255743bd242bd753f3211f75ed3d98ac43fe7"
+    },
+    "map_npz": {
+      "path": "data/maps/L25-lane.npz",
+      "sha256": "35981a94ee4bd90f2ea403010cfb5b0ee6fc8200a2936b08dc30f2a0094722de"
+    },
+    "map_wiring": {
+      "path": "data/maps/L25-lane.wiring.json",
+      "sha256": "4a19d31ece96b382228c0a3c20fbebbe1dd55b144ac9addd58a73db8544d4910"
+    },
+    "weights": {
+      "path": "weights/block23.layer0.layer.bin",
+      "sha256": "63399444cd1c361a295167f7958cc707d8e88ec363da1cbf2ada632dcc741df5",
+      "tensor": "block23.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r02/freeze/C26-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r02/maps/chain/C26-no-contraction.json",
+      "sha256": "90249f72e54c1a601b77908e4a239f188a55bfa26cd92d587e5c6d8375a946dc"
+    },
+    "map_npz": {
+      "path": "data/maps/L26-lane.npz",
+      "sha256": "025eb191cf8b2e090b1f1cfd729178d7c08a302861c0216c14ac1152461e70e4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L26-lane.wiring.json",
+      "sha256": "998f5e5729490cf269385a3f1fdcbf2b8bdf6b5b0d370cb8b05a1cd315755e66"
+    },
+    "weights": {
+      "path": "weights/block23.layer1.layer.bin",
+      "sha256": "61bd7b37c8458f4baf1e401def0135d1887f416c8c8300cf02faa0225ebb9bbd",
+      "tensor": "block23.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r02/freeze/C27-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r02/maps/L27-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "6c70f6b0539dc3c60e68164fddcce7c9be24163fe14b6740fc51ec1d37872567",
+      "source_sha256": "0173a7e0fdf5de0a9cc50b0203c7c7e7a5e81461290a42ce4a8d960768dc1d0f"
+    },
+    "map_npz": {
+      "path": "data/maps/L27-lane.npz",
+      "sha256": "d39db3050a589b16206d427f78503c8bcb601c3b744492d447881df9c7757763"
+    },
+    "map_wiring": {
+      "path": "data/maps/L27-lane.wiring.json",
+      "sha256": "e9f851e2df2ecbaf01cabf635ddf0d72b8713b5ac4fa3e4eeda140ad2ac07dea"
+    },
+    "weights": {
+      "path": "weights/block23.layer2.layer.bin",
+      "sha256": "4418029920032fe9b68e7757bd7fc83f87c1fa56ee714db5a015f7cfef12e3a7",
+      "tensor": "block23.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r02/freeze/C28-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r02/maps/chain/C28-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L28-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L28-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block23.layer3.layer.bin",
+      "sha256": "ad2ddbc077729a776267698f4cccbf23c87bc09d825902475777e2cbd3fd1b06",
+      "tensor": "block23.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K29-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L29-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L29-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L29-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block24.layer0.layer.bin",
+      "sha256": "0b034c80329788fe6e7047cfaf63cd6a72e4b4803cddd945f053657868908059",
+      "tensor": "block24.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K30-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L30-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L30-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L30-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block24.layer1.layer.bin",
+      "sha256": "2c51c65e4c202757a83622259229602cfc87816dcf99680d015bc6dc78ab8d22",
+      "tensor": "block24.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K31-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L31-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "277a9b5d9d67b022453bfd891615702d00efe32ff2aacb4f13f29bc957f71517"
+    },
+    "map_npz": {
+      "path": "data/maps/L31-lane.npz",
+      "sha256": "50c89f1b38670895af5d1d79c2632012997cfd11824bb4438452703ab2201cec"
+    },
+    "map_wiring": {
+      "path": "data/maps/L31-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block24.layer2.layer.bin",
+      "sha256": "725a1e3d3f33b07ef7d45536a5a7dd895365eef69ac8a01d504103582324f745",
+      "tensor": "block24.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K32-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L32-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L32-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L32-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block24.layer3.layer.bin",
+      "sha256": "28f4c6603895ec25746f9dc5c8fbb6f4f2b35bc0f330def31321de8ef9d864ed",
+      "tensor": "block24.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K33-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L33-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L33-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L33-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block25.layer0.layer.bin",
+      "sha256": "1ec87cc7deec553a343123ff6e6a2db7248e713cdf9246f1e9918132415e2427",
+      "tensor": "block25.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K34-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L34-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L34-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L34-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block25.layer1.layer.bin",
+      "sha256": "74cadb350c25a2d38d66872e90809f3efe5db51f4c5b065a539d2c18f9d8d542",
+      "tensor": "block25.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K35-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L35-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "57a54dcfcee5194732336aea9964ad0206264bc8ba2e5e20655f87ed9519feb2"
+    },
+    "map_npz": {
+      "path": "data/maps/L35-lane.npz",
+      "sha256": "07ca59766cf20edd01da45316369c5cf4bbfa7940c6073aef13d808230a32fc2"
+    },
+    "map_wiring": {
+      "path": "data/maps/L35-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block25.layer2.layer.bin",
+      "sha256": "6aec37f51c3d2acb013e01b1e0149730b21b15f9c5cea12dc92cf71e37124029",
+      "tensor": "block25.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K36-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L36-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L36-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L36-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block25.layer3.layer.bin",
+      "sha256": "9fa724ac790899ce5a63aaf0b5d13b03013216907a6083163b4dee42985bd56f",
+      "tensor": "block25.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K37-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L37-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L37-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L37-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block26.layer0.layer.bin",
+      "sha256": "e9a984f72e9e8911c09b86b626dbf05c1898cfbaa893a4d5267f14cd9ed258cd",
+      "tensor": "block26.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K38-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L38-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L38-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L38-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block26.layer1.layer.bin",
+      "sha256": "fc02ffc8d36a48310c0883a1b88333ed0ec9c47dbcd9463fdfeacc019caae221",
+      "tensor": "block26.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K39-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L39-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "1163a5c3be94c4b67a648727a20387f5ce2978af1b827e662194d3a9043b0315"
+    },
+    "map_npz": {
+      "path": "data/maps/L39-lane.npz",
+      "sha256": "eb0de642a2da41e767bc8d990baf0ffb85bc03d2b59c1eb09db4c71867c6e1e3"
+    },
+    "map_wiring": {
+      "path": "data/maps/L39-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block26.layer2.layer.bin",
+      "sha256": "758aadaac32583262c7863993478ac6d32179c34954638a3349c6989b688186a",
+      "tensor": "block26.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r03/freeze/K40-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r03/maps/contraction/L40-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L40-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L40-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block26.layer3.layer.bin",
+      "sha256": "2a2cd7b0fc7def1e29d14f1f0e98a2ba0a0a1d26f2f52d0c7783a53fb9bc1970",
+      "tensor": "block26.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K41-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L41-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L41-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L41-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block27.layer0.layer.bin",
+      "sha256": "a01e4e9989fef611f7f73ba55892921c7f9a9142ce17f0758445029c00cb2168",
+      "tensor": "block27.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K42-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L42-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L42-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L42-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block27.layer1.layer.bin",
+      "sha256": "2006d9a956b3712d7994cac157932a5e83d193d81a29f2a1c15fa860cae8c9ad",
+      "tensor": "block27.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K43-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L43-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "6c70f6b0539dc3c60e68164fddcce7c9be24163fe14b6740fc51ec1d37872567",
+      "source_sha256": "0173a7e0fdf5de0a9cc50b0203c7c7e7a5e81461290a42ce4a8d960768dc1d0f"
+    },
+    "map_npz": {
+      "path": "data/maps/L43-lane.npz",
+      "sha256": "d39db3050a589b16206d427f78503c8bcb601c3b744492d447881df9c7757763"
+    },
+    "map_wiring": {
+      "path": "data/maps/L43-lane.wiring.json",
+      "sha256": "e9f851e2df2ecbaf01cabf635ddf0d72b8713b5ac4fa3e4eeda140ad2ac07dea"
+    },
+    "weights": {
+      "path": "weights/block27.layer2.layer.bin",
+      "sha256": "431d412bb2fd2a72b67365de9a855be87c1e813f84c2196526bec70e87f7e263",
+      "tensor": "block27.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K44-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L44-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L44-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L44-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block27.layer3.layer.bin",
+      "sha256": "1c7ca078a440b6821f7cf6531ce3b2fa7d30b70e374ccd412da58ddb689af4e5",
+      "tensor": "block27.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K45-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L45-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L45-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L45-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block28.layer0.layer.bin",
+      "sha256": "f12339d64f64f178ba8e258c9b5f771eb985e40f986d70566eaf0d280c51fae2",
+      "tensor": "block28.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K46-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L46-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L46-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L46-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block28.layer1.layer.bin",
+      "sha256": "6ce486b35ec916fdd38ec40d80d079581dc0581a9fd5bb9f2360761b4161b43f",
+      "tensor": "block28.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K47-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L47-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "277a9b5d9d67b022453bfd891615702d00efe32ff2aacb4f13f29bc957f71517"
+    },
+    "map_npz": {
+      "path": "data/maps/L47-lane.npz",
+      "sha256": "50c89f1b38670895af5d1d79c2632012997cfd11824bb4438452703ab2201cec"
+    },
+    "map_wiring": {
+      "path": "data/maps/L47-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block28.layer2.layer.bin",
+      "sha256": "967ce7a73aee5f67a62be620d79806e8f439fe002e6c4e42b412349a015e6ead",
+      "tensor": "block28.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K48-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L48-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L48-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L48-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block28.layer3.layer.bin",
+      "sha256": "3b44fc127317576eb7613ca7290aa7936d66417f1a740688846eb3badf2eb8a8",
+      "tensor": "block28.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K49-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L49-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L49-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L49-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block29.layer0.layer.bin",
+      "sha256": "42672f1abbd74ebc0f25f54f699e85eaf9f34dd172329267ec8c4c448788290a",
+      "tensor": "block29.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K50-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L50-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L50-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L50-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block29.layer1.layer.bin",
+      "sha256": "027a5512fd135e044e63b98c34f8aaf5d2cb00b84f1fc0fa42795a650a0696d7",
+      "tensor": "block29.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K51-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L51-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "57a54dcfcee5194732336aea9964ad0206264bc8ba2e5e20655f87ed9519feb2"
+    },
+    "map_npz": {
+      "path": "data/maps/L51-lane.npz",
+      "sha256": "07ca59766cf20edd01da45316369c5cf4bbfa7940c6073aef13d808230a32fc2"
+    },
+    "map_wiring": {
+      "path": "data/maps/L51-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block29.layer2.layer.bin",
+      "sha256": "06877db4ee570bb36b50cadbf9b33585aa17090035cb97a5a0417943025ebfb6",
+      "tensor": "block29.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r04/freeze/K52-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r04/maps/contraction/L52-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L52-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L52-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block29.layer3.layer.bin",
+      "sha256": "6d2a4d0e088ea8960b2ee513cb51f183613dda89913a4893df4400248de1a88c",
+      "tensor": "block29.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r05/freeze/K53-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r05/maps/contraction/L53-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L53-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L53-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block30.layer0.layer.bin",
+      "sha256": "f0f6eb4560034e325821dfebf4f84121158a0b90b9fe0b840da5ffb1e94057f5",
+      "tensor": "block30.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r05/freeze/K54-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r05/maps/contraction/L54-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L54-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L54-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block30.layer1.layer.bin",
+      "sha256": "b9bf314bb5e5b181eada7d49d8342c863cf0ad59e3cacfca3d31f8388519e465",
+      "tensor": "block30.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r05/freeze/K55-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r05/maps/contraction/L55-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "1163a5c3be94c4b67a648727a20387f5ce2978af1b827e662194d3a9043b0315"
+    },
+    "map_npz": {
+      "path": "data/maps/L55-lane.npz",
+      "sha256": "eb0de642a2da41e767bc8d990baf0ffb85bc03d2b59c1eb09db4c71867c6e1e3"
+    },
+    "map_wiring": {
+      "path": "data/maps/L55-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block30.layer2.layer.bin",
+      "sha256": "77255cc2533958caebaa309f19f401954cc8da26a97b6c7363d42bfb5eba9a38",
+      "tensor": "block30.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r05/freeze/K56-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r05/maps/contraction/L56-no-fma-sass.json",
+      "sha256": "67897c3b5c2b2e7636034f436821e1b2330f2650b66eef2b08cc22349a3b1757"
+    },
+    "map_npz": {
+      "path": "data/maps/L56-lane.npz",
+      "sha256": "68671ff0ec8c928852bb2632ac35c7c1c7060f3d9e966600fce0d273ddf586ba"
+    },
+    "map_wiring": {
+      "path": "data/maps/L56-lane.wiring.json",
+      "sha256": "384adcbb6260db42348605a7b84532d10a02491a3fc4fb1260624227282d3686"
+    },
+    "weights": {
+      "path": "weights/block30.layer3.layer.bin",
+      "sha256": "d70b9d9beea7b82b37cc6a305bf9841e07a236d00708438f06b1f90bdb2e454a",
+      "tensor": "block30.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r05/freeze/K57-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r05/maps/contraction/L57-no-contraction.json",
+      "sha256": "f649708101258f224e7d523606a51e405ec3fcab8f03fdf1b0ae2b8967c5b7f8"
+    },
+    "map_npz": {
+      "path": "data/maps/L57-lane.npz",
+      "sha256": "ce5a87f53d22f31bbb7352a1d7bd6135d4f000984805b8e61559fa30b8402a9d"
+    },
+    "map_wiring": {
+      "path": "data/maps/L57-lane.wiring.json",
+      "sha256": "aca3c19410e09c60086e2076bfd5b6f614382a9cceeaade6487193d3defee052"
+    },
+    "weights": {
+      "path": "weights/block30.layer4.layer.bin",
+      "sha256": "3ab0bf4b8e4b55cd4f60a8473d9cb0100896c1fd8328179188db43e427a50a4c",
+      "tensor": "block30.layer4.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K101-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L101-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L101-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L101-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block40.layer0.layer.bin",
+      "sha256": "a36d4a79990ac0856d9230579cb5ef6a90896bdbe5452ec683cfb9573b92886e",
+      "tensor": "block40.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K102-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L102-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L102-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L102-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block40.layer1.layer.bin",
+      "sha256": "e99170e79f9d78198b30b421f8226b37157cbb4bf15c6a6a6b42408cedaf839d",
+      "tensor": "block40.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K103-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L103-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "6c70f6b0539dc3c60e68164fddcce7c9be24163fe14b6740fc51ec1d37872567",
+      "source_sha256": "0173a7e0fdf5de0a9cc50b0203c7c7e7a5e81461290a42ce4a8d960768dc1d0f"
+    },
+    "map_npz": {
+      "path": "data/maps/L103-lane.npz",
+      "sha256": "d39db3050a589b16206d427f78503c8bcb601c3b744492d447881df9c7757763"
+    },
+    "map_wiring": {
+      "path": "data/maps/L103-lane.wiring.json",
+      "sha256": "e9f851e2df2ecbaf01cabf635ddf0d72b8713b5ac4fa3e4eeda140ad2ac07dea"
+    },
+    "weights": {
+      "path": "weights/block40.layer2.layer.bin",
+      "sha256": "f3dc4e363e17e38f61ff878d127d8961f858bc7a296f48e4bcf204c32bb67648",
+      "tensor": "block40.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K104-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L104-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L104-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L104-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block40.layer3.layer.bin",
+      "sha256": "23a7753582130c7cb74c47d01a3304401d7373d40af4690523ace6f331a08ae5",
+      "tensor": "block40.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K105-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L105-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L105-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L105-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block41.layer0.layer.bin",
+      "sha256": "83c88dcb8add6547b1dca74f3b8a23ba1916e9b1bebd2e6c42d5079e7d149a38",
+      "tensor": "block41.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K106-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L106-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L106-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L106-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block41.layer1.layer.bin",
+      "sha256": "c710059a619e1ba9f524c73cd519e4f3e8fc3b51b3111cf2f7dbae24591d5a09",
+      "tensor": "block41.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K107-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L107-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "277a9b5d9d67b022453bfd891615702d00efe32ff2aacb4f13f29bc957f71517"
+    },
+    "map_npz": {
+      "path": "data/maps/L107-lane.npz",
+      "sha256": "50c89f1b38670895af5d1d79c2632012997cfd11824bb4438452703ab2201cec"
+    },
+    "map_wiring": {
+      "path": "data/maps/L107-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block41.layer2.layer.bin",
+      "sha256": "3a8d9905ca92f0de4e30a4137a14f6248c6c5735a811a5192296262a064236a8",
+      "tensor": "block41.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K108-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L108-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L108-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L108-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block41.layer3.layer.bin",
+      "sha256": "ff81dedea3ef5f792bdd525f507f4e33de53efd4d39709c0446dd5980ed7d415",
+      "tensor": "block41.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K109-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L109-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L109-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L109-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block42.layer0.layer.bin",
+      "sha256": "ec48ed96accdf1e8ffb4983c888966182bf36856e2e2663a17521500ed29e083",
+      "tensor": "block42.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K110-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L110-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L110-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L110-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block42.layer1.layer.bin",
+      "sha256": "291fdf13e493d4ec399e1e423a4303d5d6e445c3cafefb39e3196d1450f221e9",
+      "tensor": "block42.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K111-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L111-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "57a54dcfcee5194732336aea9964ad0206264bc8ba2e5e20655f87ed9519feb2"
+    },
+    "map_npz": {
+      "path": "data/maps/L111-lane.npz",
+      "sha256": "07ca59766cf20edd01da45316369c5cf4bbfa7940c6073aef13d808230a32fc2"
+    },
+    "map_wiring": {
+      "path": "data/maps/L111-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block42.layer2.layer.bin",
+      "sha256": "7e84b86194e1c578c55d7306d8d8869d8f8eddbde7d1034368e65e0d4c325e05",
+      "tensor": "block42.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K112-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L112-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L112-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L112-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block42.layer3.layer.bin",
+      "sha256": "9b3039596f7479a226402a8c961e2af8ccb797a127702a4b289573358550b75c",
+      "tensor": "block42.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K113-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L113-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L113-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L113-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block43.layer0.layer.bin",
+      "sha256": "95eb00e2c501ef690c9c7258f48099d3ef3a897453615a06828e74c890a5f801",
+      "tensor": "block43.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K114-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L114-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L114-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L114-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block43.layer1.layer.bin",
+      "sha256": "1c75c6f58dc0f4c7db50c59cb1955ccc9def98c717c7b8c1c698dc77eead5dcb",
+      "tensor": "block43.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K115-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L115-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "1163a5c3be94c4b67a648727a20387f5ce2978af1b827e662194d3a9043b0315"
+    },
+    "map_npz": {
+      "path": "data/maps/L115-lane.npz",
+      "sha256": "eb0de642a2da41e767bc8d990baf0ffb85bc03d2b59c1eb09db4c71867c6e1e3"
+    },
+    "map_wiring": {
+      "path": "data/maps/L115-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block43.layer2.layer.bin",
+      "sha256": "c79e7824bde317e982b3b05ea11dca9104c4b495ead4768111b46d316e4d1861",
+      "tensor": "block43.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K116-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L116-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L116-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L116-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block43.layer3.layer.bin",
+      "sha256": "2274f369d6c1eed43d0199228e1387b16f64bcd62cfd86f278a66d32fd45c882",
+      "tensor": "block43.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K117-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L117-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L117-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L117-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block44.layer0.layer.bin",
+      "sha256": "45e08cbbc8eb229191804b8a9d635eb4bd45519349f1bb892a8bb9420223e4ea",
+      "tensor": "block44.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K118-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L118-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L118-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L118-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block44.layer1.layer.bin",
+      "sha256": "3e7a09996d4442c14c146357e8ed33117a4505762b4d292de21c6d55e8ba737f",
+      "tensor": "block44.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K119-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L119-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "6c70f6b0539dc3c60e68164fddcce7c9be24163fe14b6740fc51ec1d37872567",
+      "source_sha256": "0173a7e0fdf5de0a9cc50b0203c7c7e7a5e81461290a42ce4a8d960768dc1d0f"
+    },
+    "map_npz": {
+      "path": "data/maps/L119-lane.npz",
+      "sha256": "d39db3050a589b16206d427f78503c8bcb601c3b744492d447881df9c7757763"
+    },
+    "map_wiring": {
+      "path": "data/maps/L119-lane.wiring.json",
+      "sha256": "e9f851e2df2ecbaf01cabf635ddf0d72b8713b5ac4fa3e4eeda140ad2ac07dea"
+    },
+    "weights": {
+      "path": "weights/block44.layer2.layer.bin",
+      "sha256": "02290bdc13ae0b21ef8c5a66174974b6db72599873307d238d316de9c84e1824",
+      "tensor": "block44.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K120-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L120-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L120-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L120-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block44.layer3.layer.bin",
+      "sha256": "34b2a029d6708752ca238e5cb5e04bef0c81f6f683b312c98392be21721b9fe8",
+      "tensor": "block44.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K121-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L121-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L121-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L121-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block45.layer0.layer.bin",
+      "sha256": "fedb4a5a22108fef5a29c93e693cb04ba4838795854c9d27ea75e94e48410cbe",
+      "tensor": "block45.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K122-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L122-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L122-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L122-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block45.layer1.layer.bin",
+      "sha256": "0d64f870f57decee4c2098a02cdc5f8a9917d06b88ecd5864efb6439bf873374",
+      "tensor": "block45.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K123-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L123-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "277a9b5d9d67b022453bfd891615702d00efe32ff2aacb4f13f29bc957f71517"
+    },
+    "map_npz": {
+      "path": "data/maps/L123-lane.npz",
+      "sha256": "50c89f1b38670895af5d1d79c2632012997cfd11824bb4438452703ab2201cec"
+    },
+    "map_wiring": {
+      "path": "data/maps/L123-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block45.layer2.layer.bin",
+      "sha256": "3b39d1813b715d36800d7a743d46d225352400ae73b6fdf176375ba0070b4db1",
+      "tensor": "block45.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K124-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L124-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L124-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L124-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block45.layer3.layer.bin",
+      "sha256": "63b7382045777dcf5d48ab3e7f471f8750f4b8f96df0808d34b42a6ece9b7cd4",
+      "tensor": "block45.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K125-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L125-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L125-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L125-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block46.layer0.layer.bin",
+      "sha256": "a3c9e5d1685d5c22e1c9d6185cfea5daf7407e827ba9a15b888e463571228ad4",
+      "tensor": "block46.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K126-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L126-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L126-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L126-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block46.layer1.layer.bin",
+      "sha256": "105d851765cbe451f08d5cfdc3ffe0f84ae95b2aaedaa48ba371e47c3523f51c",
+      "tensor": "block46.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K127-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L127-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "57a54dcfcee5194732336aea9964ad0206264bc8ba2e5e20655f87ed9519feb2"
+    },
+    "map_npz": {
+      "path": "data/maps/L127-lane.npz",
+      "sha256": "07ca59766cf20edd01da45316369c5cf4bbfa7940c6073aef13d808230a32fc2"
+    },
+    "map_wiring": {
+      "path": "data/maps/L127-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block46.layer2.layer.bin",
+      "sha256": "83f87e36e583b7d8c07bfc3999e5299cfc062539c960e30a60a62fb11465131d",
+      "tensor": "block46.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r06/freeze/K128-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r06/maps/contraction/L128-no-contraction.json",
+      "sha256": "ef85744deb87843ca6125b69404f7871cb3f7e386b0eadef0e638094ed755c12"
+    },
+    "map_npz": {
+      "path": "data/maps/L128-lane.npz",
+      "sha256": "494965bf947a03588b2e06562554dc3d767a6ab343042112c1a9d1811b12fe7b"
+    },
+    "map_wiring": {
+      "path": "data/maps/L128-lane.wiring.json",
+      "sha256": "e9c276cfeb85801e701539aece1b008ef6d06f3ff8b4f4e45d1fd59a2d3940bd"
+    },
+    "weights": {
+      "path": "weights/block46.layer3.layer.bin",
+      "sha256": "e66c2fb31a32966cda0963d2e8901d0979fd612d9e36576f847b1dd3856582d4",
+      "tensor": "block46.layer3.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r07/freeze/K129-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r07/maps/contraction/L129-no-contraction.json",
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    "map_npz": {
+      "path": "data/maps/L129-lane.npz",
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    "map_wiring": {
+      "path": "data/maps/L129-lane.wiring.json",
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    "weights": {
+      "path": "weights/block47.layer0.layer.bin",
+      "sha256": "397018b5d777330822b63007f69a092ccff6a5a1fa851345fb79dfc871fa9fcf",
+      "tensor": "block47.layer0.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r07/freeze/K130-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r07/maps/contraction/L130-no-contraction.json",
+      "sha256": "4a79af476a30c774a59f1995c8747acfbc6095b2244cab67117a12eaf648377e"
+    },
+    "map_npz": {
+      "path": "data/maps/L130-lane.npz",
+      "sha256": "22cdf23be2b65c35e21804d5f670fa09e8835aac81d7113b6c3bb82df891c80e"
+    },
+    "map_wiring": {
+      "path": "data/maps/L130-lane.wiring.json",
+      "sha256": "3364fc7bfa55fef2d1b482e20076294c4c2c766182d7ec034ddf890eebd2f530"
+    },
+    "weights": {
+      "path": "weights/block47.layer1.layer.bin",
+      "sha256": "94ed1eb4bd04d78ccbf7d83c3ebff974e4678d0cd58182a25e7e0c5bf0917ff3",
+      "tensor": "block47.layer1.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r07/freeze/K131-chain-r1.json": {
+    "contraction": {
+      "derived": true,
+      "path": "glassbox_nr/kernels/split16_r07/maps/contraction/L131-sass-contraction.json",
+      "rule_id": "R7-contraction-keep-contract-only",
+      "sha256": "83a6fb29e4e40344ab957d3e247c7a6ae40d98df121e40440fd502f6c3a30556",
+      "source_sha256": "1163a5c3be94c4b67a648727a20387f5ce2978af1b827e662194d3a9043b0315"
+    },
+    "map_npz": {
+      "path": "data/maps/L131-lane.npz",
+      "sha256": "eb0de642a2da41e767bc8d990baf0ffb85bc03d2b59c1eb09db4c71867c6e1e3"
+    },
+    "map_wiring": {
+      "path": "data/maps/L131-lane.wiring.json",
+      "sha256": "9c57bf1d18478764eb1d3084a6ac639081ab1fa18e2a5736dba48c7ad43df239"
+    },
+    "weights": {
+      "path": "weights/block47.layer2.layer.bin",
+      "sha256": "8f950bc98fae69f66901fd29eaa3eaf4315fadcadd25ec4a8ebb82468cf5ba5d",
+      "tensor": "block47.layer2.layer"
+    }
+  },
+  "glassbox_nr/kernels/split16_r07/freeze/K132-chain-r1.json": {
+    "contraction": {
+      "path": "glassbox_nr/kernels/split16_r07/maps/contraction/L132-no-contraction.json",
+      "sha256": "ceab957359f4baa0cfd55e231218e9b2f0637f0cfa264a9808bfb180c0f6138e"
+    },
+    "map_npz": {
+      "path": "data/maps/L132-lane.npz",
+      "sha256": "e76b7b8597cd557663740ac9ce788e6ba119254cb003fa40a350e97dcfe1e04c"
+    },
+    "map_wiring": {
+      "path": "data/maps/L132-lane.wiring.json",
+      "sha256": "bf30565a4e15efcdc759aa776baa3fa4effd1056c48b5a7293b11b8e6e8dce12"
+    },
+    "weights": {
+      "path": "weights/block47.layer3.layer.bin",
+      "sha256": "f6acb87d2210dfae4d962aec3613628eb56581812baee148175b6af4313ff2d1",
+      "tensor": "block47.layer3.layer"
+    }
+  }
+}

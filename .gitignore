@@ -1,0 +1,17 @@
+# Local-only, generated or user-supplied -- never published.
+__pycache__/
+*.pyc
+*.pyo
+
+# Weights extracted locally by tools/extract_weights.py from the user's own
+# nvngx_dlssnr.dll. Never shipped in any form (see weight_derived_files.json).
+/weights/
+
+# Sample capture inputs extracted locally by glassbox_nr/s0_grand.py from the
+# user's own capture package. Raw capture data is never published.
+/anchors/
+/anchors-trusted.json
+
+# Local run outputs.
+/runs/
+/runs_clean/

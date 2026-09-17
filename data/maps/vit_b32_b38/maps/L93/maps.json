@@ -1,0 +1,17 @@
+{
+  "file_sha256": {
+    "check": "693ec366f274d9a176ad10c0befef57ba86f6d694c1e8f4b14f9821bb77c11fc",
+    "json": "f45ff618386246f87e615ec77b198a5e21e0dbe0eb4d9a0faf1a8ec249e304f4",
+    "npz": "d9eaf6a8ea0b274a47d52d54c006d8ad6b9f3734fc91463e38ad45274223ad50"
+  },
+  "files": {
+    "check": "maps/L93/L93-l63-sass-family-check.json",
+    "json": "maps/L93/L93-l63-templates-and-checks.json",
+    "npz": "maps/L93/L93-l63-address-map.npz"
+  },
+  "function": "cc_vit_1d_projection_chained_fp8",
+  "interp_sha256": "9c24d160e2677d92c3d07c49491fb6f25ef0115db52831206e11905d2a6848a6",
+  "launch": 93,
+  "shim_sha256": "9fb14ff109442534278a3f89db16f9f93c321a8e8040788a911eda9cd277238f",
+  "status": "PASS_FAMILY_EQUAL"
+}

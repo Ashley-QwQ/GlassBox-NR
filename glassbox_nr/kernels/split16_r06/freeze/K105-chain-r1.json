@@ -1,0 +1,148 @@
+{
+  "format": "opus-split16-freeze/1",
+  "stage": "K105",
+  "samples": [
+    "c1-C-img-full"
+  ],
+  "files": [
+    {
+      "role": "predictor",
+      "base": "round",
+      "path": "predict_block.py",
+      "bytes": 14715,
+      "sha256": "6d383da809e2d75e1d2a72bc64bc1af59ad8532325db07636a4e55115109b825"
+    },
+    {
+      "role": "driver",
+      "base": "round",
+      "path": "run_block.py",
+      "bytes": 6530,
+      "sha256": "dac28a44af13c80f74c916874228c7d2db0b0531221499df815a2c71af7bd0ef"
+    },
+    {
+      "role": "arith",
+      "base": "round",
+      "path": "arith.py",
+      "bytes": 11945,
+      "sha256": "9d0a6833ab540e6d72a5a7969dccafc6bf53e72fbae70af8eb0d570a7c9b57ed"
+    },
+    {
+      "role": "arith2",
+      "base": "round",
+      "path": "arith2.py",
+      "bytes": 3113,
+      "sha256": "b68ac7503dde6d464a9a7f11d76b542359366a35eadd0d6f7744a8e2d9f99d68"
+    },
+    {
+      "role": "mapexec2",
+      "base": "round",
+      "path": "mapexec2.py",
+      "bytes": 8422,
+      "sha256": "a1f07be3a953f08617371b29e243393ab05fe07b32400617fd5964342988e2ea"
+    },
+    {
+      "role": "mlxdlss_init",
+      "base": "project",
+      "path": "mlxdlss/__init__.py",
+      "bytes": 210,
+      "sha256": "5836131c5553328f6572b154af71ac767c40497afb6ebec3cd380c70324b88bd"
+    },
+    {
+      "role": "mlxdlss_sm120_b1",
+      "base": "project",
+      "path": "mlxdlss/sm120_b1.py",
+      "bytes": 33659,
+      "sha256": "f4ada69da4ec60be36f09b05560a0fd0240a147721a20a0b51d7001518089d31"
+    },
+    {
+      "role": "mlxdlss_model",
+      "base": "project",
+      "path": "mlxdlss/model.py",
+      "bytes": 53257,
+      "sha256": "87ad06c4337d75543ad8257141164e94272a356173295e7abb6508f9a0891b8f"
+    },
+    {
+      "role": "table_rsq",
+      "base": "project",
+      "path": "mlxdlss/resources/rsq-domain.npz",
+      "bytes": 246454,
+      "sha256": "06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62"
+    },
+    {
+      "role": "table_rcp",
+      "base": "project",
+      "path": "mlxdlss/resources/rcp-domain.npz",
+      "bytes": 246446,
+      "sha256": "055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59"
+    },
+    {
+      "role": "comparator",
+      "base": "round",
+      "path": "compare_b41.py",
+      "bytes": 44000,
+      "sha256": "d09d93659384091d0550e712804982b1d990cf21d543ddd690bf083fab2ab071"
+    },
+    {
+      "role": "stage_spec",
+      "base": "round",
+      "path": "stages/K105.json",
+      "bytes": 804,
+      "sha256": "6471243c0dd8361bec9a04fce5b4a7aef200903d97d3dc5fa9c8953022ba0e2b"
+    },
+    {
+      "role": "map_json",
+      "base": "round",
+      "path": "maps/L105-lane.json",
+      "bytes": 4123,
+      "sha256": "7d365b2efe9a7894e58b6dc952019e8dd27e7aee6b36a4429ab6226062c54510"
+    },
+    {
+      "role": "map_npz",
+      "base": "round",
+      "path": "maps/L105-lane.npz",
+      "bytes": 1496269,
+      "sha256": "9a0986acb84b2d3323f113990f89295ee2a9b30571cbcb29bbdfd556e63738d4"
+    },
+    {
+      "role": "map_wiring",
+      "base": "round",
+      "path": "maps/L105-lane.wiring.json",
+      "bytes": 212912,
+      "sha256": "3b03345e3c9b1969e4992fc2cfd7ef4c140ffee389e4a62f867cb6f040223639"
+    },
+    {
+      "role": "contraction",
+      "base": "round",
+      "path": "maps/contraction/L105-no-contraction.json",
+      "bytes": 756,
+      "sha256": "11346280992bdcc3fd90b8246bcbf3e25a5226e2395b30a81313fd04bbaae15f"
+    },
+    {
+      "role": "weights:block41.layer0.layer",
+      "base": "round",
+      "path": "weights/block41.layer0.layer.bin",
+      "bytes": 524288,
+      "sha256": "83c88dcb8add6547b1dca74f3b8a23ba1916e9b1bebd2e6c42d5079e7d149a38"
+    },
+    {
+      "role": "input:c1-C-img-full:K105-word0",
+      "base": "round",
+      "path": "inputs/c1-C-img-full/L105-word0-before.bin",
+      "bytes": 73728,
+      "sha256": "1be729911868ff5035b113ebd4b97f1306131171e6e298094ccd20cc5c476368"
+    }
+  ],
+  "hypotheses": [
+    "map: ptx_interp r02 reading of cc_split_swin_16h_ffwd_512_chained_fp8 for this launch's own params (identity/s0-b41.json); map checks maps/checks/L105-generic-check.json",
+    "arithmetic and executor semantics exactly as accepted for B23 (arith.py, arith2.py, mapexec2.py byte-identical copies of r02 via r03, see tools-provenance.json); joint hypotheses and their evidence limits unchanged (see r02 RESULT_ZH.md section 4)",
+    "contraction table maps/contraction/L105-no-contraction.json decided statically before any numeric run (interfaces/B41-static-decisions.json)",
+    "public samples c1-C-img-full only"
+  ],
+  "notes": [
+    "block B41 local chain stage K105 (revision r06-b40-b46)",
+    "the target bytes are not opened by the predictor; the comparator re-derives them from the capture package"
+  ],
+  "plan": "plans/K105-chain-r1.json",
+  "plan_sha256": "cb095337b8e08b67fcd92e70a492a77b84902987a0eeec66774537e301e54df0",
+  "created_utc": "2026-09-13T22:40:02.046027+00:00"
+}

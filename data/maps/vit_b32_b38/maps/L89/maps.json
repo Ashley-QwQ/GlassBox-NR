@@ -1,0 +1,15 @@
+{
+  "file_sha256": {
+    "json": "06777985634bf43c7f05ec4033f5952c5111618b43a5690f76833d36672bfc01",
+    "npz": "2271610daae4cf9378ed1c4d194faefafb42f0d76ad1cd38d511ca81afb3d5b8"
+  },
+  "files": {
+    "json": "maps/L89/L89-l59-wiring-and-checks.json",
+    "npz": "maps/L89/L89-l59-address-map.npz"
+  },
+  "function": "cc_vit_1d_ffn_expand_chained_fp8",
+  "interp_sha256": "23414ff158ab9c5567e640666a4c300d63e724e3801203b91fde7c0827034e23",
+  "launch": 89,
+  "shim_sha256": "4a48fb41bb47f7351179c9c5feb474524713b0b868a4289baebec37a53e7f6ef",
+  "status": "PASS_FAMILY_EQUAL"
+}

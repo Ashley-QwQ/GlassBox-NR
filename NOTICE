@@ -1,0 +1,42 @@
+GlassBox-NR -- byte-exact CPU reimplementation of a proprietary neural
+rendering pipeline (reverse-engineered independently; no vendor source,
+headers, or SDK were used).
+
+This distribution mixes three licensing scopes. Each applies to a
+different, clearly separated part of the tree:
+
+1. Source code written by this project (`glassbox_nr/`, `tools/`,
+   `commitment/verify_commitment.py`, and the offline map-generation
+   helpers under `data/maps/vit_b32_b38/interp/`):
+
+     SPDX-License-Identifier: AGPL-3.0-or-later
+     Copyright 2026 GlassBox-NR contributors
+
+   Full text: `LICENSE` (AGPL-3.0, unmodified, from
+   https://www.gnu.org/licenses/agpl-3.0.txt).
+
+2. Documentation and data files written or derived by this project
+   (`README.md`, every `PROVENANCE.md`, `CHANGELOG`, `CITATION.cff`, and
+   the contents of `data/params/`, `data/maps/` (excluding code under
+   `data/maps/vit_b32_b38/interp/`, covered in section 1 above), and
+   `data/tables/`):
+
+     Licensed under CC-BY-4.0.
+
+   Full text: `LICENSE-docs` (CC-BY-4.0, unmodified, from
+   https://creativecommons.org/licenses/by/4.0/legalcode.txt).
+
+3. `third_party/mlxdlss/`: files from the MLX-DLSS project, used and in
+   two files (`model.py`, `__init__.py`) modified under its own license.
+   MLX-DLSS keeps its own Apache-2.0 license and notice -- see
+   `third_party/mlxdlss/LICENSE`, `third_party/mlxdlss/NOTICE`, and
+   `third_party/mlxdlss/MODIFICATIONS.md` for the exact changes made.
+   Apache-2.0 code may be incorporated into an AGPLv3-licensed work, but
+   its own license is not replaced by doing so.
+
+If you redistribute a modified version of this project, please note that
+it is based on GlassBox-NR.
+
+Weights, native captures, and any other data that must come from your own
+lawfully obtained copy of the proprietary runtime are never included in
+this distribution (see README.md, "Scope and requirements").

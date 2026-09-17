@@ -1,0 +1,1697 @@
+{
+  "samples": {
+    "c1-C-img-full": {
+      "launches": {
+        "58": {
+          "function": "cc_vit_1d_repack_2d_to_1d_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            }
+          }
+        },
+        "59": {
+          "function": "cc_vit_1d_ffn_expand_publish_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "w6": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block31.layer0.layer"
+            }
+          }
+        },
+        "60": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block31.layer1.layer"
+            }
+          }
+        },
+        "61": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block31.layer2.layer"
+            }
+          }
+        },
+        "62": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block31.layer3.layer"
+            }
+          }
+        },
+        "63": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block31.layer4.layer"
+            }
+          }
+        },
+        "64": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block32.layer0.layer"
+            }
+          }
+        },
+        "65": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block32.layer1.layer"
+            }
+          }
+        },
+        "66": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block32.layer2.layer"
+            }
+          }
+        },
+        "67": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block32.layer3.layer"
+            }
+          }
+        },
+        "68": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block32.layer4.layer"
+            }
+          }
+        },
+        "69": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block33.layer0.layer"
+            }
+          }
+        },
+        "70": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block33.layer1.layer"
+            }
+          }
+        },
+        "71": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block33.layer2.layer"
+            }
+          }
+        },
+        "72": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block33.layer3.layer"
+            }
+          }
+        },
+        "73": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block33.layer4.layer"
+            }
+          }
+        },
+        "74": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block34.layer0.layer"
+            }
+          }
+        },
+        "75": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block34.layer1.layer"
+            }
+          }
+        },
+        "76": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block34.layer2.layer"
+            }
+          }
+        },
+        "77": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block34.layer3.layer"
+            }
+          }
+        },
+        "78": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block34.layer4.layer"
+            }
+          }
+        },
+        "79": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block35.layer0.layer"
+            }
+          }
+        },
+        "80": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block35.layer1.layer"
+            }
+          }
+        },
+        "81": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block35.layer2.layer"
+            }
+          }
+        },
+        "82": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block35.layer3.layer"
+            }
+          }
+        },
+        "83": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block35.layer4.layer"
+            }
+          }
+        },
+        "84": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block36.layer0.layer"
+            }
+          }
+        },
+        "85": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block36.layer1.layer"
+            }
+          }
+        },
+        "86": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block36.layer2.layer"
+            }
+          }
+        },
+        "87": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block36.layer3.layer"
+            }
+          }
+        },
+        "88": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block36.layer4.layer"
+            }
+          }
+        },
+        "89": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block37.layer0.layer"
+            }
+          }
+        },
+        "90": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block37.layer1.layer"
+            }
+          }
+        },
+        "91": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block37.layer2.layer"
+            }
+          }
+        },
+        "92": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block37.layer3.layer"
+            }
+          }
+        },
+        "93": {
+          "function": "cc_vit_1d_projection_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block37.layer4.layer"
+            }
+          }
+        },
+        "94": {
+          "function": "cc_vit_1d_ffn_expand_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "w1": {
+              "role": "zero"
+            },
+            "w4": {
+              "role": "zero"
+            },
+            "w5": {
+              "role": "zero"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block38.layer0.layer"
+            }
+          }
+        },
+        "95": {
+          "function": "cc_vit_1d_ffn_contract_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block38.layer1.layer"
+            }
+          }
+        },
+        "96": {
+          "function": "cc_vit_1d_qkv_chained_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "k": {
+              "kind": "out",
+              "role": "k"
+            },
+            "q": {
+              "kind": "out",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_next": {
+              "kind": "rel",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "out",
+              "role": "v"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block38.layer2.layer"
+            }
+          }
+        },
+        "97": {
+          "function": "cc_vit_1d_attention_chained_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "k": {
+              "kind": "in",
+              "role": "k"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "q": {
+              "kind": "in",
+              "role": "q"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "v": {
+              "kind": "in",
+              "role": "v"
+            },
+            "weights_unloaded": {
+              "kind": "w",
+              "role": "weights_unloaded",
+              "tensor": "block38.layer3.layer"
+            }
+          }
+        },
+        "98": {
+          "function": "cc_vit_1d_projection_wait_fp8",
+          "roles": {
+            "buffer": {
+              "kind": "buf",
+              "role": "buffer"
+            },
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            },
+            "release_own": {
+              "kind": "rel",
+              "role": "release_own"
+            },
+            "residual": {
+              "kind": "in",
+              "role": "residual"
+            },
+            "state_next": {
+              "kind": "null",
+              "role": "state_next"
+            },
+            "state_prev": {
+              "kind": "rel",
+              "role": "state_prev"
+            },
+            "weights": {
+              "kind": "w",
+              "role": "weights",
+              "tensor": "block38.layer4.layer"
+            }
+          }
+        },
+        "99": {
+          "function": "cc_vit_1d_repack_1d_to_2d_fp8",
+          "roles": {
+            "extent": {
+              "kind": "ext",
+              "role": "extent"
+            },
+            "input": {
+              "kind": "in",
+              "role": "input"
+            },
+            "output": {
+              "kind": "out",
+              "role": "output"
+            }
+          }
+        }
+      }
+    }
+  }
+}
