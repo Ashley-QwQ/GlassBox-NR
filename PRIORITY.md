@@ -6,7 +6,7 @@ This project makes a **narrow, checkable** priority claim and states its evidenc
 
 **There is no verifiable evidence of any date before 2026-09-17.** Work carried out before that date has internal
 records only, with no third-party timestamp. The verifiable public record of this project begins with the GitHub
-repository creation (2026-09-17 16:10:19 UTC) and the first push of its content, recorded by GitHub at
+repository creation (2026-09-17 16:10:19 UTC) and GitHub's record of receiving its content, at
 2026-09-17 16:10:52 UTC.
 
 ## Why git history is not the evidence
@@ -27,7 +27,7 @@ This repository's root commit illustrates the distinction rather than hiding it:
 | repository `created_at` | **`2026-09-17T16:10:19Z`** | **GitHub** |
 | repository activity: `main` created at `8f951866…` | **`2026-09-17T16:10:52Z`** | **GitHub** |
 
-Only the last two rows are assertions by a party other than the author. Anyone can query them:
+The last two rows are asserted by GitHub rather than by the author. Anyone can query them:
 
 ```
 gh api repos/Ashley-QwQ/GlassBox-NR --jq .created_at

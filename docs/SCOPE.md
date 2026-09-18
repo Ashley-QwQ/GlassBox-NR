@@ -1,7 +1,7 @@
 # Scope of this preview
 
 This page lists what the public preview covers and what it does not. A
-claim outside the first list is not made by this package.
+claim outside the "Covered" list is not made by this package.
 
 ## Covered
 

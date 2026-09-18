@@ -1,6 +1,6 @@
 # B70 and S157: why this preview stops at B69
 
-The pipeline has 73 nodes. This preview runs the first 71 (B00 through B69,
+The pipeline has 73 nodes. This preview runs 71 of them (B00 through B69,
 including L99). The last two, B70 and S157, form the output-tail stage that
 produces the final image. They are not included, so **this package does not
 produce the pipeline's final image**.
