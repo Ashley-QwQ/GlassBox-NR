@@ -33,10 +33,9 @@ implementations end.
   S157 under `not_run_nodes`. No final-image hash is produced or claimed.
 - `reference/reference_hashes.json` covers B00 through B69 only.
 
-## What is planned
+## What is in progress
 
-B70 and S157 are to be reimplemented as ordinary numerical code that reads
-no disassembly text, and checked byte for byte against the existing
-results, the same way every other node was. That work is tracked
-separately and is not part of this preview. Until it is published and
-listed in `CHANGELOG.md`, the scope of this package is B00 through B69.
+Work to rewrite B70 and S157 as ordinary numerical code, reading no
+disassembly text, is in progress. It will be published after review. Until
+it appears in `CHANGELOG.md`, the scope of this package remains B00 through
+B69.

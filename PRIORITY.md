@@ -52,15 +52,18 @@ every file's path, size and SHA-256, and reduces to a single root hash under a d
 that root proves the files existed at that moment without revealing their contents.
 
 The manifest for the current unpublished work (the native rewrite of the pipeline's tail block and its audit trail)
-was built on 2026-09-18 and timestamped by two independent RFC 3161 authorities:
+was built on 2026-09-18 and timestamped by two independent RFC 3161 authorities. Snapshots v2 to v4 are later
+snapshots of the same scope, built and timestamped the same way on the same day:
 
-| Item | Value |
-|---|---|
-| Manifest root (SHA-256) | `f43ab5f39927b4cc5cb76afc39019a3231ae731cf5d9460b3eefea86b7b1b733` |
-| Files covered | 2,263 |
-| Root convention | entries sorted by path; per entry `<path>` `0x00` `<sha256hex>` `\n`; root = SHA-256 of the concatenation |
-| FreeTSA token | `2026-09-18T00:18:32Z`, serial `0x08373BC8` |
-| DigiCert token | `2026-09-18T00:18:41Z`, serial `0xB423531AF2AC4CB9676B8384D1CBC7D7` |
+| Snapshot | Manifest root (SHA-256) | Files covered | FreeTSA token | DigiCert token |
+|---|---|---|---|---|
+| v1 | `f43ab5f39927b4cc5cb76afc39019a3231ae731cf5d9460b3eefea86b7b1b733` | 2,263 | `2026-09-18T00:18:32Z`, serial `0x08373BC8` | `2026-09-18T00:18:41Z`, serial `0xB423531AF2AC4CB9676B8384D1CBC7D7` |
+| v2 | `48431130e8210c224b59ccb004437c9144cc34a5e10a7b0a9612a81be07fd4b7` | 2,347 | `2026-09-18T01:41:56Z`, serial `0x08378387` | `2026-09-18T01:41:56Z`, serial `0x1288DEA02372E343B3F4016A5372931D` |
+| v3 | `1edb271e9fa77bddfc62d0548ceaddd9ea67f2a4dacaec304acc7d8ce6e596a4` | 2,481 | `2026-09-18T02:37:31Z`, serial `0x0837B36C` | `2026-09-18T02:37:32Z`, serial `0x56209E1F5EC3C66164ACF2EA8651460C` |
+| v4 | `0d50afccaf7fb456ab23f14b0cbeb6f1f8720ce0383034f95d5c15b2867baaa4` | 2,531 | `2026-09-18T13:25:29Z`, serial `0x083A5A0E` | `2026-09-18T13:25:29Z`, serial `0x03D009C974F9E09501E09AFC89208E8E` |
+
+All four roots use one convention: entries sorted by path; per entry `<path>` `0x00` `<sha256hex>` `\n`;
+root = SHA-256 of the concatenation.
 
 Two independent authorities are used deliberately: if either one's key is later compromised or distrusted, the other
 still stands.
@@ -83,7 +86,7 @@ From this point on, each milestone is anchored before it is announced:
 
 1. build a commitment manifest and compute its root under the declared convention;
 2. obtain RFC 3161 timestamps from two independent authorities;
-3. create a signed annotated tag;
+3. create an annotated tag (signed once a signing key is in place);
 4. publish a GitHub Release;
 5. optionally archive to Zenodo (DOI) and Software Heritage.
 
