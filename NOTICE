@@ -16,10 +16,11 @@ different, clearly separated part of the tree:
    https://www.gnu.org/licenses/agpl-3.0.txt).
 
 2. Documentation and data files written or derived by this project
-   (`README.md`, every `PROVENANCE.md`, `CHANGELOG`, `CITATION.cff`, and
-   the contents of `data/params/`, `data/maps/` (excluding code under
-   `data/maps/vit_b32_b38/interp/`, covered in section 1 above), and
-   `data/tables/`):
+   (`README.md`, `README_ZH.md`, `PRIORITY.md`, everything under `docs/`,
+   every `PROVENANCE.md`, `CHANGELOG`, `CITATION.cff`,
+   `reference/reference_hashes.json`, and the contents of `data/params/`,
+   `data/maps/` (excluding code under `data/maps/vit_b32_b38/interp/`,
+   covered in section 1 above), and `data/tables/`):
 
      Licensed under CC-BY-4.0.
 
