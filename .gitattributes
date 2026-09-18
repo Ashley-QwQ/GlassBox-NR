@@ -1,0 +1,4 @@
+# Byte-exact project: every file must be checked out exactly as committed.
+# Several data files are verified by sha256 at run time; line-ending
+# conversion (e.g. Git for Windows core.autocrlf=true) would break them.
+* -text

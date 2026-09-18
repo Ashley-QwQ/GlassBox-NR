@@ -6,6 +6,7 @@
 - **Input generator**: `tools/make_inputs.py` generates the two published samples' colour inputs procedurally and checks them against the sha256 the reference results were produced from.
 - **Documentation**: added `docs/SCOPE.md`, `docs/NUMERICAL_EXACTNESS.md`, `docs/B70_S157_STATUS.md`, `docs/REPRODUCIBILITY.md` and `PRIORITY.md`; removed README and `docs/SAMPLE_NAMES.md` references to files that are not part of this repository; the README headline now states the covered range explicitly.
 - **Citation metadata**: `CITATION.cff` now lists the author, the repository URL, the code license (AGPL-3.0-or-later) and the first public release date (2026-09-17).
+- **Fix: Windows clones**: added `.gitattributes` (`* -text`). With Git for Windows' default `core.autocrlf=true`, a fresh clone converted line endings, and the package's own sha256 checks then refused several of its data files, stopping the run at B23. Files are now checked out exactly as committed.
 - **Changelog correction**: the 2026-09-14 entry below previously read "Initial public results statement". There is no public, third-party-verifiable record of that date; the entry now describes it as an internal milestone. See `PRIORITY.md`.
 
 ---
@@ -16,6 +17,7 @@
 - **输入生成器**：`tools/make_inputs.py` 以程序化方式生成两个已发布样本的彩色输入，并与生成参照结果时所用输入的 sha256 核对。
 - **文档**：新增 `docs/SCOPE.md`、`docs/NUMERICAL_EXACTNESS.md`、`docs/B70_S157_STATUS.md`、`docs/REPRODUCIBILITY.md` 与 `PRIORITY.md`；删除 README 与 `docs/SAMPLE_NAMES.md` 中指向本仓库之外文件的引用；README 首段改为明确写出覆盖范围。
 - **引用元数据**：`CITATION.cff` 补全作者、仓库地址、代码许可证（AGPL-3.0-or-later）与首次公开发布日期（2026-09-17）。
+- **修复：Windows 上的 clone**：新增 `.gitattributes`（`* -text`）。在 Git for Windows 默认的 `core.autocrlf=true` 下，新 clone 会转换行尾，本包自带的 sha256 校验随即拒绝若干数据文件，运行在 B23 停止。现在所有文件均按提交时的字节原样检出。
 - **更正**：下方 2026-09-14 条目原写作"首次公开结果声明"。该日期没有任何公开、可由第三方核验的记录，现改为如实描述为内部里程碑。见 `PRIORITY.md`。
 
 ---
