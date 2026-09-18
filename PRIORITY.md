@@ -37,8 +37,13 @@ gh api repos/Ashley-QwQ/GlassBox-NR/activity --jq '.[] | select(.activity_type =
 The repository's `pushed_at` field is not used as evidence here: it records the most recent push and moves forward
 with every later update.
 
-**The claim is therefore anchored at 2026-09-17 16:10:52 UTC**, the moment GitHub recorded receiving this content,
-not at the commit's own date, and not at any earlier internal milestone.
+**The claim is therefore anchored at two GitHub-asserted times**, not at the commit's own date and not at any earlier
+internal milestone:
+
+1. **2026-09-17 16:10:52 UTC**: the repository activity record of `main` being created at commit `8f951866…`, i.e.
+   the moment GitHub recorded receiving this content;
+2. **2026-09-17 16:10:19 UTC**: the repository's `created_at`, a fixed field of the repository itself. It is listed
+   as a second anchor because activity records may be subject to a retention period.
 
 ## Unpublished work: commitment, not disclosure
 
