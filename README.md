@@ -1,123 +1,88 @@
-# GlassBox-NR (runnable preview package)
+# GlassBox-NR v2.0.0-preview
 
 [中文版](README_ZH.md)
 
-**Byte-exact CPU reconstruction preview of a neural-rendering denoiser
-inference chain: B00–B69 (71 / 73 nodes), 77 compared exits × 2 published
-samples, zero byte mismatches against the audited reference captures.
-B70 / S157 and final-image output are not included in this public preview.**
+**Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** This is an independent CPU C++ reimplementation of the inference chain of that one
+fixed target library (not of any other version, including 310.9.16). Licence: Apache-2.0 (see `NOTICE`).
 
-An independently reconstructed CPU implementation of the inference
-execution path. The inference kernels and execution semantics are
-independently reconstructed; weight extraction and unpacking use the
-vendored MLX-DLSS tooling under its original Apache-2.0 license. No vendor
-source, headers, or SDK were used.
+The claim of this release is **measured byte-for-byte equivalence** on the listed inputs, configurations and hardware: on
+1080p / 1440p / 4K frame-0 input, the 158-launch chain reproduces the final image of the GPU capture byte for byte. A formal
+equivalence proof is **NOT_ESTABLISHED**; nothing here says "proved".
 
-## Scope and requirements
+You must supply your own, lawfully obtained copy of `nvngx_dlssnr.dll`. The DLL, the weights and anything derived from the weight
+bytes are never part of this repository or of the release assets.
 
-This package needs:
+## What is in this repository (git HEAD)
 
-- Your own, lawfully obtained copy of the proprietary runtime DLL. It is
-  never shipped, downloaded, or bundled by this package.
-- Python 3.13 and the dependencies in `requirements.txt` (numpy, torch,
-  safetensors; a CPU-only torch build is sufficient).
+| Directory | Content |
+|---|---|
+| `cpp/` | C++ sources of the chain modules (10 modules, 57 files) |
+| `runtime/`, `third_party/mlxdlss/tools/` | Python runtime glue (loaders, ABI, pins) and the weight extractor (MLX-DLSS, Apache-2.0, verbatim) |
+| `devkit/` | user-facing run driver for the 1080p frame-0 chain, plus `payload_layout.py` |
+| `params/` | per-launch parameter files (329) |
+| `modules/` | compiled Python extension modules (10, `cpython-313-x86_64-linux-gnu`) |
+| `docs/FILES_MAP_V2.json` | repo path -> release-whitelist path, used by `payload_layout.py` |
 
-It runs entirely on CPU. No GPU, no network access, no telemetry.
+Everything else (about 32 GB when counted per path, 16.6 GB unique) is the **payload**: one compressed volume,
+`payload.tar.zst.001` (465,105,242 B), a GitHub Release asset. The v1 Python toolchain (`v0.1.0-preview`) is no longer in HEAD;
+it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 
-**Runnable range**: nodes B00 through B69 of the 73-node chain, for the two
-published samples (`c1-C-img-full`, `d23-n2-nat320x240`; public names are
-listed in [`docs/SAMPLE_NAMES.md`](docs/SAMPLE_NAMES.md)). Every one of the
-77 compared exits in that range is byte-identical to the reference output
-for both samples. The reference sha256 of all 154 exits is published in
-[`reference/reference_hashes.json`](reference/reference_hashes.json), so you
-can check this yourself (see "How to verify" below).
+## Quickstart (Linux x86-64, Python 3.13, numpy, safetensors, zstd >= 1.4)
 
-**Not runnable yet**: nodes B70 and S157, the final output-tail stage. **This
-package does not currently produce the pipeline's final image.** Every run
-stops at B69. Why, and what is planned, is in
-[`docs/B70_S157_STATUS.md`](docs/B70_S157_STATUS.md).
+1. From the GitHub Release `v2.0.0-preview` download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
+2. Verify the volume:
+   ```
+   echo "8605a10e01765870befc625c0f15a64f4e17eb27968630b936f7091f5bc1d9cd  payload.tar.zst.001" | sha256sum -c -
+   ```
+3. Extract (the `--long=27` flag is required; about 16.6 GB of disk):
+   ```
+   mkdir extract && cd extract && zstd -d --long=27 < ../payload.tar.zst.001 | tar -x && cd ..
+   ```
+4. Lay the files out where the driver expects them (hard links; the git-resident files come from this checkout):
+   ```
+   python devkit/payload_layout.py --manifest devkit/data/PAYLOAD_MANIFEST.json --extracted extract --repo . --out PAYLOAD_DIR --tables TABLES_DIR
+   ```
+5. Make all five weight files from your own DLL (`weights.bin`, `device_weights.bin`, `weights-device.bin`, `weights_gpu.bin`, `weights-packed.safetensors`; standard library only, a few seconds; the script prints OK/FAIL per file against the manifest size/sha256 and refuses to overwrite existing files):
+   ```
+   python devkit/make_weights.py /path/to/nvngx_dlssnr.dll WEIGHTS
+   ```
+   `WEIGHTS` is the `--weights` directory of the next step. The DLL and the generated weights are not part of this release; do not upload them.
+6. Run the 1080p frame-0 chain (158 launches) and compare with the reference table. The two frame-0 input files come from the payload (laid out by step 4 under the `--inputs` path below):
+   ```
+   python devkit/run_1080_f0.py --root WORK --payload PAYLOAD_DIR --weights WEIGHTS --tables TABLES_DIR \
+       --inputs PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --threads 4
+   ```
+   Add `--verify-only` for the relocation and file checks without running. Exit code 0 means every launch matches the reference
+   table and the final image sha256 is `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`.
 
-This is a preview, not a finished or "official" release. No claim here
-means every code path has been audited to the same depth, and no claim here
-is "100%" anything. The scope above is exactly what has been verified;
-[`docs/SCOPE.md`](docs/SCOPE.md) lists what is and is not covered, and
-[`docs/NUMERICAL_EXACTNESS.md`](docs/NUMERICAL_EXACTNESS.md) defines what
-"byte-exact" means here.
+## What is claimed, by tier
 
-## How to run
+Release seal: **M2**, the release-clean sub-seal of the unified seal M (content base `9d0a4593...`): no data derived from analysis listings of the vendor binary,
+`repack` rewritten as a closed-form address map, derived JSON stripped, path guard literals XOR-encoded.
 
-```
-python -B tools/extract_weights.py /path/to/your/nvngx_dlssnr.dll
-python -B tools/make_inputs.py
-python -B tools/run_pipeline.py --sample all --run-tag my-run
-python -B tools/verify_reference_hashes.py runs/my-run
-```
+| Tier | Where | What |
+|---|---|---|
+| Numeric gates run on **M2** | 1080p f0, 1440p f0, 4K L0-L99 | 1080 f0: 158 launches byte-equal, final `764e7dd0...`. 1440 f0: 158 launches MATCH, final `20b4f026...`. 4K L0-L99: full workspace plus six POST textures, all segments PASS |
+| User driver, payload only | 1080p f0 | end-to-end from the unpacked payload plus the git files: 158/158 launches match the reference table, final `764e7dd0...` |
+| **Configuration census only** on M2 (no numeric gate) | 4K L100-L157, 1080 f1-f5, 1440 f3 | 1,738 census records identical to M (up to the mapped paths / shas); no numeric re-run on M2 |
+| Evidence carried from **M** (or its parent seal 854a8724), not re-measured on M2 | 4K f0 L0-L157 final `152d6f07...` (with the limits listed in the release notes), 1440p f0-f3, 1080p f0-f5, MSVC build (1080 f0), non-finite line (144/147 held-out finals identical, 3 refused by guard), scene cut f0-f15, 3/3 pre-registered predictions (registered by git commit time, not a third-party timestamp) | |
+| Not covered | 4K multi-frame, 1440p f4/f5, held-out 1440p/4K inputs, other DLL versions, multi-parameter streams beyond the listed ones, formal timing | NOT_RUN |
+| Formal proof of equivalence | | **NOT_ESTABLISHED** |
 
-`extract_weights.py` refuses to proceed if your DLL's weight resource
-doesn't match the sha256 this package's kernels were verified against (see
-its own docstring).
+Speed and memory figures in the release notes are small samples (one or two runs each), not statistics. This release contains no
+showcase renders.
 
-`make_inputs.py` generates each published sample's colour input from a
-closed-form procedural formula (no external asset, nothing taken from a
-native capture) into `anchors/<sample>/inputs/colour.rgba16`, and refuses to
-write it unless its sha256 equals the input the reference results were
-produced from.
+## Provenance of the output-tail stage
 
-`run_pipeline.py` runs the chain and writes
-`runs/my-run/<sample>/run_manifest.json`: every node's output byte count
-and sha256, and whether the run was partial. `--run-tag` is required and
-must not already exist under `--output-dir` (pass `--resume` to continue an
-unfinished run under the same tag). This package never silently overwrites
-a previous run's evidence.
+The B70 / S157 tail logic was derived by analysing the NVIDIA binary; the code is an independent rewrite and was verified byte-exact
+against GPU measurements. See `docs/B70_S157_STATUS.md` and `NOTICE`.
 
-## How to verify
+## Priority and history
 
-1. `make_inputs.py` (above) checks that the generated colour inputs are
-   byte-identical to the ones the reference results were produced from. Use
-   `--check` to verify without writing anything.
-2. `verify_reference_hashes.py` compares every exit in your run manifests
-   against `reference/reference_hashes.json` and prints `N/154 MATCH`. It
-   exits non-zero unless all 154 exits are present and match.
-3. Optionally run `run_pipeline.py` with `--audit-opens` and inspect
-   `runs/<tag>/<sample>/open_audit.jsonl` to confirm the run only touched
-   this package's own directory tree.
+`PRIORITY.md` explains what can and cannot be proved about dates, and how to verify the v1 commitment against the tag
+`v0.1.0-preview`.
 
-`reference/reference_hashes.json` contains hashes only, no reference tensor
-data. Its header records the reference identity: runtime DLL version and
-sha256, `WEIGHTS_HT` sha256, and the capture GPU and architecture. Note that
-154 compared outputs are not 154 graph nodes: several nodes expose more than
-one compared exit (71 nodes → 77 exits per sample, × 2 samples = 154).
+## Licence
 
-The canonical environment and full reproduction steps are in
-[`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md).
-
-## Code commitment and derived files
-
-A complete cryptographic commitment of 997 research codebase files (`freeze_code_sha256 = 83d1a5c2...`) is published in `commitment/freeze-code-manifest.json`.
-For a detailed explanation and per-file audit cross-referencing published files with their committed sources, see [`docs/COMMITMENT_AND_DERIVED_FILES.md`](docs/COMMITMENT_AND_DERIVED_FILES.md) and [`docs/DERIVED_FILES_MAP_PUBLIC.json`](docs/DERIVED_FILES_MAP_PUBLIC.json).
-
-## Priority and timestamps
-
-What this project can and cannot prove about dates, and which third-party
-timestamps it relies on, is in [`PRIORITY.md`](PRIORITY.md).
-
-## License
-
-- Source code written by this project: **AGPL-3.0-or-later** (`LICENSE`).
-- Documentation and data files written or derived by this project:
-  **CC-BY-4.0** (`LICENSE-docs`).
-- `third_party/mlxdlss/`: MLX-DLSS, its own **Apache-2.0** license (see
-  `third_party/mlxdlss/LICENSE`, `NOTICE`, `MODIFICATIONS.md`).
-
-See `NOTICE` for the full breakdown.
-
-## What isn't published, and why
-
-See `NOTICE` and each directory's own `PROVENANCE.md` for exactly what is
-and isn't included and why (weights, native captures, and raw disassembly
-text are never published; several data files that originally mixed
-needed computation data with disassembly-derived diagnostic content are
-published here as derived copies with that content removed -- each such
-file's `PROVENANCE.md` entry names the rule applied and the resulting
-sha256, so the exact transformation is checkable without needing anything
-outside this distribution).
+Code and data: **Apache-2.0** (`LICENSE`). Documentation: **CC-BY-4.0** (`LICENSE-docs`). `third_party/mlxdlss/`: MLX-DLSS, its own
+Apache-2.0 licence and notice. Details in `NOTICE`.

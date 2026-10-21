@@ -1,0 +1,2389 @@
+{
+ "schema": "M2_DEVKIT_MANIFEST/1",
+ "rewrite": [
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L000.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L001.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L002.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L003.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L004.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L005.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L006.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L007.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L008.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L009.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L010.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L011.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L012.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L013.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L014.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L015.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L016.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L017.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L018.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L019.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L020.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L021.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L022.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L023.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L024.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L025.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L026.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L027.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L028.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L029.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L030.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L031.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L032.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L033.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L034.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L035.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L036.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L037.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L038.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L039.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L040.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L041.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L042.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L043.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L044.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L045.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L046.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L047.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L048.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L049.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L050.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L051.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L052.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L053.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L054.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L055.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L056.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L057.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L058.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L059.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L060.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L061.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L062.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L063.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L064.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L065.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L066.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L067.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L068.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L069.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L070.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L071.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L072.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L073.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L074.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L075.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L076.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L077.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L078.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L079.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L080.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L081.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L082.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L083.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L084.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L085.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L086.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L087.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L088.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L089.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L090.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L091.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L092.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L093.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L094.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L095.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L096.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L097.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L098.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L099.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L100.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L101.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L102.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L103.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L104.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L105.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L106.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L107.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L108.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L109.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L110.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L111.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L112.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L113.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L114.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L115.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L116.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L117.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L118.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L119.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L120.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L121.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L122.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L123.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L124.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L125.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L126.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L127.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L128.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L129.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L130.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L131.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L132.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L133.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L134.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L135.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L136.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L137.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L138.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L139.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L140.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L141.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L142.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L143.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L144.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L145.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L146.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L147.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L148.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L149.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L150.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L151.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L152.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L153.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L154.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L155.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L156.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/configs/L157.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/registries/6c83784ed3b0673dff00097a394ac0c75f684aac4e7474e6b22b18497d539b84.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L000.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L001.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L002.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L003.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L004.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L005.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L006.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L007.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L008.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L009.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L010.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L011.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L012.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L013.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L014.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L015.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L016.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L017.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L018.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L019.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L020.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L021.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L022.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L023.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L024.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L025.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L026.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L027.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L028.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L029.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L030.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L031.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L032.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L033.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L034.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L035.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L036.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L037.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L038.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L039.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L040.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L041.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L042.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L043.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L044.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L045.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L046.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L047.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L048.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L049.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L050.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L051.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L052.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L053.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L054.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L055.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L056.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L057.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L058.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L059.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L060.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L061.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L062.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L063.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L064.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L065.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L066.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L067.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L068.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L069.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L070.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L071.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L072.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L073.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L074.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L075.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L076.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L077.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L078.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L079.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L080.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L081.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L082.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L083.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L084.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L085.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L086.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L087.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L088.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L089.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L090.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L091.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L092.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L093.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L094.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L095.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L096.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L097.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L098.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L099.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L100.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L101.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L102.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L103.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L104.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L105.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L106.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L107.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L108.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L109.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L110.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L111.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L112.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L113.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L114.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L115.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L116.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L117.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L118.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L119.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L120.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L121.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L122.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L123.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L124.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L125.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L126.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L127.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L128.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L129.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L130.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L131.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L132.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L133.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L134.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L135.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L136.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L137.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L138.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L139.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L140.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L141.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L142.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L143.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L144.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L145.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L146.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L147.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L148.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L149.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L150.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L151.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L152.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L153.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L154.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L155.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L156.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/case1080/routes/L157.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/execution-seal.json",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/frames1080/frames-root.json",
+  "/kit/data/cpp-merge-next-seal-r01-20261013-codex-resume1/D03-descriptors.json",
+  "/kit/data/cpp-merge-next-seal-r01-20261013-codex-resume1/candidate/runtime/plan-assets/index.bin",
+  "/kit/data/cpp-merge-next-seal-r01-20261013-codex-resume1/candidate/runtime/split16-config.json",
+  "/kit/data/cpp-merge-next-seal-r01-20261014-codex-resume4/geometry1080-r1/geometry-input-only.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/runtime/entry-asset-pins.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/runtime/entry-config.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/runtime/outtail-config.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/runtime/tin-config.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/runtime/vit-bindings.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/ex2-profile.json",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/multiframe-inputs.json"
+ ],
+ "copy": [
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/backend_abi.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/derived_pins.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/entry_assets.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/g0b_maps.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/identity.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/owner_guard.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/plan_runtime_merged.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/tail_runtime.py",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/vit_adapter_c1.py"
+ ],
+ "aliases": {
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L101-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L104-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L105-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L106-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L109-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L110-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L112-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L113-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L114-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L116-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L117-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L118-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L119-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L120-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L121-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L122-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L123-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L124-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L125-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L126-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L127-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L128-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L129-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L130-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L131-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L25-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L25-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L26-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L26-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L32-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L33-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L34-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L36-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L37-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L38-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L40-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L41-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L42-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L43-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L44-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L45-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L46-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L47-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L48-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L49-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L50-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L51-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L52-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L53-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L54-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L55-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L56-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L56-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L57-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L57-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-work-e/1080-close-r04-codex/assets/tail-l100-b39-r02-codex/maps/b39-map.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-work-e/1080-close-r04-codex/assets/tail-l100-b39-r02-codex/maps/b39-map.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror-v5/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/expand-wiring-L59.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/expand-wiring-L59.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L101-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L104-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L105-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L106-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L109-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L110-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L112-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L113-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L114-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L116-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L117-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L118-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L119-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L120-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L121-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L122-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L123-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L124-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L125-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L126-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L127-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L128-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L129-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L130-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L131-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L25-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L25-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L26-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L26-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L32-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L33-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L34-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L36-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L37-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L38-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L40-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L41-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L42-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L43-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L44-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L45-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L46-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L47-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L48-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L49-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L50-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L51-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L52-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L53-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L54-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L55-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L56-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L56-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L57-contract.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L57-contract.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/E/dlssnr-work-e/1080-close-r04-codex/assets/tail-l100-b39-r02-codex/maps/b39-map.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-work-e/1080-close-r04-codex/assets/tail-l100-b39-r02-codex/maps/b39-map.json",
+  "/kit/data/geo2-l62-diagnosis-r01-20261009-codex/linux-candidate-v1/mirror1440-v2/E/dlssnr-geo2-r01-20261008-codex/assets-1080-v1/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/expand-wiring-L59.json": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/expand-wiring-L59.json"
+ },
+ "dir_mirrors": [
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo",
+  "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M",
+  "/kit/data/cpp-integrate-next-seal-r01-20261008-codex/candidate/build-gcc",
+  "/kit/data/cpp-merge-next-seal-r01-20261014-codex-resume6/candidate/build-geo",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/baseline/build-native-v2",
+  "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/build-native-v2",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-entry-r01-codex-entry",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/experiments/parity-cpp-opt-e1-r01-20261001-codex/encoded",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-work-e/1080-close-r04-codex/assets",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/resume3",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-tin-r01-codex",
+  "/kit/data/dlssnr-biggeom/r01-20261006-codex/relocated-chain"
+ ],
+ "external": [
+  {
+   "role": "tables",
+   "name": "tables/72d3c030728e4eb850135109f700d08182c7bb1e923cac745cee2ca0c35fbc0e.bin",
+   "path": "/kit/data/cpp-integrate-next-seal-r01-20261008-codex/candidate/rcp-special/rcp-b255.bin",
+   "bytes": 33554432,
+   "sha256": "72d3c030728e4eb850135109f700d08182c7bb1e923cac745cee2ca0c35fbc0e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ff1ed0c5b4bb7bcdaeea3397b7586d4ffe6125cb8235941ce6fe991a5fd1bbe0.bin",
+   "path": "/kit/data/cpp-integrate-next-seal-r01-20261008-codex/candidate/rcp-special/rcp-b511.bin",
+   "bytes": 33554432,
+   "sha256": "ff1ed0c5b4bb7bcdaeea3397b7586d4ffe6125cb8235941ce6fe991a5fd1bbe0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/aeb1753dab94b6db6086fd59d642c4244950899fc9e2aba979e761e88fba9c3c.f32",
+   "path": "/kit/data/cpp-merge-next-seal-r01-20261013-codex-resume1/candidate/runtime/plan-assets/rcp.f32",
+   "bytes": 122816,
+   "sha256": "aeb1753dab94b6db6086fd59d642c4244950899fc9e2aba979e761e88fba9c3c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8001d8862a20c1ef51251da9bfd0d9f2f8b89094a032a50b411d32deb25686bf.f32",
+   "path": "/kit/data/cpp-merge-next-seal-r01-20261013-codex-resume1/candidate/runtime/plan-assets/rsq.f32",
+   "bytes": 122816,
+   "sha256": "8001d8862a20c1ef51251da9bfd0d9f2f8b89094a032a50b411d32deb25686bf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d7173dd8a9e81deded3f2e4719ef149effbd21afd81da9d10ed50b5dff69a708.u32",
+   "path": "/kit/data/cpp-mufu-reach-d03-d02-r01-20261009-codex/assets/rcp-e0-word0.u32",
+   "bytes": 4,
+   "sha256": "d7173dd8a9e81deded3f2e4719ef149effbd21afd81da9d10ed50b5dff69a708"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d95b2ad4375921cc8da901e57ef8b46bef566c14ee84fe6aad3756025b3db5b3.dnc",
+   "path": "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/support/compact/cos_k_exact.dnc",
+   "bytes": 8635352,
+   "sha256": "d95b2ad4375921cc8da901e57ef8b46bef566c14ee84fe6aad3756025b3db5b3"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1ffe7b333e0155adb16ea1b8232c38013a3321bf6978ce07ddacdb6396fef1e3.dnc",
+   "path": "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/support/compact/sin_k_exact.dnc",
+   "bytes": 8650456,
+   "sha256": "1ffe7b333e0155adb16ea1b8232c38013a3321bf6978ce07ddacdb6396fef1e3"
+  },
+  {
+   "role": "tables",
+   "name": "tables/2c42bbbabc3ad60efe6f33096539786955e2885c182422cb9c07669f88ec540e.dnc",
+   "path": "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/support/compact/sqrt_k_exact.dnc",
+   "bytes": 5675352,
+   "sha256": "2c42bbbabc3ad60efe6f33096539786955e2885c182422cb9c07669f88ec540e"
+  },
+  {
+   "role": "weights",
+   "name": "device_weights.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-entry-r01-codex-entry/device_weights.bin",
+   "bytes": 147719680,
+   "sha256": "a5513b1845c98a486985ed04f38e66a1854cce33c2aba3a505866028bd4ee3e5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cce5df10202dbfcde720ca547d147edb3e2a406a5fed189323f419177a72a1a5.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex/tables/ex2.bin",
+   "bytes": 33554432,
+   "sha256": "cce5df10202dbfcde720ca547d147edb3e2a406a5fed189323f419177a72a1a5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f619d83997dfaa804ca336830448dac77da0ec716b79cf3ae50e3b83de89c26a.json",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex/tables/manifest.json",
+   "bytes": 2842,
+   "sha256": "f619d83997dfaa804ca336830448dac77da0ec716b79cf3ae50e3b83de89c26a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c408381446132e07fa5581e930dc33fb790bea7ec4276ef3621e322df2492a55.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex/tables/rcp.bin",
+   "bytes": 33554432,
+   "sha256": "c408381446132e07fa5581e930dc33fb790bea7ec4276ef3621e322df2492a55"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5f50d80e6793405891045b4c8f747b46bc86551dee11b7d2cbef84f154088107.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex/tables/rsq.bin",
+   "bytes": 122820,
+   "sha256": "5f50d80e6793405891045b4c8f747b46bc86551dee11b7d2cbef84f154088107"
+  },
+  {
+   "role": "weights",
+   "name": "weights.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-outtail-r01-codex/weights.bin",
+   "bytes": 147695410,
+   "sha256": "836f445d06ecd2e59bb9f17b84b91c143396fd76ccda1c9dc7fe81d5edd548f4"
+  },
+  {
+   "role": "weights",
+   "name": "weights-device.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/weights-device.bin",
+   "bytes": 147719232,
+   "sha256": "c75ec57e2b66cb42a5962b5abb16677a1b45ee74891bd513728d407b108acc79"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7fd9be9a924e40a0ee18ba20e7f5158135112947597c8dd86131d3d4d8f9dbfa.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/experiments/parity-cpp-opt-e1-r01-20261001-codex/encoded/base_E127.bin",
+   "bytes": 33554432,
+   "sha256": "7fd9be9a924e40a0ee18ba20e7f5158135112947597c8dd86131d3d4d8f9dbfa"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1ad908d16acdfab5b1b810c076f1d6b403cf954b634955d8a8fe63da71e8cbf4.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/experiments/parity-cpp-opt-e1-r01-20261001-codex/encoded/level_3bit.bin",
+   "bytes": 3145728,
+   "sha256": "1ad908d16acdfab5b1b810c076f1d6b403cf954b634955d8a8fe63da71e8cbf4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/883e42d8f751983063b4c93a966fba006f08c1e111d90fe20e0fee3dd67ddd22.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/experiments/parity-cpp-opt-e1-r01-20261001-codex/encoded/raw_E126.bin",
+   "bytes": 33554432,
+   "sha256": "883e42d8f751983063b4c93a966fba006f08c1e111d90fe20e0fee3dd67ddd22"
+  },
+  {
+   "role": "weights",
+   "name": "weights-packed.safetensors",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/experiments/parity-v1/weights-packed.safetensors",
+   "bytes": 147716314,
+   "sha256": "d81d0f5ce573c4596d6aee96ab89ddd463c2d63e71bbfdaa1459c3f90a925018"
+  },
+  {
+   "role": "tables",
+   "name": "tables/055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59.npz",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/mlxdlss/resources/rcp-domain.npz",
+   "bytes": 246446,
+   "sha256": "055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59"
+  },
+  {
+   "role": "tables",
+   "name": "tables/06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62.npz",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-pytorch-cpu-20260909/mlxdlss/resources/rsq-domain.npz",
+   "bytes": 246454,
+   "sha256": "06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62"
+  },
+  {
+   "role": "tables",
+   "name": "tables/055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59.npz",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59/rcp-domain.npz",
+   "bytes": 246446,
+   "sha256": "055e26f1b2324491e47b7faf02f3b82c4da71fd6d7cb4843b1275f61f95b2b59"
+  },
+  {
+   "role": "tables",
+   "name": "tables/06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62.npz",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-chain-r02-codex/programs/06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62/rsq-domain.npz",
+   "bytes": 246454,
+   "sha256": "06ffffcad0796e18eb51cce1166712d57b33a2138857bfa791d0e36f35210e62"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0f7803de239ba07f109bead85e726cf414af35101a9d41ba58cc5c4a17a6ecfc.u16",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-tin-r01-codex/rcp.u16",
+   "bytes": 61408,
+   "sha256": "0f7803de239ba07f109bead85e726cf414af35101a9d41ba58cc5c4a17a6ecfc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/73f5c18f6c853ce7ba071d2dca44afe4441606a046fd0d73386596b4474af874.u16",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-tin-r01-codex/rsq.u16",
+   "bytes": 61410,
+   "sha256": "73f5c18f6c853ce7ba071d2dca44afe4441606a046fd0d73386596b4474af874"
+  },
+  {
+   "role": "weights",
+   "name": "weights_gpu.bin",
+   "path": "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/G/dlssnr-cpp-work/chain-tin-r01-codex/weights_gpu.bin",
+   "bytes": 147719232,
+   "sha256": "c75ec57e2b66cb42a5962b5abb16677a1b45ee74891bd513728d407b108acc79"
+  },
+  {
+   "role": "tables",
+   "name": "tables/bac16f5f17f21641ab2dd1fd72e1d6e3563d4caeb1ef304d25f3857a20510af0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_ex2-b389.bin",
+   "bytes": 33554432,
+   "sha256": "bac16f5f17f21641ab2dd1fd72e1d6e3563d4caeb1ef304d25f3857a20510af0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e5f493766fc57b782c4208e9da8415f9f406e8ca643918580ea98d49e7c5196d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b001.bin",
+   "bytes": 33554432,
+   "sha256": "e5f493766fc57b782c4208e9da8415f9f406e8ca643918580ea98d49e7c5196d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/31e4113584c80c8fdfd21aefef28ddb2e42b61fe25b4dcf0be42195cce7713d2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b002.bin",
+   "bytes": 33554432,
+   "sha256": "31e4113584c80c8fdfd21aefef28ddb2e42b61fe25b4dcf0be42195cce7713d2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/67b7ad60fb6b0466b6e8bd3d27deb4ac68e61563c24f9e72beedf3435d658419.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b003.bin",
+   "bytes": 33554432,
+   "sha256": "67b7ad60fb6b0466b6e8bd3d27deb4ac68e61563c24f9e72beedf3435d658419"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7aac9c8966561956f08057ac7ec07c29007861a0d3c2d94f16efbaad2cd6b674.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b004.bin",
+   "bytes": 33554432,
+   "sha256": "7aac9c8966561956f08057ac7ec07c29007861a0d3c2d94f16efbaad2cd6b674"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0671246c753df5d08d3cce6ed29635956332c9d727fdeab4a54d6861720ee481.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b005.bin",
+   "bytes": 33554432,
+   "sha256": "0671246c753df5d08d3cce6ed29635956332c9d727fdeab4a54d6861720ee481"
+  },
+  {
+   "role": "tables",
+   "name": "tables/42e61e8df0de74465e9a2c67993f9917ddffc0de6f55fb0c3f42f81ae1e2652e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b006.bin",
+   "bytes": 33554432,
+   "sha256": "42e61e8df0de74465e9a2c67993f9917ddffc0de6f55fb0c3f42f81ae1e2652e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a5ada7db61b5d6eea530fcb589740b8f2e3b2bb0a4c637e088e5ef0327301c95.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b007.bin",
+   "bytes": 33554432,
+   "sha256": "a5ada7db61b5d6eea530fcb589740b8f2e3b2bb0a4c637e088e5ef0327301c95"
+  },
+  {
+   "role": "tables",
+   "name": "tables/68e44ab3ba9246ff010c15f93cadcef0def5b258b75a02e8e4226b78a8495e6f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b008.bin",
+   "bytes": 33554432,
+   "sha256": "68e44ab3ba9246ff010c15f93cadcef0def5b258b75a02e8e4226b78a8495e6f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/13215139ba9eb72a76e4e23dc31f24cd0545044ac43635a6280d01dab3b818e2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b009.bin",
+   "bytes": 33554432,
+   "sha256": "13215139ba9eb72a76e4e23dc31f24cd0545044ac43635a6280d01dab3b818e2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/da5d1cc7399e001cc562ad0f8eb99ea28552f05c7c1b536aa1066cd2e6a4ba97.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b010.bin",
+   "bytes": 33554432,
+   "sha256": "da5d1cc7399e001cc562ad0f8eb99ea28552f05c7c1b536aa1066cd2e6a4ba97"
+  },
+  {
+   "role": "tables",
+   "name": "tables/179d9ca61abe1811f8e07ed69e977fe361e76df3843e04b9502ec15ac211a874.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b011.bin",
+   "bytes": 33554432,
+   "sha256": "179d9ca61abe1811f8e07ed69e977fe361e76df3843e04b9502ec15ac211a874"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c8c67355d51cf352481f2dfdc6251094e8432d7d5116503c6d97bb36d6fd0887.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b012.bin",
+   "bytes": 33554432,
+   "sha256": "c8c67355d51cf352481f2dfdc6251094e8432d7d5116503c6d97bb36d6fd0887"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8fe7a7f579a16d882e2b2963d274a98c6af986ec258e6f46575faee3eb7b748d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b013.bin",
+   "bytes": 33554432,
+   "sha256": "8fe7a7f579a16d882e2b2963d274a98c6af986ec258e6f46575faee3eb7b748d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/9f400f43a60ecc1e6a597b4dc71a472df9cb6650576937126424d3fd0ccbd962.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b014.bin",
+   "bytes": 33554432,
+   "sha256": "9f400f43a60ecc1e6a597b4dc71a472df9cb6650576937126424d3fd0ccbd962"
+  },
+  {
+   "role": "tables",
+   "name": "tables/32ed4a7815397199bdb741f6f139b44b7fa0646748fccd12b7790db1a90bdda1.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b015.bin",
+   "bytes": 33554432,
+   "sha256": "32ed4a7815397199bdb741f6f139b44b7fa0646748fccd12b7790db1a90bdda1"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0e6be1449f0cd07665a61ff4f106f8fa3b037ea1159faea3e141bc452e9728af.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b016.bin",
+   "bytes": 33554432,
+   "sha256": "0e6be1449f0cd07665a61ff4f106f8fa3b037ea1159faea3e141bc452e9728af"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3bcb9104c28d1bee68b6497c7cc6426c80b871a25e96941297df88834198f295.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b017.bin",
+   "bytes": 33554432,
+   "sha256": "3bcb9104c28d1bee68b6497c7cc6426c80b871a25e96941297df88834198f295"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7fbc9e383a7eea819451a7fc9e57e8fc8d9c14cf22b995b3a06a4f26885713ff.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b018.bin",
+   "bytes": 33554432,
+   "sha256": "7fbc9e383a7eea819451a7fc9e57e8fc8d9c14cf22b995b3a06a4f26885713ff"
+  },
+  {
+   "role": "tables",
+   "name": "tables/00c2527e38bd513134eae9cc9bbd50d1d82bb8f2f53a2558aef08a3a38876117.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b019.bin",
+   "bytes": 33554432,
+   "sha256": "00c2527e38bd513134eae9cc9bbd50d1d82bb8f2f53a2558aef08a3a38876117"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b4514a8f14122130ea197df642785339d96efcaa795e11e728bcaed69add49af.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b020.bin",
+   "bytes": 33554432,
+   "sha256": "b4514a8f14122130ea197df642785339d96efcaa795e11e728bcaed69add49af"
+  },
+  {
+   "role": "tables",
+   "name": "tables/478749a1a313b76a3a496d3c3fed800143dad3a3f0a688dbe9eee6a0873ce954.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b021.bin",
+   "bytes": 33554432,
+   "sha256": "478749a1a313b76a3a496d3c3fed800143dad3a3f0a688dbe9eee6a0873ce954"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5b90e842b6bc2528f00b89d18a86777c85254994659ff525f4cacbd624feffa5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b022.bin",
+   "bytes": 33554432,
+   "sha256": "5b90e842b6bc2528f00b89d18a86777c85254994659ff525f4cacbd624feffa5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3941bd0fecd5bedf0d242febde75e9796508168758f99c77f0203a2025fcf031.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b023.bin",
+   "bytes": 33554432,
+   "sha256": "3941bd0fecd5bedf0d242febde75e9796508168758f99c77f0203a2025fcf031"
+  },
+  {
+   "role": "tables",
+   "name": "tables/45c0fcdfc12abd962e17a05e8e8f3216e50f12dc7aad0154d7cf7e057dfc4728.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b024.bin",
+   "bytes": 33554432,
+   "sha256": "45c0fcdfc12abd962e17a05e8e8f3216e50f12dc7aad0154d7cf7e057dfc4728"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8c54e297d08d73cae668a56865232f1dee4676cd90b9d6157209944988921631.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b025.bin",
+   "bytes": 33554432,
+   "sha256": "8c54e297d08d73cae668a56865232f1dee4676cd90b9d6157209944988921631"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e7834b19e7ad224dbe1ee0cefd7eb81666400e8bf9fd47978b2b79e6bfb2fa0a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b026.bin",
+   "bytes": 33554432,
+   "sha256": "e7834b19e7ad224dbe1ee0cefd7eb81666400e8bf9fd47978b2b79e6bfb2fa0a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/79d1539a17a379e3378e838223cbb4ee8512b029512cf9d6253f364727cddf6c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b027.bin",
+   "bytes": 33554432,
+   "sha256": "79d1539a17a379e3378e838223cbb4ee8512b029512cf9d6253f364727cddf6c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/295b9173a6b0e4c46bcf6a18c91167d428fec3700811cb573cf3baa7e6a13764.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b028.bin",
+   "bytes": 33554432,
+   "sha256": "295b9173a6b0e4c46bcf6a18c91167d428fec3700811cb573cf3baa7e6a13764"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c444cb8e2f361b3833b8b7d53cb3fa6603b00513c94e42eb32de5dea758b24d7.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b029.bin",
+   "bytes": 33554432,
+   "sha256": "c444cb8e2f361b3833b8b7d53cb3fa6603b00513c94e42eb32de5dea758b24d7"
+  },
+  {
+   "role": "tables",
+   "name": "tables/bbfbbfffa794417ca0ee77cdd00f02a9b5dfdb2c1ed7627a51ec9f472df378b8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b030.bin",
+   "bytes": 33554432,
+   "sha256": "bbfbbfffa794417ca0ee77cdd00f02a9b5dfdb2c1ed7627a51ec9f472df378b8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1840e1926e3f7c05780897d853a950aac226052958337e91a66a43814ca454dd.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b031.bin",
+   "bytes": 33554432,
+   "sha256": "1840e1926e3f7c05780897d853a950aac226052958337e91a66a43814ca454dd"
+  },
+  {
+   "role": "tables",
+   "name": "tables/2e2b6c6b6f06eac95a25f5a32f967bb42ec53c94bd88734b9bd2dc1179e5b042.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b032.bin",
+   "bytes": 33554432,
+   "sha256": "2e2b6c6b6f06eac95a25f5a32f967bb42ec53c94bd88734b9bd2dc1179e5b042"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dd7576550f487daf0d1cc1deee7a86a8a0803fa5e9b80644f12f346f99142fd6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b033.bin",
+   "bytes": 33554432,
+   "sha256": "dd7576550f487daf0d1cc1deee7a86a8a0803fa5e9b80644f12f346f99142fd6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a5f9bb499e79fcc3326a1fbc0b218a6a897ddb03e262753d362b8d69cf5d5cad.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b034.bin",
+   "bytes": 33554432,
+   "sha256": "a5f9bb499e79fcc3326a1fbc0b218a6a897ddb03e262753d362b8d69cf5d5cad"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8288cad60a997d9752051f39a5373d2e475ab83f16ed30fce1673f7de5aa83d2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b035.bin",
+   "bytes": 33554432,
+   "sha256": "8288cad60a997d9752051f39a5373d2e475ab83f16ed30fce1673f7de5aa83d2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c19bf372835a4c7761e7949dceb741194770f156728d2fb1b5d5b7c19c98a271.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b036.bin",
+   "bytes": 33554432,
+   "sha256": "c19bf372835a4c7761e7949dceb741194770f156728d2fb1b5d5b7c19c98a271"
+  },
+  {
+   "role": "tables",
+   "name": "tables/86043b2bcdfd29fb142818586bf81de7ed796db82126bb6f758a16d7e8a45c77.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b037.bin",
+   "bytes": 33554432,
+   "sha256": "86043b2bcdfd29fb142818586bf81de7ed796db82126bb6f758a16d7e8a45c77"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8c94952e4b86bdcb1ec121722188c4802f758f870620541edd7243ce2104b2cb.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b038.bin",
+   "bytes": 33554432,
+   "sha256": "8c94952e4b86bdcb1ec121722188c4802f758f870620541edd7243ce2104b2cb"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3684bc08520085600c75b12d1bb8fb372c689bc23c55912af9ec553c196180de.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b039.bin",
+   "bytes": 33554432,
+   "sha256": "3684bc08520085600c75b12d1bb8fb372c689bc23c55912af9ec553c196180de"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5e056ce749cb16e884c074f0e8e17404c6393671371dd57d84c9a0c6188a3bcf.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b040.bin",
+   "bytes": 33554432,
+   "sha256": "5e056ce749cb16e884c074f0e8e17404c6393671371dd57d84c9a0c6188a3bcf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/6593f24a05dd51717df3f2f1aa63339fba0a845b138055b69946940a9bf55391.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b041.bin",
+   "bytes": 33554432,
+   "sha256": "6593f24a05dd51717df3f2f1aa63339fba0a845b138055b69946940a9bf55391"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3fc203d86b73be06952f11dbac807e08bb50cd40c28536ad7f859c0eea1ed953.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b042.bin",
+   "bytes": 33554432,
+   "sha256": "3fc203d86b73be06952f11dbac807e08bb50cd40c28536ad7f859c0eea1ed953"
+  },
+  {
+   "role": "tables",
+   "name": "tables/eba3bd6174b34c680d3f05ab91ad2e22eee7b122d7b14aa65d1b90da016f775d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b043.bin",
+   "bytes": 33554432,
+   "sha256": "eba3bd6174b34c680d3f05ab91ad2e22eee7b122d7b14aa65d1b90da016f775d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7762dcaec6f57102138bdbc8b8cae870559a6eadc7d7e46a325ca58eb42a2b26.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b044.bin",
+   "bytes": 33554432,
+   "sha256": "7762dcaec6f57102138bdbc8b8cae870559a6eadc7d7e46a325ca58eb42a2b26"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a8af67d995774f2579aa2d032922959e54806d0609f9b1496541a52d447c1d21.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b045.bin",
+   "bytes": 33554432,
+   "sha256": "a8af67d995774f2579aa2d032922959e54806d0609f9b1496541a52d447c1d21"
+  },
+  {
+   "role": "tables",
+   "name": "tables/92b0466f24e617515d82c25d4cd0f7d326bad7c0b6174642699ccd663802f019.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b046.bin",
+   "bytes": 33554432,
+   "sha256": "92b0466f24e617515d82c25d4cd0f7d326bad7c0b6174642699ccd663802f019"
+  },
+  {
+   "role": "tables",
+   "name": "tables/37ce89b1e1e363168a04bafd6d0ae1480a5b0fb90b57e8609f55c670e3d10b61.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b047.bin",
+   "bytes": 33554432,
+   "sha256": "37ce89b1e1e363168a04bafd6d0ae1480a5b0fb90b57e8609f55c670e3d10b61"
+  },
+  {
+   "role": "tables",
+   "name": "tables/47c1c216c4b9cbd3ae023247a3964c308ac70363a1c5712a436d9efdfe313c1a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b048.bin",
+   "bytes": 33554432,
+   "sha256": "47c1c216c4b9cbd3ae023247a3964c308ac70363a1c5712a436d9efdfe313c1a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e43c97fecbbfec316f876ac8b84fad52e394598e6cd98d9e6e1253f50aeb2567.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b049.bin",
+   "bytes": 33554432,
+   "sha256": "e43c97fecbbfec316f876ac8b84fad52e394598e6cd98d9e6e1253f50aeb2567"
+  },
+  {
+   "role": "tables",
+   "name": "tables/918d7f69fa18667e93607ca619a3a1ee1753e85344b0714619d1cf263b761b0d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b050.bin",
+   "bytes": 33554432,
+   "sha256": "918d7f69fa18667e93607ca619a3a1ee1753e85344b0714619d1cf263b761b0d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dcb80460714c05ea5cfa4a6cf88b0b3b4d20da8a551a999814e998e3669b9f4e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b051.bin",
+   "bytes": 33554432,
+   "sha256": "dcb80460714c05ea5cfa4a6cf88b0b3b4d20da8a551a999814e998e3669b9f4e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ac6c2447612895ee0e57e10e4095da6ee58eec0d167be2aa76e86fd2f64b61fe.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b052.bin",
+   "bytes": 33554432,
+   "sha256": "ac6c2447612895ee0e57e10e4095da6ee58eec0d167be2aa76e86fd2f64b61fe"
+  },
+  {
+   "role": "tables",
+   "name": "tables/4a1940694e747424134b55136b9e85287242a9eb645ce5f6037f59d702558bc3.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b053.bin",
+   "bytes": 33554432,
+   "sha256": "4a1940694e747424134b55136b9e85287242a9eb645ce5f6037f59d702558bc3"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1cff33f895f2261a8222378d3a415cfdadcdd7f3455ae8fd24c9ba95253ecbf9.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b054.bin",
+   "bytes": 33554432,
+   "sha256": "1cff33f895f2261a8222378d3a415cfdadcdd7f3455ae8fd24c9ba95253ecbf9"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b25cac9ade0b1ef88558412f6f48430a1f83eec9b0068f8daa1edd475752e01c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b055.bin",
+   "bytes": 33554432,
+   "sha256": "b25cac9ade0b1ef88558412f6f48430a1f83eec9b0068f8daa1edd475752e01c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b8595894d245690a757b3667d50f185f8a14a630809e1b77a2d78ad18551ddf9.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b056.bin",
+   "bytes": 33554432,
+   "sha256": "b8595894d245690a757b3667d50f185f8a14a630809e1b77a2d78ad18551ddf9"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e17d6a6f7931eb51b7df1913bca695ca172c2c57b4e5690a534a467d505b4e48.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b057.bin",
+   "bytes": 33554432,
+   "sha256": "e17d6a6f7931eb51b7df1913bca695ca172c2c57b4e5690a534a467d505b4e48"
+  },
+  {
+   "role": "tables",
+   "name": "tables/4fbc229b2d59b6500eec4a29c5ed2a5ef701aa8967d1282818797381ccb51863.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b058.bin",
+   "bytes": 33554432,
+   "sha256": "4fbc229b2d59b6500eec4a29c5ed2a5ef701aa8967d1282818797381ccb51863"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3a1b72f9fb601314751b0f53abff6f3abd18b58f1f8b397159318504b0c9fb65.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b059.bin",
+   "bytes": 33554432,
+   "sha256": "3a1b72f9fb601314751b0f53abff6f3abd18b58f1f8b397159318504b0c9fb65"
+  },
+  {
+   "role": "tables",
+   "name": "tables/29a0386d2837bf8aaf92d02eece24f9306e62caf55acbf2f729d8b0b930dd9fc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b060.bin",
+   "bytes": 33554432,
+   "sha256": "29a0386d2837bf8aaf92d02eece24f9306e62caf55acbf2f729d8b0b930dd9fc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d4232dacb7f3f92913dc3fd009b6526a88538357aecf00a1c86623b0c4c5e295.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b061.bin",
+   "bytes": 33554432,
+   "sha256": "d4232dacb7f3f92913dc3fd009b6526a88538357aecf00a1c86623b0c4c5e295"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7964c5564564c3ed32689a540e49552c1a0163bf45c8aced74cd65d5276248a1.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b062.bin",
+   "bytes": 33554432,
+   "sha256": "7964c5564564c3ed32689a540e49552c1a0163bf45c8aced74cd65d5276248a1"
+  },
+  {
+   "role": "tables",
+   "name": "tables/6f37b5b72c1d2a72d81f80aabee8f90265429f0914a2da2c1f292694d34fa2b8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b063.bin",
+   "bytes": 33554432,
+   "sha256": "6f37b5b72c1d2a72d81f80aabee8f90265429f0914a2da2c1f292694d34fa2b8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/91097af7d67e06f86cac734b2ba893d113e45109e0a965f8af3d191fc0464b97.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b064.bin",
+   "bytes": 33554432,
+   "sha256": "91097af7d67e06f86cac734b2ba893d113e45109e0a965f8af3d191fc0464b97"
+  },
+  {
+   "role": "tables",
+   "name": "tables/24d9ed7a047f33be41979cb27bdfc123faf90f838d1d629255827d567effb642.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b065.bin",
+   "bytes": 33554432,
+   "sha256": "24d9ed7a047f33be41979cb27bdfc123faf90f838d1d629255827d567effb642"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1d0a8c5830c8816579c0173d9896953cae8f6cdb57e89089d36dbe77d33f8f0e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b066.bin",
+   "bytes": 33554432,
+   "sha256": "1d0a8c5830c8816579c0173d9896953cae8f6cdb57e89089d36dbe77d33f8f0e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/83f694f761660b4aaf10a219160b939cf4720b5bd6d3aa63a1e88bb8e20c5658.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b067.bin",
+   "bytes": 33554432,
+   "sha256": "83f694f761660b4aaf10a219160b939cf4720b5bd6d3aa63a1e88bb8e20c5658"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ad7841b3d2206bedd15f045ada4c5d9c6506dd0a4931e8620ec94a78eeda2748.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b068.bin",
+   "bytes": 33554432,
+   "sha256": "ad7841b3d2206bedd15f045ada4c5d9c6506dd0a4931e8620ec94a78eeda2748"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c73049540c44ac78824015f9bbb16d25b55633261ee78d3aaf2886af0c8da12a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b069.bin",
+   "bytes": 33554432,
+   "sha256": "c73049540c44ac78824015f9bbb16d25b55633261ee78d3aaf2886af0c8da12a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8e16cd4846b3768ca63b814becd138e7f9061e9c16149bbe2639a13c72c1d69a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b070.bin",
+   "bytes": 33554432,
+   "sha256": "8e16cd4846b3768ca63b814becd138e7f9061e9c16149bbe2639a13c72c1d69a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1f309ebcc8f83a1d885bb5aa50752752d5ac59eea49bb40868ed782e28cd9ea1.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b071.bin",
+   "bytes": 33554432,
+   "sha256": "1f309ebcc8f83a1d885bb5aa50752752d5ac59eea49bb40868ed782e28cd9ea1"
+  },
+  {
+   "role": "tables",
+   "name": "tables/65f50bbb764b47e638af1d66a0947e00fc8ee6d4a86c9c23cba42e8610dd5997.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b072.bin",
+   "bytes": 33554432,
+   "sha256": "65f50bbb764b47e638af1d66a0947e00fc8ee6d4a86c9c23cba42e8610dd5997"
+  },
+  {
+   "role": "tables",
+   "name": "tables/54a5ca9bfdc496b75cbe75f3a4365da874430a859aebbb96ecfbab15d99e0570.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b073.bin",
+   "bytes": 33554432,
+   "sha256": "54a5ca9bfdc496b75cbe75f3a4365da874430a859aebbb96ecfbab15d99e0570"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5e1d7ed05c2e96ff0f764a758f3e88edeb253e83b5732c519d582fb1ee9143d4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b074.bin",
+   "bytes": 33554432,
+   "sha256": "5e1d7ed05c2e96ff0f764a758f3e88edeb253e83b5732c519d582fb1ee9143d4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/906e888c08a4d3a5bda0731d26ff8101f93f27ed608d3404fdbccce01fd12113.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b075.bin",
+   "bytes": 33554432,
+   "sha256": "906e888c08a4d3a5bda0731d26ff8101f93f27ed608d3404fdbccce01fd12113"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8ad5c7635b295af07c52a4ef4413b30eff8939f0a109ed1e22c3e2212107eb6e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b076.bin",
+   "bytes": 33554432,
+   "sha256": "8ad5c7635b295af07c52a4ef4413b30eff8939f0a109ed1e22c3e2212107eb6e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8b31270529006c3db07629d3d1f35bc7fbb1f639d3a4a9445d726d1e8d48e394.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b077.bin",
+   "bytes": 33554432,
+   "sha256": "8b31270529006c3db07629d3d1f35bc7fbb1f639d3a4a9445d726d1e8d48e394"
+  },
+  {
+   "role": "tables",
+   "name": "tables/69cfe97c6c138bb15b14209d20b749b34508a0b478839e0fbc2195a00930f3b5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b078.bin",
+   "bytes": 33554432,
+   "sha256": "69cfe97c6c138bb15b14209d20b749b34508a0b478839e0fbc2195a00930f3b5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/4c33d7d80f70c28357c5bf20a1c5fcb0235bc95ec5a92708d2c9c6b35e12595c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b079.bin",
+   "bytes": 33554432,
+   "sha256": "4c33d7d80f70c28357c5bf20a1c5fcb0235bc95ec5a92708d2c9c6b35e12595c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/915531898e2a95229c7e3a79feccdb2f95e3cac57518f71c88ffc8cba6b2ab68.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b080.bin",
+   "bytes": 33554432,
+   "sha256": "915531898e2a95229c7e3a79feccdb2f95e3cac57518f71c88ffc8cba6b2ab68"
+  },
+  {
+   "role": "tables",
+   "name": "tables/61b2a22d60bd020400848938841f62c72db52a86598156108aa66012dc1d8c66.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b081.bin",
+   "bytes": 33554432,
+   "sha256": "61b2a22d60bd020400848938841f62c72db52a86598156108aa66012dc1d8c66"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7549b7b8999789cce4781f5897d9d37e7eacd9b6527197064ed6e26e181246ee.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b082.bin",
+   "bytes": 33554432,
+   "sha256": "7549b7b8999789cce4781f5897d9d37e7eacd9b6527197064ed6e26e181246ee"
+  },
+  {
+   "role": "tables",
+   "name": "tables/2bea279dfe6509dd1c2dcc045d91ce4bb58bc8c4d83ffbfc0e5d05eec6d63043.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b083.bin",
+   "bytes": 33554432,
+   "sha256": "2bea279dfe6509dd1c2dcc045d91ce4bb58bc8c4d83ffbfc0e5d05eec6d63043"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c53ac5ec4209eebe603adad66a93b5539c970b219f99d9a330094edbe928c2e8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b084.bin",
+   "bytes": 33554432,
+   "sha256": "c53ac5ec4209eebe603adad66a93b5539c970b219f99d9a330094edbe928c2e8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/12653f128001c3c2585911e6d4cc8de7cad6b6eee9ae0e4ec9f9516eb52bfad5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b085.bin",
+   "bytes": 33554432,
+   "sha256": "12653f128001c3c2585911e6d4cc8de7cad6b6eee9ae0e4ec9f9516eb52bfad5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d5c1214bd8b0499fa87123ab67ce528bc749819efa69fcba583334cba987ee2a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b086.bin",
+   "bytes": 33554432,
+   "sha256": "d5c1214bd8b0499fa87123ab67ce528bc749819efa69fcba583334cba987ee2a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/22fb0fb8580e1f9f2acef130b70e70f5172df207acd1f3cf1c848b4ca6ded0c5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b087.bin",
+   "bytes": 33554432,
+   "sha256": "22fb0fb8580e1f9f2acef130b70e70f5172df207acd1f3cf1c848b4ca6ded0c5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b4b88497f47650540d29eb0064e6ef990310056eb9eb0df1f6f1f0dfe4a55626.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b088.bin",
+   "bytes": 33554432,
+   "sha256": "b4b88497f47650540d29eb0064e6ef990310056eb9eb0df1f6f1f0dfe4a55626"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d2b7759e1d2a845af53385016a0e1f699e74eaf3db640c12fe8c582196e4e703.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b089.bin",
+   "bytes": 33554432,
+   "sha256": "d2b7759e1d2a845af53385016a0e1f699e74eaf3db640c12fe8c582196e4e703"
+  },
+  {
+   "role": "tables",
+   "name": "tables/40703aa37260006d0d66c84c87fec93e02ac3538ff1bf8e94ad5259d899197f2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b090.bin",
+   "bytes": 33554432,
+   "sha256": "40703aa37260006d0d66c84c87fec93e02ac3538ff1bf8e94ad5259d899197f2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/6c437b254d8369ec82bf288574f7a5c614ef724a1b85b35dbf0b93b8c075ee48.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b091.bin",
+   "bytes": 33554432,
+   "sha256": "6c437b254d8369ec82bf288574f7a5c614ef724a1b85b35dbf0b93b8c075ee48"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c82e8c655705c2068d27859979cd331fcb61a4d5d631d13395a7829ade5a0511.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b092.bin",
+   "bytes": 33554432,
+   "sha256": "c82e8c655705c2068d27859979cd331fcb61a4d5d631d13395a7829ade5a0511"
+  },
+  {
+   "role": "tables",
+   "name": "tables/9a321e0fa33f96fb0b45bc3bcb9fe8f9623c8fc71141b6f920f178f55f4d6816.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b093.bin",
+   "bytes": 33554432,
+   "sha256": "9a321e0fa33f96fb0b45bc3bcb9fe8f9623c8fc71141b6f920f178f55f4d6816"
+  },
+  {
+   "role": "tables",
+   "name": "tables/45341cd7e60182b452c3183fd99bacd38f45844e328a8e265c2abba442134b2a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b094.bin",
+   "bytes": 33554432,
+   "sha256": "45341cd7e60182b452c3183fd99bacd38f45844e328a8e265c2abba442134b2a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/96c3b06618863cf48922236b2714107cd12a161cbb8c18a2b9bd48f185d47dcf.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b095.bin",
+   "bytes": 33554432,
+   "sha256": "96c3b06618863cf48922236b2714107cd12a161cbb8c18a2b9bd48f185d47dcf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/17609b51515a8fa9f8d662b0b6b83b5fb15f63a25750a9f66ebc23e12294f582.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b096.bin",
+   "bytes": 33554432,
+   "sha256": "17609b51515a8fa9f8d662b0b6b83b5fb15f63a25750a9f66ebc23e12294f582"
+  },
+  {
+   "role": "tables",
+   "name": "tables/53cb67d1ff54f0fda0150039b33e249d9c35aeaba95ad304c1f53aab64f8936c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b097.bin",
+   "bytes": 33554432,
+   "sha256": "53cb67d1ff54f0fda0150039b33e249d9c35aeaba95ad304c1f53aab64f8936c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f1cf4031cb01b3c1190fbb798f17e69f50da8ca8367b2db3610ca2a3f2e165bd.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b098.bin",
+   "bytes": 33554432,
+   "sha256": "f1cf4031cb01b3c1190fbb798f17e69f50da8ca8367b2db3610ca2a3f2e165bd"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cc48fda6b658866b0e0afa0b44b92e5fa9798be9a2d66d591b187da2aca2385e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b099.bin",
+   "bytes": 33554432,
+   "sha256": "cc48fda6b658866b0e0afa0b44b92e5fa9798be9a2d66d591b187da2aca2385e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8183a6b41470ccdfba12be0d0d3c1d54144ddd8f9879b02fc0631cb9c62bc3d2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b100.bin",
+   "bytes": 33554432,
+   "sha256": "8183a6b41470ccdfba12be0d0d3c1d54144ddd8f9879b02fc0631cb9c62bc3d2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0e319e6913d3e3ee3e97faba59d491adf2a0db4ea8c665da961741624bf38538.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b101.bin",
+   "bytes": 33554432,
+   "sha256": "0e319e6913d3e3ee3e97faba59d491adf2a0db4ea8c665da961741624bf38538"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d470d04c2455a8a81c59a9d50aeea65c230b7d94976d6895ef87650ca690ff6b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b102.bin",
+   "bytes": 33554432,
+   "sha256": "d470d04c2455a8a81c59a9d50aeea65c230b7d94976d6895ef87650ca690ff6b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/550f04d16ffdac7bc5c9e5956bbfbc0baf0e106313e274ed525913298f5dd09b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b103.bin",
+   "bytes": 33554432,
+   "sha256": "550f04d16ffdac7bc5c9e5956bbfbc0baf0e106313e274ed525913298f5dd09b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3dbba603961017f09b4f0ca24f4343689b60f8fdd75298f1042d46c8568c1bb5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b104.bin",
+   "bytes": 33554432,
+   "sha256": "3dbba603961017f09b4f0ca24f4343689b60f8fdd75298f1042d46c8568c1bb5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ceb3ad6e29a8dc8fc34c27b524185e732d3da6d9178519e6a9838561c2e77f95.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b105.bin",
+   "bytes": 33554432,
+   "sha256": "ceb3ad6e29a8dc8fc34c27b524185e732d3da6d9178519e6a9838561c2e77f95"
+  },
+  {
+   "role": "tables",
+   "name": "tables/05f4bc7009cf29428195c15a211e664b4b7bc51b9cc2458b44101b2f9bac7c91.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b106.bin",
+   "bytes": 33554432,
+   "sha256": "05f4bc7009cf29428195c15a211e664b4b7bc51b9cc2458b44101b2f9bac7c91"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b6b1b894461e74c837a1f884979ab5604f16fedbbf5ce02ec72b281ea3303ddd.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b107.bin",
+   "bytes": 33554432,
+   "sha256": "b6b1b894461e74c837a1f884979ab5604f16fedbbf5ce02ec72b281ea3303ddd"
+  },
+  {
+   "role": "tables",
+   "name": "tables/fdd404f9c4437d21513c31f94a0a556c65e4a3e89247efe3091452755d2538df.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b108.bin",
+   "bytes": 33554432,
+   "sha256": "fdd404f9c4437d21513c31f94a0a556c65e4a3e89247efe3091452755d2538df"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5bb9761620507f62cdbd7f178d09e4866659c90075a22e698ccc93a81553469e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b109.bin",
+   "bytes": 33554432,
+   "sha256": "5bb9761620507f62cdbd7f178d09e4866659c90075a22e698ccc93a81553469e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/93b8c1634c1822cbae12b220e9b0585ee2f4484e2dd51413592cf43554b46ec5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b110.bin",
+   "bytes": 33554432,
+   "sha256": "93b8c1634c1822cbae12b220e9b0585ee2f4484e2dd51413592cf43554b46ec5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b3e28f2ca8595aa7f02dfd6b91c130e699c7606af5e111fa8176bf0cf43e669c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b128.bin",
+   "bytes": 33554432,
+   "sha256": "b3e28f2ca8595aa7f02dfd6b91c130e699c7606af5e111fa8176bf0cf43e669c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cf5bb817330bb504047704c107eca282cbb667b930e52ec48a8af737125627b8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b129.bin",
+   "bytes": 33554432,
+   "sha256": "cf5bb817330bb504047704c107eca282cbb667b930e52ec48a8af737125627b8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/07d3e78edf3d248e26e249bf3275bbcc30fb55ad82e0adf58deb5fe3981cd52d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b130.bin",
+   "bytes": 33554432,
+   "sha256": "07d3e78edf3d248e26e249bf3275bbcc30fb55ad82e0adf58deb5fe3981cd52d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/773dee9ec6091230eed57bf80acd8b16a7eece122cb1926f074914550d3726c4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b131.bin",
+   "bytes": 33554432,
+   "sha256": "773dee9ec6091230eed57bf80acd8b16a7eece122cb1926f074914550d3726c4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1106fe44d249b3ad64419199e4e292acd907f0fb00f582168a583e683e53d159.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b132.bin",
+   "bytes": 33554432,
+   "sha256": "1106fe44d249b3ad64419199e4e292acd907f0fb00f582168a583e683e53d159"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7192320e7b5751f146ae90bcf7f3767df316f384fe371a0bbedf951b10a641cc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b133.bin",
+   "bytes": 33554432,
+   "sha256": "7192320e7b5751f146ae90bcf7f3767df316f384fe371a0bbedf951b10a641cc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/584b761cdff09071b4f2135ebadd3a49aa5ba1bc436629a572dc007412227a01.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b134.bin",
+   "bytes": 33554432,
+   "sha256": "584b761cdff09071b4f2135ebadd3a49aa5ba1bc436629a572dc007412227a01"
+  },
+  {
+   "role": "tables",
+   "name": "tables/04c8adc2881aeeedbb456fb3bc4822c0df55753005ca603ed83fbee9191c48d3.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b135.bin",
+   "bytes": 33554432,
+   "sha256": "04c8adc2881aeeedbb456fb3bc4822c0df55753005ca603ed83fbee9191c48d3"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dd647e2ba75efcf576ba324a2cf160b0fcdc37f5ea51152f9109fc3dc8473850.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b136.bin",
+   "bytes": 33554432,
+   "sha256": "dd647e2ba75efcf576ba324a2cf160b0fcdc37f5ea51152f9109fc3dc8473850"
+  },
+  {
+   "role": "tables",
+   "name": "tables/721f84640b0145a940a98edfaecf9c857adb137c72af0eac32f01e669cd74d83.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b137.bin",
+   "bytes": 33554432,
+   "sha256": "721f84640b0145a940a98edfaecf9c857adb137c72af0eac32f01e669cd74d83"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cf9f1f8e41a0066d9744dd81ab442e9ac75b661e10a0e5e1e445cb807e9077d9.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b138.bin",
+   "bytes": 33554432,
+   "sha256": "cf9f1f8e41a0066d9744dd81ab442e9ac75b661e10a0e5e1e445cb807e9077d9"
+  },
+  {
+   "role": "tables",
+   "name": "tables/09964d7c5e9fa359ce32f9e2b5a060f7983de1d4e5748133e3b2c0a3ca8fbd2d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b139.bin",
+   "bytes": 33554432,
+   "sha256": "09964d7c5e9fa359ce32f9e2b5a060f7983de1d4e5748133e3b2c0a3ca8fbd2d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e2009af0d74ce00017a2517e39ebe0a10e7c8240f2c180e603c6915f331628bc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b140.bin",
+   "bytes": 33554432,
+   "sha256": "e2009af0d74ce00017a2517e39ebe0a10e7c8240f2c180e603c6915f331628bc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/874a2d7de44cbff985476c06f0f5ae505f283804ba566ea9e5f765b19a2b59e0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b141.bin",
+   "bytes": 33554432,
+   "sha256": "874a2d7de44cbff985476c06f0f5ae505f283804ba566ea9e5f765b19a2b59e0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f728da21f2304149ba3969f578333b8a5f1a85a5ee576dadaf3d3fec54607cd4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b142.bin",
+   "bytes": 33554432,
+   "sha256": "f728da21f2304149ba3969f578333b8a5f1a85a5ee576dadaf3d3fec54607cd4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/79920a470dca0a3c72545003f46a3743a8b4861ac57a792d4d154fb2ac31ef0a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b143.bin",
+   "bytes": 33554432,
+   "sha256": "79920a470dca0a3c72545003f46a3743a8b4861ac57a792d4d154fb2ac31ef0a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/617750508380a9fe6af1122878b4ee834ff1a22d9c88a2239ba29b3f59156f5a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b144.bin",
+   "bytes": 33554432,
+   "sha256": "617750508380a9fe6af1122878b4ee834ff1a22d9c88a2239ba29b3f59156f5a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/092fd4530587374e04056db77decc64886bf72734148a06fe315b91d71bc5782.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b145.bin",
+   "bytes": 33554432,
+   "sha256": "092fd4530587374e04056db77decc64886bf72734148a06fe315b91d71bc5782"
+  },
+  {
+   "role": "tables",
+   "name": "tables/58286d06072afe29190ec565c366b340126553d9159ee73a4ed3e41f82ad8d67.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b146.bin",
+   "bytes": 33554432,
+   "sha256": "58286d06072afe29190ec565c366b340126553d9159ee73a4ed3e41f82ad8d67"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a9072afdc1071f1001aca686623f20ed9c37be3be73e3b6f4e817739dcb1f2fa.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b147.bin",
+   "bytes": 33554432,
+   "sha256": "a9072afdc1071f1001aca686623f20ed9c37be3be73e3b6f4e817739dcb1f2fa"
+  },
+  {
+   "role": "tables",
+   "name": "tables/bedbc3ca206a7e922da59a502748e4290f2738a4a54a31b8f92094ee86fbaaa8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b148.bin",
+   "bytes": 33554432,
+   "sha256": "bedbc3ca206a7e922da59a502748e4290f2738a4a54a31b8f92094ee86fbaaa8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/10159d1a7857903d43a21dc85c5064ef1adf1583f06ec67104662d513c011087.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b149.bin",
+   "bytes": 33554432,
+   "sha256": "10159d1a7857903d43a21dc85c5064ef1adf1583f06ec67104662d513c011087"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8a0ce9c942c4d713f4f5059cf17ca93f73a5abc86e5e41f213df5300772eed09.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b150.bin",
+   "bytes": 33554432,
+   "sha256": "8a0ce9c942c4d713f4f5059cf17ca93f73a5abc86e5e41f213df5300772eed09"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a63103c0be1fdea407bdd39475d9450e7c6247ce234cbe10b8c2201f991434ae.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b151.bin",
+   "bytes": 33554432,
+   "sha256": "a63103c0be1fdea407bdd39475d9450e7c6247ce234cbe10b8c2201f991434ae"
+  },
+  {
+   "role": "tables",
+   "name": "tables/570430931232ce82f3c5407c1322050743b63cb821842a88e1e8e40d6b7f671f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b152.bin",
+   "bytes": 33554432,
+   "sha256": "570430931232ce82f3c5407c1322050743b63cb821842a88e1e8e40d6b7f671f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cb572b46f2c10e213f9953ce53916ab6f405fc10c12bdfa900d377d2b4584659.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b153.bin",
+   "bytes": 33554432,
+   "sha256": "cb572b46f2c10e213f9953ce53916ab6f405fc10c12bdfa900d377d2b4584659"
+  },
+  {
+   "role": "tables",
+   "name": "tables/aab5983da1c73b9edb5d5e43eb10c9a1ea79680c134a7234cc0ed36e756c381e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b154.bin",
+   "bytes": 33554432,
+   "sha256": "aab5983da1c73b9edb5d5e43eb10c9a1ea79680c134a7234cc0ed36e756c381e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/9ba8cd434b1cb16d90f19bf77cf6776b7ab2ed4010c3aa35543fb639b852297b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b155.bin",
+   "bytes": 33554432,
+   "sha256": "9ba8cd434b1cb16d90f19bf77cf6776b7ab2ed4010c3aa35543fb639b852297b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/4d2c7799ffc7a1e58626f503796ff34c499e8a9006dc3c4f6435882649eb7900.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b156.bin",
+   "bytes": 33554432,
+   "sha256": "4d2c7799ffc7a1e58626f503796ff34c499e8a9006dc3c4f6435882649eb7900"
+  },
+  {
+   "role": "tables",
+   "name": "tables/fc8b88121fa57edda6a8fb09b22f80b9371bc928bcbd5a8d52d50ce21ecf9487.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b157.bin",
+   "bytes": 33554432,
+   "sha256": "fc8b88121fa57edda6a8fb09b22f80b9371bc928bcbd5a8d52d50ce21ecf9487"
+  },
+  {
+   "role": "tables",
+   "name": "tables/94f48c934b24d2e68ccc0845a48126f54596e274ffae065a1d7abb54cf6da980.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b158.bin",
+   "bytes": 33554432,
+   "sha256": "94f48c934b24d2e68ccc0845a48126f54596e274ffae065a1d7abb54cf6da980"
+  },
+  {
+   "role": "tables",
+   "name": "tables/4d0158bcf08287af5a24d11b3709ec178a3ea027389b25cd627df301de8f5bf6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b159.bin",
+   "bytes": 33554432,
+   "sha256": "4d0158bcf08287af5a24d11b3709ec178a3ea027389b25cd627df301de8f5bf6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0abe8e0b8889778f88bffba9ee14b991db09c38072110c553b6d70d1d3ae551c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b160.bin",
+   "bytes": 33554432,
+   "sha256": "0abe8e0b8889778f88bffba9ee14b991db09c38072110c553b6d70d1d3ae551c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1bde23175b926b5e8c85afb953c8ce70f8637accb241fcd894efdd3e24671851.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b161.bin",
+   "bytes": 33554432,
+   "sha256": "1bde23175b926b5e8c85afb953c8ce70f8637accb241fcd894efdd3e24671851"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cc555a6235d7bc8faa3b325a7e6987bd85207fbc924e3d92a236fcaa962f06b3.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b162.bin",
+   "bytes": 33554432,
+   "sha256": "cc555a6235d7bc8faa3b325a7e6987bd85207fbc924e3d92a236fcaa962f06b3"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a82ed5d37364a2b6cdbfa23d24302d7b7e7b8464b5cc2d42263ec69f920792b2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b163.bin",
+   "bytes": 33554432,
+   "sha256": "a82ed5d37364a2b6cdbfa23d24302d7b7e7b8464b5cc2d42263ec69f920792b2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/57d5761ee91023c5e82b68a27f28c463d07e8e64f6e8f546d2589d2d429475bc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b164.bin",
+   "bytes": 33554432,
+   "sha256": "57d5761ee91023c5e82b68a27f28c463d07e8e64f6e8f546d2589d2d429475bc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/de7ab4e1f6b4418320943247b7f69d022d42f576778dc8860de6621a38d247e0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b165.bin",
+   "bytes": 33554432,
+   "sha256": "de7ab4e1f6b4418320943247b7f69d022d42f576778dc8860de6621a38d247e0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/02b348bd9befdb2f38fdd0401350bbfffb8994108308115fe879d6683edfc1bf.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b166.bin",
+   "bytes": 33554432,
+   "sha256": "02b348bd9befdb2f38fdd0401350bbfffb8994108308115fe879d6683edfc1bf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3cf56f809b6fdb3101b79c48322735c9a0b220e377b91e9df69633915d1b70a5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b167.bin",
+   "bytes": 33554432,
+   "sha256": "3cf56f809b6fdb3101b79c48322735c9a0b220e377b91e9df69633915d1b70a5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/053ebc5b7db0d60ccbde7876cdaeae690cc4e4b132c95d6dce85d211a6ff65ac.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b168.bin",
+   "bytes": 33554432,
+   "sha256": "053ebc5b7db0d60ccbde7876cdaeae690cc4e4b132c95d6dce85d211a6ff65ac"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a350a51cffa28c5ba55e6a6fc2db5d67b7500f89bc85463f5b0ff6706a291ffc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b169.bin",
+   "bytes": 33554432,
+   "sha256": "a350a51cffa28c5ba55e6a6fc2db5d67b7500f89bc85463f5b0ff6706a291ffc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/634e2bea3c3cd528791e4acce6795926e7208c8b0b53c9594221907a2421fb88.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b170.bin",
+   "bytes": 33554432,
+   "sha256": "634e2bea3c3cd528791e4acce6795926e7208c8b0b53c9594221907a2421fb88"
+  },
+  {
+   "role": "tables",
+   "name": "tables/213c60c5e907554401d1f6ba51c14cdbbfe59a4ef8ef393df91f1b11db08bcd6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b171.bin",
+   "bytes": 33554432,
+   "sha256": "213c60c5e907554401d1f6ba51c14cdbbfe59a4ef8ef393df91f1b11db08bcd6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dae5c08651c1dfef9d626cc5fb5896f5acc934b3f7ca1ea1bb5095086863a3e8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b172.bin",
+   "bytes": 33554432,
+   "sha256": "dae5c08651c1dfef9d626cc5fb5896f5acc934b3f7ca1ea1bb5095086863a3e8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a7634f17ac7e02da7b3856e9fab49cab189a3709d789d9dde0a5f3cb84b6a60e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b173.bin",
+   "bytes": 33554432,
+   "sha256": "a7634f17ac7e02da7b3856e9fab49cab189a3709d789d9dde0a5f3cb84b6a60e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1b01c4d8a7024afc3e797f091fa732b47c195e36cbada10cab14c580e34cd04a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b174.bin",
+   "bytes": 33554432,
+   "sha256": "1b01c4d8a7024afc3e797f091fa732b47c195e36cbada10cab14c580e34cd04a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a1015b05a3953a5ab770da8144d47c120b998b5ad76fd4c00e3645243b8b9bb4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b175.bin",
+   "bytes": 33554432,
+   "sha256": "a1015b05a3953a5ab770da8144d47c120b998b5ad76fd4c00e3645243b8b9bb4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7fd4ee326d8d24848d95002b43d0968bb8e46c120ec1e37831d77e2d5dd32816.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b176.bin",
+   "bytes": 33554432,
+   "sha256": "7fd4ee326d8d24848d95002b43d0968bb8e46c120ec1e37831d77e2d5dd32816"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dcea1833b4cbd0e32ee19481204b56eba9f9f48a015d3b0d88814fa618c963c6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b177.bin",
+   "bytes": 33554432,
+   "sha256": "dcea1833b4cbd0e32ee19481204b56eba9f9f48a015d3b0d88814fa618c963c6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/198eba66db9b231d688f95f108a448b475a30bb87183283af6b8623117296a6e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b178.bin",
+   "bytes": 33554432,
+   "sha256": "198eba66db9b231d688f95f108a448b475a30bb87183283af6b8623117296a6e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/680af47b292246521a5d9f05acd5553b928e4dbacb67e40df83c339286f476cb.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b179.bin",
+   "bytes": 33554432,
+   "sha256": "680af47b292246521a5d9f05acd5553b928e4dbacb67e40df83c339286f476cb"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7e2e764bec1c40dcdb10314c6c1782295f8c410c8474a1f2beaff59adad6a815.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b180.bin",
+   "bytes": 33554432,
+   "sha256": "7e2e764bec1c40dcdb10314c6c1782295f8c410c8474a1f2beaff59adad6a815"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e08e3f0ebeab565fa81507145359484aac511c83c72841bd243db862d23dfce5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b181.bin",
+   "bytes": 33554432,
+   "sha256": "e08e3f0ebeab565fa81507145359484aac511c83c72841bd243db862d23dfce5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a2de967294b37461fb657be71998631cf6c16954f6165e32f2a7d4335350d2aa.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b182.bin",
+   "bytes": 33554432,
+   "sha256": "a2de967294b37461fb657be71998631cf6c16954f6165e32f2a7d4335350d2aa"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c0a984e52202c81cbebffc2367718736e438bb0a73cf89bbfdbb72eee431e026.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b183.bin",
+   "bytes": 33554432,
+   "sha256": "c0a984e52202c81cbebffc2367718736e438bb0a73cf89bbfdbb72eee431e026"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5f4cf91225c19b48ee2d96c4ddc697267e592b3f82295c73273c9c3ada46ec23.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b184.bin",
+   "bytes": 33554432,
+   "sha256": "5f4cf91225c19b48ee2d96c4ddc697267e592b3f82295c73273c9c3ada46ec23"
+  },
+  {
+   "role": "tables",
+   "name": "tables/080a216d8092fec7815efea0ce74cf4e15ea9102b3341ae2b71b05238605e666.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b185.bin",
+   "bytes": 33554432,
+   "sha256": "080a216d8092fec7815efea0ce74cf4e15ea9102b3341ae2b71b05238605e666"
+  },
+  {
+   "role": "tables",
+   "name": "tables/2dc9f42ac0abd013f896093d23496db439c0a85e91beb50ed6d02bf6c40340c5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b186.bin",
+   "bytes": 33554432,
+   "sha256": "2dc9f42ac0abd013f896093d23496db439c0a85e91beb50ed6d02bf6c40340c5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d7d2812615ede9be533b684ce81ec8ff3d4b7d15cfa7608d6ec9ed482cc775ab.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b187.bin",
+   "bytes": 33554432,
+   "sha256": "d7d2812615ede9be533b684ce81ec8ff3d4b7d15cfa7608d6ec9ed482cc775ab"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e1be268ab67162dddf8415973e3fc377e9419a03f2a9488fb2bfdd8049c24a13.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b188.bin",
+   "bytes": 33554432,
+   "sha256": "e1be268ab67162dddf8415973e3fc377e9419a03f2a9488fb2bfdd8049c24a13"
+  },
+  {
+   "role": "tables",
+   "name": "tables/adc9030f2cd944ae4974ade9c0a26bd53f02f5cac8135d32a8739d9b32cbaaf9.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b189.bin",
+   "bytes": 33554432,
+   "sha256": "adc9030f2cd944ae4974ade9c0a26bd53f02f5cac8135d32a8739d9b32cbaaf9"
+  },
+  {
+   "role": "tables",
+   "name": "tables/9e353004ff741935bf55fb67f45234fa67cfda1fa2350404fc618650e1893fd8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b190.bin",
+   "bytes": 33554432,
+   "sha256": "9e353004ff741935bf55fb67f45234fa67cfda1fa2350404fc618650e1893fd8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/798572028b24ff6c61b3a1259ea3f19fb5642aabadf2cdf8e7764d7ca87cb445.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b191.bin",
+   "bytes": 33554432,
+   "sha256": "798572028b24ff6c61b3a1259ea3f19fb5642aabadf2cdf8e7764d7ca87cb445"
+  },
+  {
+   "role": "tables",
+   "name": "tables/62929ad7beb3dd0fc94f9c94ebf479ba04903c5d070a025ddbf41c74b902c8bf.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b192.bin",
+   "bytes": 33554432,
+   "sha256": "62929ad7beb3dd0fc94f9c94ebf479ba04903c5d070a025ddbf41c74b902c8bf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/081a14b2deebc9d0c51e95d070af90281da9ea99425a0acd0fc2166d62ac47ad.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b193.bin",
+   "bytes": 33554432,
+   "sha256": "081a14b2deebc9d0c51e95d070af90281da9ea99425a0acd0fc2166d62ac47ad"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dab702f5fb69092d4874af8833b166dbcac46bd14f18d218c9ab37083b89bfcf.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b194.bin",
+   "bytes": 33554432,
+   "sha256": "dab702f5fb69092d4874af8833b166dbcac46bd14f18d218c9ab37083b89bfcf"
+  },
+  {
+   "role": "tables",
+   "name": "tables/21b5441e3370d587b3bdbe4a3382807359c531ace94285c3462c720ad9292c4d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b195.bin",
+   "bytes": 33554432,
+   "sha256": "21b5441e3370d587b3bdbe4a3382807359c531ace94285c3462c720ad9292c4d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b400e4ba10bd8ca325bbc17528e4317d6c9df4b96ef44d3c4c884326a31fb7dd.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b196.bin",
+   "bytes": 33554432,
+   "sha256": "b400e4ba10bd8ca325bbc17528e4317d6c9df4b96ef44d3c4c884326a31fb7dd"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0aa720a3c06f11e460986307d0d6b0fa4989944589fb83fd94fecffaee7b6b83.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b197.bin",
+   "bytes": 33554432,
+   "sha256": "0aa720a3c06f11e460986307d0d6b0fa4989944589fb83fd94fecffaee7b6b83"
+  },
+  {
+   "role": "tables",
+   "name": "tables/00cb48759ed4b01c19ed70c4989099742b90269ad1a2cca05a228892bf15220a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b198.bin",
+   "bytes": 33554432,
+   "sha256": "00cb48759ed4b01c19ed70c4989099742b90269ad1a2cca05a228892bf15220a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b904cf416b14c69be235522b4cbfd659118149fd1245e9cb60a88f5e3ea858e2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b199.bin",
+   "bytes": 33554432,
+   "sha256": "b904cf416b14c69be235522b4cbfd659118149fd1245e9cb60a88f5e3ea858e2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/05b14df3c386aba66ea5dc6b1808dcfb2bdb47782d36352327b2fa769b662670.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b200.bin",
+   "bytes": 33554432,
+   "sha256": "05b14df3c386aba66ea5dc6b1808dcfb2bdb47782d36352327b2fa769b662670"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c1e61e44ccdec83deec99a22c5bff199e4e8798198ee1143ab2d54d0e285acac.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b201.bin",
+   "bytes": 33554432,
+   "sha256": "c1e61e44ccdec83deec99a22c5bff199e4e8798198ee1143ab2d54d0e285acac"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f077898127473b319e7ecdf03bb0536435dd1f6925de61c1c91ad6738108dbe4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b202.bin",
+   "bytes": 33554432,
+   "sha256": "f077898127473b319e7ecdf03bb0536435dd1f6925de61c1c91ad6738108dbe4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/610111309daf074d52de08815f0e2bb12e3c73ea60dd0c4b5b923ab1477d8316.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b203.bin",
+   "bytes": 33554432,
+   "sha256": "610111309daf074d52de08815f0e2bb12e3c73ea60dd0c4b5b923ab1477d8316"
+  },
+  {
+   "role": "tables",
+   "name": "tables/1536d65629d84a2cb2960e9f9dac460eb164e84875377d1f3fb586c30a6756fe.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b204.bin",
+   "bytes": 33554432,
+   "sha256": "1536d65629d84a2cb2960e9f9dac460eb164e84875377d1f3fb586c30a6756fe"
+  },
+  {
+   "role": "tables",
+   "name": "tables/abee5384ce473758bf9976693574df1203db7d57c2bf077cd88a4bdfe98190a0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b205.bin",
+   "bytes": 33554432,
+   "sha256": "abee5384ce473758bf9976693574df1203db7d57c2bf077cd88a4bdfe98190a0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/bef04736fd4168d626ea86536394ebf622528383c9d7ca9cdbb668655e271f3e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b206.bin",
+   "bytes": 33554432,
+   "sha256": "bef04736fd4168d626ea86536394ebf622528383c9d7ca9cdbb668655e271f3e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/d52916f534404ed31f44029e2626a249aa1975fc7fd5969ccf46cb95162a7570.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b207.bin",
+   "bytes": 33554432,
+   "sha256": "d52916f534404ed31f44029e2626a249aa1975fc7fd5969ccf46cb95162a7570"
+  },
+  {
+   "role": "tables",
+   "name": "tables/25da11e227035c5a23cd1f7b60d5ab896c5793cf8ac5e4f5805933fb559e9ab6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b208.bin",
+   "bytes": 33554432,
+   "sha256": "25da11e227035c5a23cd1f7b60d5ab896c5793cf8ac5e4f5805933fb559e9ab6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/74da93d902f6a5aa695e8b2f3d83a679a245c72adb8a2e63f85bca713d6fadf4.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b209.bin",
+   "bytes": 33554432,
+   "sha256": "74da93d902f6a5aa695e8b2f3d83a679a245c72adb8a2e63f85bca713d6fadf4"
+  },
+  {
+   "role": "tables",
+   "name": "tables/391ce8d8fae5f38cdea6c9ef820adca9194954667c83f842fd89f6bb1a655f39.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b210.bin",
+   "bytes": 33554432,
+   "sha256": "391ce8d8fae5f38cdea6c9ef820adca9194954667c83f842fd89f6bb1a655f39"
+  },
+  {
+   "role": "tables",
+   "name": "tables/0ee14128e07488b3f70ce5d73c8afbbb27dfe830840e3d4c402552cfd7d364d2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b211.bin",
+   "bytes": 33554432,
+   "sha256": "0ee14128e07488b3f70ce5d73c8afbbb27dfe830840e3d4c402552cfd7d364d2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cf448af2fcf27380a1193e2f888b73fec08a697feb72bc704ba88198bc2a04e5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b212.bin",
+   "bytes": 33554432,
+   "sha256": "cf448af2fcf27380a1193e2f888b73fec08a697feb72bc704ba88198bc2a04e5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/20c38394f012c7bb704e7b21398607ed197efa6794330d4b338e817e586d4077.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b213.bin",
+   "bytes": 33554432,
+   "sha256": "20c38394f012c7bb704e7b21398607ed197efa6794330d4b338e817e586d4077"
+  },
+  {
+   "role": "tables",
+   "name": "tables/609576d2e1010f53318b09c130826ae3c0f0baec070490987e7a17659c4db278.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b214.bin",
+   "bytes": 33554432,
+   "sha256": "609576d2e1010f53318b09c130826ae3c0f0baec070490987e7a17659c4db278"
+  },
+  {
+   "role": "tables",
+   "name": "tables/38ee271290a0d6468f2397ae57cb19792f9d869379d26bfb7a966f06445f0cd2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b215.bin",
+   "bytes": 33554432,
+   "sha256": "38ee271290a0d6468f2397ae57cb19792f9d869379d26bfb7a966f06445f0cd2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/fe447a8bcc42ddc5982fb838cd2ebece041d4cda7ad6ed92f35a2d1845d88818.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b216.bin",
+   "bytes": 33554432,
+   "sha256": "fe447a8bcc42ddc5982fb838cd2ebece041d4cda7ad6ed92f35a2d1845d88818"
+  },
+  {
+   "role": "tables",
+   "name": "tables/dd16ae98094c25cf796d5ba74f35582993d426bcf6fb0dac467bd58758fc184c.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b217.bin",
+   "bytes": 33554432,
+   "sha256": "dd16ae98094c25cf796d5ba74f35582993d426bcf6fb0dac467bd58758fc184c"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ef37268a6ec9649836c2fd298ed59bff045ea7e066e08edde79138488b2006d5.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b218.bin",
+   "bytes": 33554432,
+   "sha256": "ef37268a6ec9649836c2fd298ed59bff045ea7e066e08edde79138488b2006d5"
+  },
+  {
+   "role": "tables",
+   "name": "tables/197991a4e988ba32f406da3e80cd498f9110a257eb743bcbe015a9ae1f8e897b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b219.bin",
+   "bytes": 33554432,
+   "sha256": "197991a4e988ba32f406da3e80cd498f9110a257eb743bcbe015a9ae1f8e897b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ee14f1ceb609f5f917f300ca10cc3cc037b6cc535a751fb14afa9c68a646f69f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b220.bin",
+   "bytes": 33554432,
+   "sha256": "ee14f1ceb609f5f917f300ca10cc3cc037b6cc535a751fb14afa9c68a646f69f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/33c8a6a043b7e6e3749175ef574b2144058a0cc327ac77b6edb88f3ace0b880f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b221.bin",
+   "bytes": 33554432,
+   "sha256": "33c8a6a043b7e6e3749175ef574b2144058a0cc327ac77b6edb88f3ace0b880f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/2b53483bb126faa676b1e2795089e3917d69dfdd5c4c89acc15d661bd5996aee.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b222.bin",
+   "bytes": 33554432,
+   "sha256": "2b53483bb126faa676b1e2795089e3917d69dfdd5c4c89acc15d661bd5996aee"
+  },
+  {
+   "role": "tables",
+   "name": "tables/939b4e5716e2950e0ba30d2e1ede76d0e435cf2eb694904e26a66af2fe64cbee.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b223.bin",
+   "bytes": 33554432,
+   "sha256": "939b4e5716e2950e0ba30d2e1ede76d0e435cf2eb694904e26a66af2fe64cbee"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7e448a68e1b82595efa1025d990f642625a8be8b7dc7cf6ab9897c50c746e181.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b224.bin",
+   "bytes": 33554432,
+   "sha256": "7e448a68e1b82595efa1025d990f642625a8be8b7dc7cf6ab9897c50c746e181"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f97ad517b098c36c7ac9f778331c776ff39f9145b0b1b1c8de161b66295ea728.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b225.bin",
+   "bytes": 33554432,
+   "sha256": "f97ad517b098c36c7ac9f778331c776ff39f9145b0b1b1c8de161b66295ea728"
+  },
+  {
+   "role": "tables",
+   "name": "tables/beca2af8fa463a9797c002e793889fbb94560fbce0f7fc015e6fe2a4d74c0869.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b226.bin",
+   "bytes": 33554432,
+   "sha256": "beca2af8fa463a9797c002e793889fbb94560fbce0f7fc015e6fe2a4d74c0869"
+  },
+  {
+   "role": "tables",
+   "name": "tables/6d0fbc4197c56a1fa1445d89620253584557f9e6429a72083cb8170bb514e81b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b227.bin",
+   "bytes": 33554432,
+   "sha256": "6d0fbc4197c56a1fa1445d89620253584557f9e6429a72083cb8170bb514e81b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/738f194679b1817a6dfc0149ba8aae09ef1578457b55f1beb03142b841f559fe.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b228.bin",
+   "bytes": 33554432,
+   "sha256": "738f194679b1817a6dfc0149ba8aae09ef1578457b55f1beb03142b841f559fe"
+  },
+  {
+   "role": "tables",
+   "name": "tables/82b186e182c2c367a6c2d6dc004a309362933c2146a3c3e5613b8b15449c45a0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b229.bin",
+   "bytes": 33554432,
+   "sha256": "82b186e182c2c367a6c2d6dc004a309362933c2146a3c3e5613b8b15449c45a0"
+  },
+  {
+   "role": "tables",
+   "name": "tables/cc91926a25b28b5fdcc91fe6c8d83dbe5237a989e9de6453b45c5a4efb55346e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b230.bin",
+   "bytes": 33554432,
+   "sha256": "cc91926a25b28b5fdcc91fe6c8d83dbe5237a989e9de6453b45c5a4efb55346e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/c98d200018fa87cea93b9746c4c9bc4a80220c250edb629ceb14f119300c46fb.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b231.bin",
+   "bytes": 33554432,
+   "sha256": "c98d200018fa87cea93b9746c4c9bc4a80220c250edb629ceb14f119300c46fb"
+  },
+  {
+   "role": "tables",
+   "name": "tables/356ffdbefbe86ea206de0fe5c7f96563c5530d717ac488ec98cdda8e2539a713.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b232.bin",
+   "bytes": 33554432,
+   "sha256": "356ffdbefbe86ea206de0fe5c7f96563c5530d717ac488ec98cdda8e2539a713"
+  },
+  {
+   "role": "tables",
+   "name": "tables/f177394382ba87a4a95275cd042884e5b3b1793c8036897c860e1b37524bbf7b.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b233.bin",
+   "bytes": 33554432,
+   "sha256": "f177394382ba87a4a95275cd042884e5b3b1793c8036897c860e1b37524bbf7b"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e8ed60fa90970565fb0a95eba1812c3115f31481eeb96374f2897aa89638a89f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b234.bin",
+   "bytes": 33554432,
+   "sha256": "e8ed60fa90970565fb0a95eba1812c3115f31481eeb96374f2897aa89638a89f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/07cb26f13d93fa9f14962659d7ded3704b7134d7fc156e8507a2b675782af6d2.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b235.bin",
+   "bytes": 33554432,
+   "sha256": "07cb26f13d93fa9f14962659d7ded3704b7134d7fc156e8507a2b675782af6d2"
+  },
+  {
+   "role": "tables",
+   "name": "tables/3bfc1af206e382df24b4c1c95331ea9a6d862c7efe6fd73ec2a2d2a2d927dc0e.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b236.bin",
+   "bytes": 33554432,
+   "sha256": "3bfc1af206e382df24b4c1c95331ea9a6d862c7efe6fd73ec2a2d2a2d927dc0e"
+  },
+  {
+   "role": "tables",
+   "name": "tables/43239699787c5c5a4669d607b51cea81197fb6e24ff4701a5aedc581c6d35a5d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b237.bin",
+   "bytes": 33554432,
+   "sha256": "43239699787c5c5a4669d607b51cea81197fb6e24ff4701a5aedc581c6d35a5d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/09b3d0dfa00c5ca7774e9057cd769a1f7aa31673b7b4c97f6efb5faab2b1b96a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b238.bin",
+   "bytes": 33554432,
+   "sha256": "09b3d0dfa00c5ca7774e9057cd769a1f7aa31673b7b4c97f6efb5faab2b1b96a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e3e19ef7b3af75e84c98d2ca81c6f4eefe5848e6205d8aebee6e82f6f6e4f690.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b239.bin",
+   "bytes": 33554432,
+   "sha256": "e3e19ef7b3af75e84c98d2ca81c6f4eefe5848e6205d8aebee6e82f6f6e4f690"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a3c465fa08496a65cc715938cfc927500b7830e71816a2abea351592c78ae998.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b240.bin",
+   "bytes": 33554432,
+   "sha256": "a3c465fa08496a65cc715938cfc927500b7830e71816a2abea351592c78ae998"
+  },
+  {
+   "role": "tables",
+   "name": "tables/e0dec9af65e87b469bc152baa9316768e65fde26985095959ebc6d4848f0b776.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b241.bin",
+   "bytes": 33554432,
+   "sha256": "e0dec9af65e87b469bc152baa9316768e65fde26985095959ebc6d4848f0b776"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ffbbeb5ecbfdbe8e9297be9a0e172d29f00456cb4bec58a1eb304718e8b76a62.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b242.bin",
+   "bytes": 33554432,
+   "sha256": "ffbbeb5ecbfdbe8e9297be9a0e172d29f00456cb4bec58a1eb304718e8b76a62"
+  },
+  {
+   "role": "tables",
+   "name": "tables/44cdc2981a83c158a15ed6cd174494db6795a801b3b20bd7eff1cfa09a6e4375.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b243.bin",
+   "bytes": 33554432,
+   "sha256": "44cdc2981a83c158a15ed6cd174494db6795a801b3b20bd7eff1cfa09a6e4375"
+  },
+  {
+   "role": "tables",
+   "name": "tables/fefbfc5d2ccf529b358aad1b8ac60289256aeff70c9b4a52ad37704ff9b4e0b6.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b244.bin",
+   "bytes": 33554432,
+   "sha256": "fefbfc5d2ccf529b358aad1b8ac60289256aeff70c9b4a52ad37704ff9b4e0b6"
+  },
+  {
+   "role": "tables",
+   "name": "tables/648775cd2e578b509f5e9ea8e19b60d691c27f7406fa8398aba5135fc590dfdc.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b245.bin",
+   "bytes": 33554432,
+   "sha256": "648775cd2e578b509f5e9ea8e19b60d691c27f7406fa8398aba5135fc590dfdc"
+  },
+  {
+   "role": "tables",
+   "name": "tables/614815b6d4929244fb63ea1b9a949a77b3e0a9e31d2a3d490bf42b33b8bc9b68.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b246.bin",
+   "bytes": 33554432,
+   "sha256": "614815b6d4929244fb63ea1b9a949a77b3e0a9e31d2a3d490bf42b33b8bc9b68"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8822ff74f209cf14dd419a448ff79cd2a69f69608bfd497191aa30ef2cbc40ba.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b247.bin",
+   "bytes": 33554432,
+   "sha256": "8822ff74f209cf14dd419a448ff79cd2a69f69608bfd497191aa30ef2cbc40ba"
+  },
+  {
+   "role": "tables",
+   "name": "tables/9032eea2f120350157e192c1320919680dc6a01761e1c5b47bf27c386a37a16d.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b248.bin",
+   "bytes": 33554432,
+   "sha256": "9032eea2f120350157e192c1320919680dc6a01761e1c5b47bf27c386a37a16d"
+  },
+  {
+   "role": "tables",
+   "name": "tables/a154c8698253de299078826fd5350a42d6c19b72a85f568a8aad2672cfceb11a.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b249.bin",
+   "bytes": 33554432,
+   "sha256": "a154c8698253de299078826fd5350a42d6c19b72a85f568a8aad2672cfceb11a"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5486a1b0adc76eca0b253803b560e6dcccd58c10566edc273e38add95b53b44f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b250.bin",
+   "bytes": 33554432,
+   "sha256": "5486a1b0adc76eca0b253803b560e6dcccd58c10566edc273e38add95b53b44f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/7383a0ed1b084555ea8ef393fe437e5eb5b2968d16974704a0e28da338cf725f.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b251.bin",
+   "bytes": 33554432,
+   "sha256": "7383a0ed1b084555ea8ef393fe437e5eb5b2968d16974704a0e28da338cf725f"
+  },
+  {
+   "role": "tables",
+   "name": "tables/5dc83aa9cc51245bf29cc0fee648d88ba9fbb0766bfaaaee0eb216d3058e64c1.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b252.bin",
+   "bytes": 33554432,
+   "sha256": "5dc83aa9cc51245bf29cc0fee648d88ba9fbb0766bfaaaee0eb216d3058e64c1"
+  },
+  {
+   "role": "tables",
+   "name": "tables/8e5bc377bd1ba82be0d08edaa985ef36060b4c984ff4c398289b9a677d5e9ff8.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b253.bin",
+   "bytes": 33554432,
+   "sha256": "8e5bc377bd1ba82be0d08edaa985ef36060b4c984ff4c398289b9a677d5e9ff8"
+  },
+  {
+   "role": "tables",
+   "name": "tables/928291fc4374472da0984e8c0283e7c717c8c2ff9617e5c3e9bac3736caff8a0.bin",
+   "path": "/kit/data/dlssnr-mufu-full/r01-20261007-codex/ingest-raw-v1/raw-tables/mufu_lg2-b254.bin",
+   "bytes": 33554432,
+   "sha256": "928291fc4374472da0984e8c0283e7c717c8c2ff9617e5c3e9bac3736caff8a0"
+  },
+  {
+   "role": "inputs",
+   "name": "caller-id1.bin",
+   "path": "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/caller-id1.bin",
+   "bytes": 16588800,
+   "sha256": "30da9b13b2cb985d2d072073e8018620fc25075988995431053b79460640a972"
+  },
+  {
+   "role": "inputs",
+   "name": "caller-id3.bin",
+   "path": "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/caller-id3.bin",
+   "bytes": 8294400,
+   "sha256": "788ae0147bdf979a6575938ca2d7d4403788588f7be2010f03776c968fd1ab49"
+  },
+  {
+   "role": "tables",
+   "name": "tables/ce1270a5ccdac9076bc83a80d4e08e0fddaeb7fdf082a95084a0e2f556b28d57.u32",
+   "path": "/kit/data/video-multiframe-r01-20261006-codex/resume3-20261007/ex2_receiver_v1/input-only-profile/payload/inputs.u32",
+   "bytes": 126972,
+   "sha256": "ce1270a5ccdac9076bc83a80d4e08e0fddaeb7fdf082a95084a0e2f556b28d57"
+  },
+  {
+   "role": "tables",
+   "name": "tables/b4c72f9697d457047d80350893c00bec6bb374c3bcbc399a762ac8340be678ff.u32",
+   "path": "/kit/data/video-multiframe-r01-20261006-codex/resume3-20261007/ex2_receiver_v1/input-only-profile/payload/outputs.u32",
+   "bytes": 126972,
+   "sha256": "b4c72f9697d457047d80350893c00bec6bb374c3bcbc399a762ac8340be678ff"
+  }
+ ],
+ "loader_dir": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M",
+ "map_path": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/DERIVED_MAP.json",
+ "pins_path": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/derived_pins.py",
+ "seal_path": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/execution-seal.json",
+ "root_config": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/frames1080/frames-root.json",
+ "layer": {
+  "repo": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo",
+  "build": "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build"
+ },
+ "job": {
+  "inputs": "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/multiframe-inputs.json",
+  "ex2": "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/ex2-profile.json",
+  "workspace_bytes": 212519936
+ }
+}

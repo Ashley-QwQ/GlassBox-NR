@@ -1,5 +1,10 @@
 # What "byte-exact" means here
 
+> v2.0.0-preview: the definition below is unchanged. The file names in "What is compared" (`data/nodes.json`, `reference/reference_hashes.json`,
+> `tools/run_pipeline.py`, `tools/verify_reference_hashes.py`) belong to the v1 toolchain, which is no longer in HEAD and stays reachable through the
+> tag `v0.1.0-preview`. In v2 the compared buffers are the per-launch workspace and texture hashes of the 158-launch chain, and the reference side
+> for the 1080p frame-0 run is `devkit/data/reference_f0.json`.
+
 ## Definition
 
 For each compared exit, "byte-exact" means:

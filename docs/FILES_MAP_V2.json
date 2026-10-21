@@ -1,0 +1,4640 @@
+{
+ "schema": "GLASSBOX_NR_FILES_MAP/1",
+ "release": "v2.0.0-preview",
+ "whitelist": {
+  "file": "SHIP_WHITELIST_v2_2.json",
+  "sha256": "82df3cef4deb9020a99f2a9ddb100bae7544b95ed62d66ae4b36a4e5cf29d1c6",
+  "schema": "SHIP_WHITELIST/2",
+  "revision": "v2.2"
+ },
+ "purpose": "repo path -> whitelist path(s). devkit/payload_layout.py uses it (--repo) to place the git-resident files at the canonical payload paths that the devkit configuration expects. cpp_source whitelist paths are relative to root M2SRC, run_driver paths to root DEVKIT, all others are canonical payload paths (root PAYLOAD). Files with the same content under several whitelist paths are stored once.",
+ "counts": {
+  "repo_files": 419,
+  "whitelist_entries": 433
+ },
+ "files": [
+  {
+   "repo_path": "cpp/chain_entry_optm/b00.hpp",
+   "category": "cpp_source",
+   "sha256": "932e0c805f020420f0e6fad9543d3e1710d0561b6afa14a30263d6f9bd939392",
+   "bytes": 9407,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/b00.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/compact_noise_optd.hpp",
+   "category": "cpp_source",
+   "sha256": "b7f5e0bda0ebc78646c22be251a78859b06c8fd20d9f86c4d746dd32cba388cb",
+   "bytes": 7762,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/compact_noise_optd.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/decode_reuse.inc",
+   "category": "cpp_source",
+   "sha256": "d4c579acf819c5fb3f2d891f6c6acab81ec1687cf8bfb5e386fd341037a7de0e",
+   "bytes": 5408,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/decode_reuse.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/entry.cpp",
+   "category": "cpp_source",
+   "sha256": "c9f1977d816c5e65757625a59859f6673578920ab7b69127efdc92e5870d313e",
+   "bytes": 19568,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/entry.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/geometry.hpp",
+   "category": "cpp_source",
+   "sha256": "9dfea5e23a045636641d512a73102b9d5968a5fb70e7354d1a548ca65801bbff",
+   "bytes": 4180,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/geometry.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/mapexec_base.hpp",
+   "category": "cpp_source",
+   "sha256": "0ac19678e7b4a31857434ffda3b250f508c98e76970485b3c70f7948b65eeb60",
+   "bytes": 21678,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/mapexec_base.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/native_temporal.hpp",
+   "category": "cpp_source",
+   "sha256": "017710cd6c0a10ce45b606130fa6ebc05e98df760fac1055abda6dc3399b8bd9",
+   "bytes": 3912,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/native_temporal.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/noise_exports_optd.inc",
+   "category": "cpp_source",
+   "sha256": "65061de9cff84305a5b710b16bfd7f7f7730cd63fdcf51a8ab98cb66764e723e",
+   "bytes": 1976,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/noise_exports_optd.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/noise_online_optd.hpp",
+   "category": "cpp_source",
+   "sha256": "eb3bf2ae81d2f38a14b5cede37f0008b867bd97c63bd594dce1df2c20572898b",
+   "bytes": 1366,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/noise_online_optd.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/path_policy.hpp",
+   "category": "cpp_source",
+   "sha256": "1c6cf39de6f6b190d527eb26c2070eb6d4736743b4586f551ad63f6da35b0ec0",
+   "bytes": 420,
+   "transform": "new_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/path_policy.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/portable_bits.hpp",
+   "category": "cpp_source",
+   "sha256": "4309a826730758f4a4dbda24b73178f612a82d09bf50cd6b0671c86abd3132e4",
+   "bytes": 654,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/portable_bits.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_entry_optm/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_entry_optm/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/b70_temporal.hpp",
+   "category": "cpp_source",
+   "sha256": "93af4fc635fde05c4930d11a33bcd4e5257d238c04184d1a1a68d41ada111179",
+   "bytes": 4843,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/b70_temporal.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/bit_cast.hpp",
+   "category": "cpp_source",
+   "sha256": "4b222e9110b4ea1d60a4415674889f423c0769afd7c16ba79c083eb6a5e5aa2d",
+   "bytes": 678,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/bit_cast.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/codec_admitted.hpp",
+   "category": "cpp_source",
+   "sha256": "97d06d9924cbeb5baa5b11dbbec557668ee4ab1d227cf81bcdbfdf790f366263",
+   "bytes": 2894,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/codec_admitted.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/codec_identity.hpp",
+   "category": "cpp_source",
+   "sha256": "3399d19c6f364b6b885121ee54c6f3b8e62ced3ff03a0433e3d71311c8ca9edd",
+   "bytes": 120,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/codec_identity.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/full_raw_registry.hpp",
+   "category": "cpp_source",
+   "sha256": "34ac6daaa274b8bcf2daacb7043d2dc7d1da5405778308a373878c6e42ab0984",
+   "bytes": 6071,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/full_raw_registry.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/geometry.hpp",
+   "category": "cpp_source",
+   "sha256": "9dfea5e23a045636641d512a73102b9d5968a5fb70e7354d1a548ca65801bbff",
+   "bytes": 4180,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/geometry.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/half_probe.inc",
+   "category": "cpp_source",
+   "sha256": "2a4bb9ec210286fa8bd7814fe5b3359abd1f9d6fe03ce692974fc9c2159ecd07",
+   "bytes": 1460,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/half_probe.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/lg2_decoder.hpp",
+   "category": "cpp_source",
+   "sha256": "6b1cf904e1bf7a9943c79b28f1675838e29ea51091d70c367932a1165ff520f8",
+   "bytes": 1469,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/lg2_decoder.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/outtail.cpp",
+   "category": "cpp_source",
+   "sha256": "b2d807fd1d4fe015eefa234918028709dbb0e98ade3b97145ae8653bd29a2aef",
+   "bytes": 29687,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/outtail.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/params_guard.hpp",
+   "category": "cpp_source",
+   "sha256": "194bcbc8f144a360d5f8415d88d49e844aafda515f6dc40f87422543b23982b6",
+   "bytes": 123,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/params_guard.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/path_policy.hpp",
+   "category": "cpp_source",
+   "sha256": "1c6cf39de6f6b190d527eb26c2070eb6d4736743b4586f551ad63f6da35b0ec0",
+   "bytes": 420,
+   "transform": "new_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/path_policy.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/primitives.hpp",
+   "category": "cpp_source",
+   "sha256": "aad1fe9554d8e25394b49d58cfcc655e5599cbc9529e2c34887bb70a4ce23420",
+   "bytes": 5999,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/primitives.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/reach_identity.hpp",
+   "category": "cpp_source",
+   "sha256": "4b550e12e7ca18abe00baf47271b01c79f5c820a706c6730e140d607c1a63838",
+   "bytes": 20675,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/reach_identity.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/reach_sites.hpp",
+   "category": "cpp_source",
+   "sha256": "79e034afd87704afde842fdd1cc8de3cbbb2665770d73d6ab97c6e81ff6e8d09",
+   "bytes": 1009,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/reach_sites.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_outtail_optm/stage_codec.inc",
+   "category": "cpp_source",
+   "sha256": "05d9b06e732546651da611e94e403c8a6096e5334515b6b3e8e9beed56995d16",
+   "bytes": 7881,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_outtail_optm/stage_codec.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_split16_optm/geometry.hpp",
+   "category": "cpp_source",
+   "sha256": "9dfea5e23a045636641d512a73102b9d5968a5fb70e7354d1a548ca65801bbff",
+   "bytes": 4180,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_split16_optm/geometry.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_split16_optm/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_split16_optm/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_split16_optm/scalar_map.hpp",
+   "category": "cpp_source",
+   "sha256": "20610eaa92c3bada615647abd5d2ce5989f7186374b83d1aaeb7c4d4dff3a50a",
+   "bytes": 24986,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_split16_optm/scalar_map.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_split16_optm/split16.cpp",
+   "category": "cpp_source",
+   "sha256": "284d2629e3282d7f759453f8c99bd158552da36f19913a869001b7899bc3417f",
+   "bytes": 12241,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_split16_optm/split16.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/bindings_optb2.inc",
+   "category": "cpp_source",
+   "sha256": "31117d5eb412d4d3edc8cf4a137ad0c5b58034907e0e429269a7d85fe41da40b",
+   "bytes": 10675,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/bindings_optb2.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/decode_reuse.inc",
+   "category": "cpp_source",
+   "sha256": "d4c579acf819c5fb3f2d891f6c6acab81ec1687cf8bfb5e386fd341037a7de0e",
+   "bytes": 5408,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/decode_reuse.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/geometry.hpp",
+   "category": "cpp_source",
+   "sha256": "9dfea5e23a045636641d512a73102b9d5968a5fb70e7354d1a548ca65801bbff",
+   "bytes": 4180,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/geometry.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/portable_bits.hpp",
+   "category": "cpp_source",
+   "sha256": "4309a826730758f4a4dbda24b73178f612a82d09bf50cd6b0671c86abd3132e4",
+   "bytes": 654,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/portable_bits.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/primitives.inc",
+   "category": "cpp_source",
+   "sha256": "5e5519dbbe41145146487512337401631ac8342c74f7357ba7ab781219a4c48e",
+   "bytes": 7236,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/primitives.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/tin.cpp",
+   "category": "cpp_source",
+   "sha256": "371d33d205655f75c809f0f9990a8054edf8e930a31733f72dbf916f87b4f1f8",
+   "bytes": 26958,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/tin.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/chain_tin_optm/unary_tables_optb2.inc",
+   "category": "cpp_source",
+   "sha256": "8ae6b6dd423aac2f583ad330b131ce745d29a064a18caf50f85b37fd624711f3",
+   "bytes": 6414,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "chain_tin_optm/unary_tables_optb2.inc"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_attention_chain_r02/attention.cpp",
+   "category": "cpp_source",
+   "sha256": "da5a6416491602777a3c83ac6230686e4889873570bedf7640dd7fc160459f7d",
+   "bytes": 5825,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_attention_chain_r02/attention.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_attention_chain_r02/attention_impl.hpp",
+   "category": "cpp_source",
+   "sha256": "713f0a6b5522e63ebdcb3652bae13c6903d5baaf16ba56fd0738a297d5157206",
+   "bytes": 22022,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_attention_chain_r02/attention_impl.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_attention_chain_r02/mem_vectors.hpp",
+   "category": "cpp_source",
+   "sha256": "c8cf0847d575885171b140925c92f1d69e76d5554d6b43b0b2ec1e20bcfe3434",
+   "bytes": 4007,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_attention_chain_r02/mem_vectors.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_attention_chain_r02/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_attention_chain_r02/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_ffn_contract/ffn_contract.cpp",
+   "category": "cpp_source",
+   "sha256": "c0aca52a9c5e08902e7d5827a70513ac6c9bcb1619ac343d8c275fbf4591fee5",
+   "bytes": 30084,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_ffn_contract/ffn_contract.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_ffn_contract/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_ffn_contract/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_ffn_expand_resume2_chain_r02/ffn_expand-resume2.cpp",
+   "category": "cpp_source",
+   "sha256": "fe67bb0dc7c878e69291798425c77a3c3f013863e11f36a48e533323ede40287",
+   "bytes": 17392,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_ffn_expand_resume2_chain_r02/ffn_expand-resume2.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_ffn_expand_resume2_chain_r02/mem_vectors.hpp",
+   "category": "cpp_source",
+   "sha256": "c8cf0847d575885171b140925c92f1d69e76d5554d6b43b0b2ec1e20bcfe3434",
+   "bytes": 4007,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_ffn_expand_resume2_chain_r02/mem_vectors.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_ffn_expand_resume2_chain_r02/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_ffn_expand_resume2_chain_r02/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_chain_r02/mem_vectors.hpp",
+   "category": "cpp_source",
+   "sha256": "c8cf0847d575885171b140925c92f1d69e76d5554d6b43b0b2ec1e20bcfe3434",
+   "bytes": 4007,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_chain_r02/mem_vectors.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_chain_r02/qkv_projection.cpp",
+   "category": "cpp_source",
+   "sha256": "610babd79015df2476e1a0db79273d2b3a8e5fab1b1970c54117bfdbcec29b2c",
+   "bytes": 5832,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_chain_r02/qkv_projection.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_chain_r02/qkv_projection_impl.hpp",
+   "category": "cpp_source",
+   "sha256": "8c25e447458f442eb5d96cd11d3ed1380557658ebf0211845459dfc8ce6cf89b",
+   "bytes": 21659,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_chain_r02/qkv_projection_impl.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_chain_r02/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_chain_r02/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_release_resume1/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_release_resume1/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_qkv_projection_release_resume1/release_resume1.cpp",
+   "category": "cpp_source",
+   "sha256": "5c31fe9afc0199a587df0d53c19bbf9e7d95053e86f99138b452ed60fb12c1dc",
+   "bytes": 1447,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_qkv_projection_release_resume1/release_resume1.cpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_repack/qmma_sm120.hpp",
+   "category": "cpp_source",
+   "sha256": "2b85ddfaeb37eb5d16560224def629ff29a043c4421b5b571749103b398e5452",
+   "bytes": 3336,
+   "transform": "none",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_repack/qmma_sm120.hpp"
+   ]
+  },
+  {
+   "repo_path": "cpp/fam_repack/repack.cpp",
+   "category": "cpp_source",
+   "sha256": "8d721e2dc8d4a2530a92548c0e19a4f4854dc9ef6652e75472a269bf2480663b",
+   "bytes": 10020,
+   "transform": "edited_m2",
+   "whitelist_root": "M2SRC",
+   "whitelist_paths": [
+    "fam_repack/repack.cpp"
+   ]
+  },
+  {
+   "repo_path": "devkit/README.txt",
+   "category": "run_driver",
+   "sha256": "4048cd5bf7873fc260f14e6838880c6e984b11f6e1107aa1b953ba5139d8ac51",
+   "bytes": 1946,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "README.txt"
+   ]
+  },
+  {
+   "repo_path": "devkit/bridge.py",
+   "category": "run_driver",
+   "sha256": "0e43e7626b5b73111f2a7c8be8a496fc6d9c7c677838b8ad36ee6465cf9d348d",
+   "bytes": 15865,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "bridge.py"
+   ]
+  },
+  {
+   "repo_path": "devkit/data/manifest.json",
+   "category": "run_driver",
+   "sha256": "9eb99bfc72b6d0d134f16f1ae2973d7a1bab71be64e8b8d3fbf817adb5f415da",
+   "bytes": 164728,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "data/manifest.json"
+   ]
+  },
+  {
+   "repo_path": "devkit/data/reference_f0.json",
+   "category": "run_driver",
+   "sha256": "bff5ad9e085c4a1d627964dd069fb199248a3ad71988752baf1a7da3b70546b3",
+   "bytes": 87580,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "data/reference_f0.json"
+   ]
+  },
+  {
+   "repo_path": "devkit/devkit_worker.py",
+   "category": "run_driver",
+   "sha256": "d4e1e64a54c7d7f7b95dc4fd76b494e8b0905d50bc77bce6a8da876b1473dbdb",
+   "bytes": 4557,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "devkit_worker.py"
+   ]
+  },
+  {
+   "repo_path": "devkit/payload_layout.py",
+   "category": "run_driver",
+   "sha256": "847003fb4135713c296522c6f13542e1dd3fc50d3befed635300a3e48fd0c4b9",
+   "bytes": 4774,
+   "transform": "added_after_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [],
+   "note": "not a whitelist entry; layout step added after the M2 whitelist (end-to-end test, 2026-10-21); this repo copy adds --repo/--check-map"
+  },
+  {
+   "repo_path": "devkit/plan_format.py",
+   "category": "run_driver",
+   "sha256": "0a05d252f46aeab08923b2ba62dc230e5c9535000be15a013d43100f27e43a17",
+   "bytes": 9802,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "plan_format.py"
+   ]
+  },
+  {
+   "repo_path": "devkit/relocate.py",
+   "category": "run_driver",
+   "sha256": "578f32b9a0f8be31691a02d74671a9dd360118032de1ca77196c8c6a636d818c",
+   "bytes": 11546,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "relocate.py"
+   ]
+  },
+  {
+   "repo_path": "devkit/run_1080_f0.py",
+   "category": "run_driver",
+   "sha256": "ab22a905e9eb9f6d227bf44fb603021899305f20aaffb3f414a6b5e7578a9b8c",
+   "bytes": 4357,
+   "transform": "new_m2",
+   "whitelist_root": "DEVKIT",
+   "whitelist_paths": [
+    "run_1080_f0.py"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_chain_entry_optm.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "915c1a62bf80fbe97860876ea49dac96fff40c40d7b449f129bd8834ae207642",
+   "bytes": 482608,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_chain_entry_optm.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_chain_outtail_optm.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "455c74a96425ab1c47e11fbf87fd1e4c7ccec2137a110e40199ad763a8b4ba8c",
+   "bytes": 502840,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_chain_outtail_optm.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_chain_split16_optm.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "2d8a716e12da052046bad17c3e5c1c798a742f8f53ae0b0d9cb9527d3dabc5f6",
+   "bytes": 406376,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_chain_split16_optm.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_chain_split16_optm.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_chain_tin_optm.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "70463754e06cfab1bed78a6a363e7faac43a92abb595849ef4eb4461f29bed10",
+   "bytes": 489752,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_chain_tin_optm.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_chain_tin_optm.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_attention_chain_r02.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "e404f5171e020afd695af8daf6e37ef58e6c6920d989b3acd660a62913c8a8ec",
+   "bytes": 336736,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_attention_chain_r02.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_attention_chain_r02.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_ffn_contract.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "7b7b329963035d524725f814de3b2f37f7708baa2c78608346ffcd19ef310b42",
+   "bytes": 335536,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_ffn_contract.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_ffn_contract.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_ffn_expand_resume2_chain_r02.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "7033f32bc81e529f1d909d00131ce68e707083e378d9373b5cc446fadc18b612",
+   "bytes": 286304,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_ffn_expand_resume2_chain_r02.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_ffn_expand_resume2_chain_r02.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_qkv_projection_chain_r02.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "f198f7fdc1302c110bfa778e61240593d3716beaf0fda2acfbf1811a10b66173",
+   "bytes": 351096,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_qkv_projection_chain_r02.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_qkv_projection_chain_r02.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_qkv_projection_release_resume1.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "0c49c40c1a9b6510d2f504fcaef1e626e5efc7fa5f63f1469a4206a286efae4e",
+   "bytes": 199880,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_qkv_projection_release_resume1.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_qkv_projection_release_resume1.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "modules/dlssnr_fam_repack.cpython-313-x86_64-linux-gnu.so",
+   "category": "compiled_module",
+   "sha256": "5bd9fd65b22ff2c56133f33802b1a4f169b33586873d9b6a0437694da4eac94a",
+   "bytes": 233208,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/build/dlssnr_fam_repack.cpython-313-x86_64-linux-gnu.so",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/build/dlssnr_fam_repack.cpython-313-x86_64-linux-gnu.so"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L000-call.params",
+   "category": "launch_params",
+   "sha256": "ba2e61aefd78d780acd2317a6265c11c31a026d0127ee1f5c4fabaf067f31407",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L000-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L001-call.params",
+   "category": "launch_params",
+   "sha256": "af98866b0c4495b5c429f509803560e5864ac525d122802410e00f4cdd00c51c",
+   "bytes": 16,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L001-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L002-call.params",
+   "category": "launch_params",
+   "sha256": "77b3043440694f77a6717bf835cac9e34c7dd1eb5e204b2da28d9b3393a4a206",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L003-call.params",
+   "category": "launch_params",
+   "sha256": "23a7db8ba7744f3f3b7ae4b3c9a72363b5e77d499ff33ae35b33995fc7cdc0d5",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L003-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L004-call.params",
+   "category": "launch_params",
+   "sha256": "105025231e1f57c4fadb617ec307796281ca223fc5a006aece4c628a2aa8aac2",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L004-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L005-call.params",
+   "category": "launch_params",
+   "sha256": "e9b782a1bf24dc1890ec7923969d71700e0f324ea4fa554079f65cc27a0e80d2",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L005-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L006-call.params",
+   "category": "launch_params",
+   "sha256": "7c4f858f8c4865e9b6b36ed535fa86cc1bec7246dcb0d54a303f90030cd1aeee",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L006-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L007-call.params",
+   "category": "launch_params",
+   "sha256": "0ffd4a15e51beded80d3b862013b6366ba8bf47fcaf1e8ed7a1c3a1bee3e5e97",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L007-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L008-call.params",
+   "category": "launch_params",
+   "sha256": "7020858f9fbef1e8542efa02af9ad0140fdf329d03a5e5aecd79e436044a986d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L008-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L009-call.params",
+   "category": "launch_params",
+   "sha256": "2e773701ec28f66f53109645019db7d2987e3ce072eeaf640d80386ef34209ea",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L009-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L010-call.params",
+   "category": "launch_params",
+   "sha256": "7073421190b9e96b3109f19ebc17c58a09867c6276136b07848638507a63c619",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L010-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L011-call.params",
+   "category": "launch_params",
+   "sha256": "0ebd3d5c8517062c006d0ae4f611839e76a2cb6c6ba0c61da706d959a0c7bd7a",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L011-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L012-call.params",
+   "category": "launch_params",
+   "sha256": "a428c1f6da522a5396f65b0865680f1c505e3674cb525164d0fa571e23c6ed9c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L012-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L013-call.params",
+   "category": "launch_params",
+   "sha256": "00d867cb68e03d00dca9f9fef77e3679135e5ac07280863b24e0802aa8ce1797",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L013-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L014-call.params",
+   "category": "launch_params",
+   "sha256": "871ce48d057a5a5b6b61687108cd22cf577bafe0b5203bf4ea14a0070b348ab5",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L014-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L015-call.params",
+   "category": "launch_params",
+   "sha256": "95cb9ed785ab1116a8bd490a02fe426cde62dd917f705eab1caba8115b2cea76",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L015-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L016-call.params",
+   "category": "launch_params",
+   "sha256": "20d675b62f60a8b3d594a0772bf27eb0539f011151450d909edd9bb040c2c0bc",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L016-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L017-call.params",
+   "category": "launch_params",
+   "sha256": "fe2156a1b51c722ecd18ae2234ca3627586e41580298c117286fe41ddf1235e8",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L017-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L018-call.params",
+   "category": "launch_params",
+   "sha256": "eb757f6177596426e2fa4c0d903419ba1f64748875b589c37ed49b52e1c94299",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L018-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L019-call.params",
+   "category": "launch_params",
+   "sha256": "d609da8675604f4c6016acd16fec0e96911ab3118afb4672b0d10ba970a18df6",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L019-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L020-call.params",
+   "category": "launch_params",
+   "sha256": "cd203e049d39fe6125062c6899733cd3e582db0adbdfcd42ecaff03691b444fe",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L020-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L021-call.params",
+   "category": "launch_params",
+   "sha256": "e7efea37380411bf5b3a7b8b0dc9089cb3638bc4bb6e44707d3bca4fffbb584b",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L021-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L022-call.params",
+   "category": "launch_params",
+   "sha256": "398fe5dc545079ceffbdad5d9fc194293e96eede8fa80c145f7ed9983c38ef1d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L022-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L023-call.params",
+   "category": "launch_params",
+   "sha256": "7866642c168107c62e5b4b8dee6989e2e0a3e0d8632fbebe18e3b8a903944a1a",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L023-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L024-call.params",
+   "category": "launch_params",
+   "sha256": "396ae319804cd9a1ff832cb305b3806a00c0118ff57ef6198a21edbe7b9b8200",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L024-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L058-call.params",
+   "category": "launch_params",
+   "sha256": "971e19e34db8e5304fd954fe1f74540cf1f43259b47cca2561e727ad64f72fcd",
+   "bytes": 24,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L058-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L059-call.params",
+   "category": "launch_params",
+   "sha256": "e0687ce18b50b1550346361377e095338126513e1e3be94163a3b461e7f77c3b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L059-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L060-call.params",
+   "category": "launch_params",
+   "sha256": "dd1acd00c9382fd9279b9a13b60bdec5cf60266e8ebe957ab7e15fe5ebe2efc4",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L060-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L061-call.params",
+   "category": "launch_params",
+   "sha256": "4a9cf5c89a30103f7647803f6d127802b2e41f65ef675bd7147bbe19b9f9ada3",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L061-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L062-call.params",
+   "category": "launch_params",
+   "sha256": "2ba78b61f364b3fc9eeb288ae1e37c5c6725a1618ed267fe2d2a2ba580506174",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L062-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L063-call.params",
+   "category": "launch_params",
+   "sha256": "6fca6a1199e6dcda683fd2154ebe5135d69b5e45918fa62bb8c960c93015b8eb",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L063-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L064-call.params",
+   "category": "launch_params",
+   "sha256": "7e77047d172aaab1849c224a3e7d9266973f1d19b47a2457641d71abb90d9f21",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L064-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L065-call.params",
+   "category": "launch_params",
+   "sha256": "9b5c4be873ca72e28221699b17d40580dec6096cb6bb925b4171a712760332cb",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L065-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L066-call.params",
+   "category": "launch_params",
+   "sha256": "db04a280ff6a55cdb9a75535ce67ae553e118c2696114c21b9c37c126f63eb98",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L066-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L067-call.params",
+   "category": "launch_params",
+   "sha256": "1c9eb60ad9f7c743e642b4bf0ac8c3fc564d784bcf9155d4a2436f76c4bf8136",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L067-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L068-call.params",
+   "category": "launch_params",
+   "sha256": "6ee98a97560d9845595345e010a97fea5d688770996f219216ac77cd9d881215",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L068-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L069-call.params",
+   "category": "launch_params",
+   "sha256": "ec9dad9bdbf19531aa4a715a70922a961b42a326ba28dc4e81f2cac138160a36",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L069-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L070-call.params",
+   "category": "launch_params",
+   "sha256": "34c262c3ec63fe4520289684dc5be162f90375ebc4734eb98c8044b211c291ec",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L070-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L071-call.params",
+   "category": "launch_params",
+   "sha256": "98b921bb222ea4bab0d71bc23977ee7c2cf535093e14430d98916593256fbc92",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L071-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L072-call.params",
+   "category": "launch_params",
+   "sha256": "b33d98104ed4346a43b1fc580b9b9b5e134b9193b707f538da33c0d3c7c7c797",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L072-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L073-call.params",
+   "category": "launch_params",
+   "sha256": "5cf2c7d2c1da07c9c3357a9f7452d1d17564c96daa45976dacfade8c082bbb50",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L073-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L074-call.params",
+   "category": "launch_params",
+   "sha256": "aaa5b9dbc96e342ebca35b1a605089173db8fbf1381e81da96a8da0cef2d05d7",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L074-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L075-call.params",
+   "category": "launch_params",
+   "sha256": "c643df393f442cac320e0fc1887be1ae0b4a727bd5b12d2f6cfd0cff56ab3d3c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L075-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L076-call.params",
+   "category": "launch_params",
+   "sha256": "6c3644a33d7962806fd412f87ae0e1f338b1b3a56bb5c4372b15b26aacf4d202",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L076-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L077-call.params",
+   "category": "launch_params",
+   "sha256": "49877c827e806cc35cfcdf505bf29773a107b2781a2ef8dfd3cf1aeeffdad77e",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L077-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L078-call.params",
+   "category": "launch_params",
+   "sha256": "bfa61f437cd5dbcb998e97f452df06a7f9846d27852d19fb5f66319a88f684f3",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L078-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L079-call.params",
+   "category": "launch_params",
+   "sha256": "36e42a975b5f587adb881086d5a7373944e0a9b354a74edaed12cb54902f807f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L079-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L080-call.params",
+   "category": "launch_params",
+   "sha256": "77c8b0a9d3880280d358677a9cf1739aa59da96500a716fd39e7ecb3cf7aff2c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L080-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L081-call.params",
+   "category": "launch_params",
+   "sha256": "0fd10c8f02a47595b8d724c5889ef7994a8c1bcbc5f0f4e3989da0a1496cc41c",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L081-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L082-call.params",
+   "category": "launch_params",
+   "sha256": "4fb3aadd4f683eba23a692d7a953aaa272986df11417e64b57861acb9ab67302",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L082-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L083-call.params",
+   "category": "launch_params",
+   "sha256": "4485b6bd461f30275b545491a3ca9ced3f3abfcfa3c0e9d854b60af00651bf66",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L083-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L084-call.params",
+   "category": "launch_params",
+   "sha256": "2b9625479db1aca4ea845e756858c197c0335aaed5f4ca392be025a7c40472c9",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L084-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L085-call.params",
+   "category": "launch_params",
+   "sha256": "398e4b112d0b0da345c9e6f3ee6314499030698506d630e372a7508d557a1d3b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L085-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L086-call.params",
+   "category": "launch_params",
+   "sha256": "ad563663de003d98dddd90bca10193384a75e8d177006b977748774c09719b5c",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L086-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L087-call.params",
+   "category": "launch_params",
+   "sha256": "44986750fddd07d2b7284edd34cb5f8bd1a6b3d8eed5cab42f8a860137ae4d4f",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L087-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L088-call.params",
+   "category": "launch_params",
+   "sha256": "cd3d7493b4e25bb7572e81a3b75e7671ce8678798abb79294ed0e33cffd5a338",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L088-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L089-call.params",
+   "category": "launch_params",
+   "sha256": "dc4ae619045df187f91ed78ed66eb937b626a3a41c5efe49a943cb2a5060b29e",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L089-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L090-call.params",
+   "category": "launch_params",
+   "sha256": "f0b3fca299a405300dc822d65e3eacf98670d5aa8765a5548654bfa3461715d3",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L090-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L091-call.params",
+   "category": "launch_params",
+   "sha256": "d67e32527511ce65fc87325cf98cdc73c4460f3cb3f5030fde5e43ac87db41a6",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L091-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L092-call.params",
+   "category": "launch_params",
+   "sha256": "13c172cc545baa844853b9e007f7f3fdae01dd74785c3796109a7cf0c3cc0071",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L092-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L093-call.params",
+   "category": "launch_params",
+   "sha256": "0efa7b29db565d2b7cc0f6588afde6f4be360bfcd5003b7888034b17878fbb48",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L093-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L094-call.params",
+   "category": "launch_params",
+   "sha256": "300970626ec6312a4fccf01a369e742d913671d6e1625ea6d89adb5e5235372e",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L094-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L095-call.params",
+   "category": "launch_params",
+   "sha256": "c4073efe9de39f6f2209ca5c88ea970c0970d513756adc313900b1fcf721188f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L095-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L096-call.params",
+   "category": "launch_params",
+   "sha256": "9e36d452b9f833237d404b166a6ad5ba08ae9aabf1efcc699fcf082a17a545d7",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L096-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L097-call.params",
+   "category": "launch_params",
+   "sha256": "d1a7bd32b6f388bd60a99e95f9ca1bbfe7e07bbf9b8871a1330968521b39eb14",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L097-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L098-call.params",
+   "category": "launch_params",
+   "sha256": "65ae1a0dc9c6632c72c22997ebf33c2912c9d94d6aa04acfdd30d61c4ffbfbbe",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L098-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L099-call.params",
+   "category": "launch_params",
+   "sha256": "09a89a2ce70157732df8e265ae5f68dd6133d1901951e447b1ab5018305e9313",
+   "bytes": 24,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L099-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L100-call.params",
+   "category": "launch_params",
+   "sha256": "93b3bd1004fbba1599875003180e32740ec5210e844e175276e057394a7ff301",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L100-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L132-call.params",
+   "category": "launch_params",
+   "sha256": "bdbacd39dafb00631efe084d41c97226db47cb95c3b7ac4a72dfa7295442a5fd",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L132-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L133-call.params",
+   "category": "launch_params",
+   "sha256": "df37ebce6d32dd60e39ea25037c62be7afc5b1c34d3b0031ab03a6e4de93c633",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L133-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L134-call.params",
+   "category": "launch_params",
+   "sha256": "cf06a8ec941a2f563a69837d99ec0d44b19706a0f4182cb3ec0234af0ef0f20e",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L134-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L135-call.params",
+   "category": "launch_params",
+   "sha256": "c415ae72c8a601310a2ffe131b7ae54ebd673d77d4d9e954f6eaafc8acf5c888",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L135-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L136-call.params",
+   "category": "launch_params",
+   "sha256": "405e28a9ade361869422a9fa98ec485ed34518384937b44af3120dc289250f22",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L136-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L137-call.params",
+   "category": "launch_params",
+   "sha256": "da12119c750856edcc179384ae1cb09d151b72e5fba88b0862ead13b2f843808",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L137-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L138-call.params",
+   "category": "launch_params",
+   "sha256": "1d317a33638b2f05e9948f4077dece1dfef0513b73d453e53f0d413cd0f3772c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L138-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L139-call.params",
+   "category": "launch_params",
+   "sha256": "7b6793b6e436b729a32b6c6a6156f8084a8545fb1ec2d2fc2bddd0981841b1da",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L139-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L140-call.params",
+   "category": "launch_params",
+   "sha256": "d9b5de1380e4e208489b936f5dc4b56281312ee78e415a7b7c316fb78c8eeb4c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L140-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L141-call.params",
+   "category": "launch_params",
+   "sha256": "ad814fa01a9ada5cba84e828b609b14364a19b0b1a9681b3c3fc8d074bf7f116",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L141-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L142-call.params",
+   "category": "launch_params",
+   "sha256": "68c162a48dedcc3eba6cd6fd0fcc96b385bae2e3a21285c07574a7e62600b2ef",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L142-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L143-call.params",
+   "category": "launch_params",
+   "sha256": "f43c0f85bc250eafedbcc59d88736849b0d8bc3739336129193aefb457a70fd8",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L143-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L144-call.params",
+   "category": "launch_params",
+   "sha256": "02792d45caac686496c85ca80a7c92083ddf8640b4fe1887de24485ef6edf5b7",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L144-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L145-call.params",
+   "category": "launch_params",
+   "sha256": "65504348b6c28d9a2fd15d12864c430cd4539b09ad69f05110a75c027de04008",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L145-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L146-call.params",
+   "category": "launch_params",
+   "sha256": "a1e153ce93e406c6f3c9e4d99a060ab91604db5a02545569458083554029ad24",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L146-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L147-call.params",
+   "category": "launch_params",
+   "sha256": "f431afdf3abac37634df6146f48cdaba04bb90dfc83c6e85921369de6b534678",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L147-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L148-call.params",
+   "category": "launch_params",
+   "sha256": "9ad6e2c3cc463d5df66575b3052660ba88f24ddf666fddc6be2e983894724ce7",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L148-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L149-call.params",
+   "category": "launch_params",
+   "sha256": "1fc67658ab17079b6fb154afc02d64cd559d737cff7ccb16c2ed60568c094dcc",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L149-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L150-call.params",
+   "category": "launch_params",
+   "sha256": "2dfaf9aba2e015cf3623641a2676ef0c59a912e2be0d94dd7bed9df23310411c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L150-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L151-call.params",
+   "category": "launch_params",
+   "sha256": "cc6144d89b3a8b0896107c1f5e30448c697423d4d60c84943df197c3b4984ba6",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L151-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L152-call.params",
+   "category": "launch_params",
+   "sha256": "ed92c9c7ae97e4bbd4e67c74564767bc95cdc5bc56bab6bf02679d3a35890020",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L152-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L153-call.params",
+   "category": "launch_params",
+   "sha256": "e36b70c3d8265060e5380299dcd6a8ecbc7fd1e7ddcd8210baf4494cf5d61681",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L153-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L154-call.params",
+   "category": "launch_params",
+   "sha256": "feb011d74f3fdcea09012a7cc5db50170ccf224ed13f101577359c5722558d3f",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L154-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L155-call.params",
+   "category": "launch_params",
+   "sha256": "a611610fe17e50f30482b4f96f9e3d5a23e6f6f2844c95c722fc3b73b020001d",
+   "bytes": 184,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L155-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L156-call.params",
+   "category": "launch_params",
+   "sha256": "889081e7422e9252de4a6ebb29795f30572fa529aa946faa0444a3a15096927d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L156-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-000/L157-call.params",
+   "category": "launch_params",
+   "sha256": "dbd85b53444d4ddf8f5dd266bce10920e9f68c95663ec6d9e322d594c08d5ac3",
+   "bytes": 376,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000/L157-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-001/L002-call.params",
+   "category": "launch_params",
+   "sha256": "7f6b6d640e7e21a03aa247ef5a63905620cb65536debef5e033c1ed499a7390b",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-001/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-001/L155-call.params",
+   "category": "launch_params",
+   "sha256": "0c4c0e7f8666daaa4f746a8abc6918f4377923c053be90430b2f1f6c498368f4",
+   "bytes": 184,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-001/L155-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-002/L002-call.params",
+   "category": "launch_params",
+   "sha256": "cb0667e2f5dc35956c292defc54e1fc2784252c12116d1e6a8ed2a0390eced2d",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-002/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-003/L002-call.params",
+   "category": "launch_params",
+   "sha256": "5a2bcac639834d0fa569862c745a708e59d24a7840da21673587e93904208b0a",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-003/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-004/L002-call.params",
+   "category": "launch_params",
+   "sha256": "7453b481704a0726cb43974265e9d7e66df1706d4ab4a305c4f5de6c804e66c2",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-004/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/chain_input_v2/frame-005/L002-call.params",
+   "category": "launch_params",
+   "sha256": "719b00ba941327051d6687cc76787ccf31071936ba7a3de75ddfcac1d99ae2fb",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-005/L002-call.params"
+   ]
+  },
+  {
+   "repo_path": "params/f3_1440/L002.params",
+   "category": "launch_params",
+   "sha256": "1ebe5bf85569a02f43ee909819308ef77139177fd4e5fd04ef8964acd04bdb59",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/f3-params/L002.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0000.params",
+   "category": "launch_params",
+   "sha256": "7f02e9ff3b5c377909a82bfd4adf37f591a38caa25a5340490876d35a52ceea6",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0000.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0001.params",
+   "category": "launch_params",
+   "sha256": "f94ccee6d2c1162de437207938a71355596bf7c565ecee1ffa48c51b8134035f",
+   "bytes": 16,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0001.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0002.params",
+   "category": "launch_params",
+   "sha256": "91845a20d717cea97a0485a992de2c75a437e3c5261a723742887e29bf203c7b",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0002.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0003.params",
+   "category": "launch_params",
+   "sha256": "acb78e7b9ec57f2c275c8569685334238944c3517d5ebb54b41c69a5157310a4",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0003.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0004.params",
+   "category": "launch_params",
+   "sha256": "7b5fa3f781ce367e1df34bd626af2ad4d2058ad7226f7b811275b3e837d50bc6",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0004.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0005.params",
+   "category": "launch_params",
+   "sha256": "166cd92a4124618ede0300cf003ec9178e2ac4c521ded95751bfce1d45e83b68",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0005.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0006.params",
+   "category": "launch_params",
+   "sha256": "e4013481246feec2ccc3c0f55b5d2aa280103d19da04d69bb1f7f2a375b1fd4a",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0006.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0007.params",
+   "category": "launch_params",
+   "sha256": "84050ea76eec4a299eba18d8ba6e7a03200cbc4a42135ee28dc02643c151c074",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0007.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0008.params",
+   "category": "launch_params",
+   "sha256": "ce54f1ab36246cfb1dd1ac92cb925e5ab4e558564b77647c1103c96161c14748",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0008.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0009.params",
+   "category": "launch_params",
+   "sha256": "8e7f600276f0ac0a4677f835d4915e7981eea545590f8449a0e9e3968977879d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0009.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0010.params",
+   "category": "launch_params",
+   "sha256": "93db1dddce3a23a5bc6eb8142b2d4007717b87d278aeb0ca002137505df11f9a",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0010.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0011.params",
+   "category": "launch_params",
+   "sha256": "fd4a8647878aec04ece77eb969076e1002a75172920b6dd3c9a5c0e9f546314c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0011.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0012.params",
+   "category": "launch_params",
+   "sha256": "d157a7007f876d91c6b7596b09a38ff91767d3278f2dbb5ab2e9cedb1b265b6e",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0012.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0013.params",
+   "category": "launch_params",
+   "sha256": "d2f5fa3a37bfa6430562030726c2c245c0f9d87483f3010030ccedaf2e61311f",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0013.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0014.params",
+   "category": "launch_params",
+   "sha256": "1b8881edd9f23a27fe28397422b9734ccc5df823d02e4b2ecdd98cb82af0c640",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0014.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0015.params",
+   "category": "launch_params",
+   "sha256": "adab973e3f997ec2e60a63fdfea23b74fe56e4b419cad648c30e06d6d58e535d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0015.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0016.params",
+   "category": "launch_params",
+   "sha256": "5a9f5d52ffdea229995e40524319507f135020029d668c0cde31009aa010880c",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0016.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0017.params",
+   "category": "launch_params",
+   "sha256": "072c97ebb55bacbaf51b1d7c94829fd0b354d5bfa9a32ec9de76c1f176e1413a",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0017.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0018.params",
+   "category": "launch_params",
+   "sha256": "61ddbe0248d9936a555864b96ca62a7e1d2719e92e367452ad1c9e9ccda49024",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0018.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0019.params",
+   "category": "launch_params",
+   "sha256": "722fc27fa3307cd53b9ab9a4f420ebd79dec1c23cca9323b34db2d7761a409c5",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0019.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0020.params",
+   "category": "launch_params",
+   "sha256": "793ffa4990ab9cf288708b32e76d0507831e86431d511e6fbe1ae6a5176a1aac",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0020.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0021.params",
+   "category": "launch_params",
+   "sha256": "668dfb10ec1f54055d17a791228af2ea596f2cc489821f0c90966411abe15059",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0021.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0022.params",
+   "category": "launch_params",
+   "sha256": "6f85ff6eea761e265337cc9e3297193b60bab3c205833404068629c5f6f9015d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0022.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0023.params",
+   "category": "launch_params",
+   "sha256": "ad25c4eda81af486653e91d218b3123805ba9a8fa1becff8c59cbf2a6720716d",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0023.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0024.params",
+   "category": "launch_params",
+   "sha256": "1851a18d9f4d17e18e2156f98796f4eb3e6b92df24197e67874a380d527ab235",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0024.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0025.params",
+   "category": "launch_params",
+   "sha256": "eadfc764d4ed38709d9833a95c7afe315ea520ad7ff9e3191b204d7453288242",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0025.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0026.params",
+   "category": "launch_params",
+   "sha256": "a30b05709e3adaf41aa13f9d5ab101ebf8e35082eecca0808d6674a4e5684918",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0026.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0027.params",
+   "category": "launch_params",
+   "sha256": "51d03034cf52cd0a833ddff876b6befb1cd95297e5b9ada19960b3f87177d4b6",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0027.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0028.params",
+   "category": "launch_params",
+   "sha256": "6b4f23fd4cc593bf1be0481b98a6ee5eb4fbe959a47cebe598bca0c82b20d574",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0028.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0029.params",
+   "category": "launch_params",
+   "sha256": "c60d8fbe19260df3c87c8108d8e51dad2bb01979a40d0aaf12f1890d4d6b9939",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0029.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0030.params",
+   "category": "launch_params",
+   "sha256": "de8a794c82095410b882e560d2417d30e8082e9fae9a38c619ca844b603de3d4",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0030.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0031.params",
+   "category": "launch_params",
+   "sha256": "e59d77888f6f2fa8d8912dcd476954b6e2e3c5b66e1842c83df6c9c8cf3a2a69",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0031.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0032.params",
+   "category": "launch_params",
+   "sha256": "a5dc4dc094824959ec60af99d2b8200ecc5cfbaca59c2015b8c14fa5bde33156",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0032.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0033.params",
+   "category": "launch_params",
+   "sha256": "9df65851175b2a63b679dcd1dc35e1e533037380783c00bdbb8f98eca3071580",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0033.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0034.params",
+   "category": "launch_params",
+   "sha256": "6c2276fa3bedaaaeecf7af7fdc5da9c0dd581fd3640a61070e71f561cd7be39f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0034.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0035.params",
+   "category": "launch_params",
+   "sha256": "8ee0e026156229ae6acbb7537706f35542059e0589d977a0ab7fa3065d386e91",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0035.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0036.params",
+   "category": "launch_params",
+   "sha256": "c2d86202c2f751e96e5bb091bc905924766abfe63dcbcba55b6b1a327ede7b43",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0036.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0037.params",
+   "category": "launch_params",
+   "sha256": "d868c4fcbc01dca0354c1b1e1a1f8dee2f1986cc2d780a531e404462ea691b88",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0037.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0038.params",
+   "category": "launch_params",
+   "sha256": "e97ff718b565c712381e409a5049d37c41b4c38efadc6ed29ef689b30c612dd1",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0038.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0039.params",
+   "category": "launch_params",
+   "sha256": "063db4d8c9cd473398df44511a9280b1b717cb66e373e771433ddaedcbc06593",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0039.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0040.params",
+   "category": "launch_params",
+   "sha256": "3b1f6bcd62557438d5d7ba868398b87f81e1056337ea557c657c4d34e2735671",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0040.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0041.params",
+   "category": "launch_params",
+   "sha256": "7d002a401abd1d07d87396d50f817d47b863dce3c31b6d23133a7ae1de4eb179",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0041.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0042.params",
+   "category": "launch_params",
+   "sha256": "a0a2cb137ce7d90475ac2ca829fcd6e4ac24d3c318738aa38d615e8f1bdd60ec",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0042.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0043.params",
+   "category": "launch_params",
+   "sha256": "d712858a1515bed5cafd8d3b3f41567ecd5a1006f411b7b2ade7aecc8d65c428",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0043.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0044.params",
+   "category": "launch_params",
+   "sha256": "2da354fab15a2f59fa72b937affc53192c37c4922127c0e7f3412942248b1aa9",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0044.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0045.params",
+   "category": "launch_params",
+   "sha256": "206fbcf4041f4fd01aad9d1b09de3cb5cbbe08bc9dd563ed669240ba1fb9a0c2",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0045.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0046.params",
+   "category": "launch_params",
+   "sha256": "1cf0fe775ed0d6307e893a762cfeba5398b21b4a71ecce1934a9c9bb92781045",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0046.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0047.params",
+   "category": "launch_params",
+   "sha256": "9b8694d63163d568f926f10a8ef5adb8d34abb4f8929f1aaaaf3db8f5b66543c",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0047.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0048.params",
+   "category": "launch_params",
+   "sha256": "760cf7e2eab191c996b8c4c4fa5f9c1057d51f7367b61d53587523f70014413d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0048.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0049.params",
+   "category": "launch_params",
+   "sha256": "c605a3243beb7f734f7ba070f87a0dfa0ecca044def688e986386b862159afef",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0049.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0050.params",
+   "category": "launch_params",
+   "sha256": "e521d4e1a88b37d0f56c898f78e47552675ee330984d9716a0ebb79507b858bf",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0050.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0051.params",
+   "category": "launch_params",
+   "sha256": "c88fb93b5ad68a28349a9f32e92e857c0f56b98a7d46021398d2fc328250b478",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0051.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0052.params",
+   "category": "launch_params",
+   "sha256": "8c36e70e2c6bf23d9115914935ef5952e1d535328033fa11cf984aa6bd0344db",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0052.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0053.params",
+   "category": "launch_params",
+   "sha256": "76ee999aa84f439ded36618e24ef8d8337d2b185e343b4127543890b068446c2",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0053.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0054.params",
+   "category": "launch_params",
+   "sha256": "b8d618f36fd33fc9e2af9040e1ce2c66ca0e6dd9bddb5b94b5df865ee33a845c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0054.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0055.params",
+   "category": "launch_params",
+   "sha256": "c2bfae411472009d2300608ddfaa1a4a29db59f20530b2d1aff4029d09ea56b3",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0055.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0056.params",
+   "category": "launch_params",
+   "sha256": "c2a5c6b4ec7d0be1ac6b0967b023b585d8f4428ee5a3f7424ecac0d993324a62",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0056.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0057.params",
+   "category": "launch_params",
+   "sha256": "5ea3e5b3943c561eb6c89eeb578412916ad98626aa1e1dd14fdf6ff10a2f71cb",
+   "bytes": 40,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0057.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0058.params",
+   "category": "launch_params",
+   "sha256": "fcc1ff69574733a25d85655ae488659ee168988e47bd0d13d1305ab62c5660ec",
+   "bytes": 24,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0058.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0059.params",
+   "category": "launch_params",
+   "sha256": "49cf0bba4f2e67407ff4ed91ec794996e82c023890525657a8cf2da3b06288b4",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0059.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0060.params",
+   "category": "launch_params",
+   "sha256": "64f1d1972184f9a8d859b5af58fa8a72025b54e2946071186c99966576958f39",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0060.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0061.params",
+   "category": "launch_params",
+   "sha256": "f03ede852346e9c7a42b7afa2c1377bea8f21994e01f01c7d21cf832c57cf97f",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0061.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0062.params",
+   "category": "launch_params",
+   "sha256": "0e20d5a13ec44b86943c521fce8d63e3c496ef6199ba8b4ca2a3e727d741d9dc",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0062.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0063.params",
+   "category": "launch_params",
+   "sha256": "2c51bca388e8a855009d727f272de6426cfe1cd9bade2d8589767b8a954ae0a9",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0063.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0064.params",
+   "category": "launch_params",
+   "sha256": "066ee4b0474aef37a81d33bbd8ba63e4bcca1f50a6190f284b5cebb4b46385c8",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0064.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0065.params",
+   "category": "launch_params",
+   "sha256": "4cab96e43615d08626bc7a66e73e7930d95c83c940750b6f8bf5b9b57f2d29b5",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0065.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0066.params",
+   "category": "launch_params",
+   "sha256": "d8f58158ff34119f41a24e63ecbdeef49e776da8577e97ff6011a866e37ac746",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0066.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0067.params",
+   "category": "launch_params",
+   "sha256": "3b9f0d2452502083737b10ec058c2c0567c68b9b8cbce21b4de1a7eb530e1535",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0067.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0068.params",
+   "category": "launch_params",
+   "sha256": "0f8ff1e6170b4bb35f014861836b2813ab0f7c48a23af2bf39027a070dfaa876",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0068.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0069.params",
+   "category": "launch_params",
+   "sha256": "7e75f0858fcb9a6bc495743d2a5a8b46944f222190daac236557e6e86e015176",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0069.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0070.params",
+   "category": "launch_params",
+   "sha256": "d0442b8fcefaa144a442f747fb18c17e2a91d8bc8c7fa2c76deee0be5a974195",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0070.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0071.params",
+   "category": "launch_params",
+   "sha256": "9091c60dba4886bc91b05c8179efe7b5b69d483dd679698016e2853708467004",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0071.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0072.params",
+   "category": "launch_params",
+   "sha256": "02ed5d58cfddff7cf79e5f796cc97fee817ee708ea7c47f8e1963e5fcde5b5d8",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0072.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0073.params",
+   "category": "launch_params",
+   "sha256": "4cb3456617ffe00de8fb0008120d40b8ebcf55c862c0bf8cc2c7cbdcaec272f3",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0073.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0074.params",
+   "category": "launch_params",
+   "sha256": "83a8cf3e15b4d5884b145096c0415c6905729b8db0530869df7a68199864ae06",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0074.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0075.params",
+   "category": "launch_params",
+   "sha256": "e3ea28aa0dcf339424257f930fc193051e9506c297fa33fc310f87831129a537",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0075.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0076.params",
+   "category": "launch_params",
+   "sha256": "c32ff27a43b55bc5de9ee80987aea33c8f60bba8034ff52da64ff7f814a2c8a0",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0076.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0077.params",
+   "category": "launch_params",
+   "sha256": "0ebeec18b16a913b520a4ab00ad7fdf39c206a6d24b7a5f23b8e539d5ad4ab67",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0077.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0078.params",
+   "category": "launch_params",
+   "sha256": "4ca28f07306c2a8d65bd4b2afed33b030ae70072cfa7014fec413ec67cc7fb2f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0078.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0079.params",
+   "category": "launch_params",
+   "sha256": "1ca35784bd6e8c82ada47ce37d47d8dba21113751e78bd8cd9ebf371c21097c5",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0079.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0080.params",
+   "category": "launch_params",
+   "sha256": "37dd023c6beb80451599e8371e56a18a9b97f1cbc22267b95f35bc178fcd5e36",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0080.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0081.params",
+   "category": "launch_params",
+   "sha256": "9985df83c4e8c2293e5f369eb2c5371c7dc7133d26bf433ae1ed201314eb2c3a",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0081.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0082.params",
+   "category": "launch_params",
+   "sha256": "dd174dbb109ad10fd52b43744dd24d8e55a9e857400336c74cdfb9b682b5d530",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0082.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0083.params",
+   "category": "launch_params",
+   "sha256": "a670ebd98ee12509045891002bdf22846e349b19377122af98022c156f0101f1",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0083.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0084.params",
+   "category": "launch_params",
+   "sha256": "93de4a210ab0f08792755cc07ac534f57d580eb1d2fcb36e6db85bb0ac9a54bd",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0084.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0085.params",
+   "category": "launch_params",
+   "sha256": "15da69e57b43a8c55941cb15909b0435e3cb534bb49cd0ad72d00d370b989a03",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0085.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0086.params",
+   "category": "launch_params",
+   "sha256": "61ed7a735aa67329c0871ff3f0e529c7d039d36e013ca499eacb6c691a1f2c93",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0086.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0087.params",
+   "category": "launch_params",
+   "sha256": "d7852ca1b7f98c1e4b7ca64b3cc0f250aeee7322ccb06872b5107160d00a46f1",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0087.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0088.params",
+   "category": "launch_params",
+   "sha256": "82f24837b0aeed05d5cdb195b68c170f45f251c97d57935bbbe80f0e60ba804b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0088.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0089.params",
+   "category": "launch_params",
+   "sha256": "1718911da80f000024ab4711f593954e07163b3f67393b764c1668d8197408f6",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0089.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0090.params",
+   "category": "launch_params",
+   "sha256": "390ab30b190b7860cda004b5f4d2e45e2916fa94eadde6731c19e1c7d7171e15",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0090.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0091.params",
+   "category": "launch_params",
+   "sha256": "1fdbddc2e9a48d65c007bfc83c226051319f9e40a00cb1695e62ca09a06d9c24",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0091.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0092.params",
+   "category": "launch_params",
+   "sha256": "6521c85f65710082756fb57940f428cdff624a9c2b9fc25d262585ed595f7b60",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0092.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0093.params",
+   "category": "launch_params",
+   "sha256": "ad4d0557e4af0ccb3144f19f10cc56a6c5ac0f5150f7320804225b8d5390a4ed",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0093.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0094.params",
+   "category": "launch_params",
+   "sha256": "16d125d7c480b438ef0f1c496893553d72047d6c4af32b3e42d31bec6407fea8",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0094.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0095.params",
+   "category": "launch_params",
+   "sha256": "8b2ee7d0fa0dce74b26d561ef96790ff0bc4f1da3c5a92229405fd90fb0c98d5",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0095.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0096.params",
+   "category": "launch_params",
+   "sha256": "29ea8443c0d38a70ab9b146a7c0b6d765edffe1c6c881fb43583d97ff81750ef",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0096.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0097.params",
+   "category": "launch_params",
+   "sha256": "69166966887fc1693a522cdbc4612a2113447c13900d0d030d3a39a3b74d66e5",
+   "bytes": 64,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0097.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0098.params",
+   "category": "launch_params",
+   "sha256": "2b523c0cc5010a9092c3064c0182a60e742e0dc1755be82fb5d4b00907d83352",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0098.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0099.params",
+   "category": "launch_params",
+   "sha256": "181ccf637ebe3a5b570587e42ddad29f79034cfd6706b606d05345353dc84f46",
+   "bytes": 24,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0099.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0100.params",
+   "category": "launch_params",
+   "sha256": "062792d7b45612ae0d8194f72c414a5274abdf03dc47f0818a6281c8d23150f9",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0100.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0101.params",
+   "category": "launch_params",
+   "sha256": "3a2ab34bb27d3607741ea13c33cf305aea063c5cd4e0af21416673fd32864edf",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0101.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0102.params",
+   "category": "launch_params",
+   "sha256": "166aa59714316f05ce472613a28157d0c703a7410e14aee21f01bce4ddd42e7e",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0102.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0103.params",
+   "category": "launch_params",
+   "sha256": "51266302e07bebfe154d2e4f14c0d69def3585132295cdfd3da86133a50f6695",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0103.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0104.params",
+   "category": "launch_params",
+   "sha256": "ff14eafe1d767a297b92649f0add54da7b19ad2e6f7887e9ae9bfcbf06111abf",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0104.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0105.params",
+   "category": "launch_params",
+   "sha256": "843c52e590a7a4c9cf7eb7452758596b63c9176dae6a8f4d8e775ca1d60f0eb2",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0105.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0106.params",
+   "category": "launch_params",
+   "sha256": "8121f96e9c8d519ff4dc477734cfe691a3608d5d8428f4b53f5623c04584f794",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0106.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0107.params",
+   "category": "launch_params",
+   "sha256": "7945db985493e9c835856f5bb2567600cbb193db97004d3a28fd188c1e1dda31",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0107.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0108.params",
+   "category": "launch_params",
+   "sha256": "0fefdcff99df46e82799be89021dee87774ee610c2dc789e81f375a4f930be9b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0108.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0109.params",
+   "category": "launch_params",
+   "sha256": "e219c11850723fa3a0340788e9b878903e44361f33426ddf1b9730e45e53b93e",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0109.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0110.params",
+   "category": "launch_params",
+   "sha256": "b5bd911b78e4828549026804af0dfaef33b6a0931f00b7ce45623b0359146fa4",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0110.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0111.params",
+   "category": "launch_params",
+   "sha256": "51ab400e5cff2e8c1acbcadd6812cc7764c58acb0aadfd07c92945e4b86e41db",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0111.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0112.params",
+   "category": "launch_params",
+   "sha256": "c85977f3f785d3172b395c1abc40e5721fa891ac39c0519d859b32a053e8892c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0112.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0113.params",
+   "category": "launch_params",
+   "sha256": "75e3bc690b88c0295c4381d94ea77099c618c3805c7dfe4b843e693f5da42605",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0113.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0114.params",
+   "category": "launch_params",
+   "sha256": "7c22592c33dc39d9150cd01f95d89a08dfb219019dc1b7b902f6ceb5d00dc72d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0114.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0115.params",
+   "category": "launch_params",
+   "sha256": "d55f71391b896de5ecefd37925252838f7fdd06060cd84cc5cff805d3820d0c6",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0115.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0116.params",
+   "category": "launch_params",
+   "sha256": "c18a3a3b14f728334d184763f862cdc99f6d38ee2276b28e727f1de6e0fc10a9",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0116.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0117.params",
+   "category": "launch_params",
+   "sha256": "59dd0d3565a25305eae932adb69eaaf9c4781a42436b60e761c15840aaeb0b7c",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0117.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0118.params",
+   "category": "launch_params",
+   "sha256": "18415633c983ba3127836831a5b7d7035884e6216ca786da5211ebf19cb9ec9c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0118.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0119.params",
+   "category": "launch_params",
+   "sha256": "751b6c66a9d326c3ec358eadd93cf2845cc2339645f1cb78e2cddbdcd043b0fd",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0119.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0120.params",
+   "category": "launch_params",
+   "sha256": "e369c88606569b8e6a194b0fac182c65452087e62a616133dac370382a415523",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0120.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0121.params",
+   "category": "launch_params",
+   "sha256": "f2767b1f43e12af8c9134c3566f29696b2dd5e28a67c45dc1c252c7273669cbc",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0121.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0122.params",
+   "category": "launch_params",
+   "sha256": "9ccb0f964a7faab56873d59f83b2ad889338e7486c5ec6ed4fc2fc55910d768c",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0122.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0123.params",
+   "category": "launch_params",
+   "sha256": "edb0225d9bf86a1f7f5a47e7da7e07548238984fd96f43b94e4548ddb123bbad",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0123.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0124.params",
+   "category": "launch_params",
+   "sha256": "c9185e9c22c38d367ec5f8f635d47fd9d2d7f7dc0782201a6c8332e3452f50a3",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0124.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0125.params",
+   "category": "launch_params",
+   "sha256": "c2a277ca4202bd2b1512a5f93d80313be882caa50ac87b50f0b30f538819d267",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0125.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0126.params",
+   "category": "launch_params",
+   "sha256": "43f16b6e0d4edba8efc40125410cfe6850923344cac189d36ab18db8ea52cc09",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0126.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0127.params",
+   "category": "launch_params",
+   "sha256": "94d3b2a0392f39fe47e24bd640b86694917293bb90dda789bac6eb5b040d38b6",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0127.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0128.params",
+   "category": "launch_params",
+   "sha256": "e4509b2323b825fc5518ace019ca7e8f2b3272b479a84e2498afc91fc51dcca0",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0128.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0129.params",
+   "category": "launch_params",
+   "sha256": "d9889e1d020eb92ac3fc7ed52bf49eb18da215bdb8e5c58ec0c92ab6dda025f0",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0129.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0130.params",
+   "category": "launch_params",
+   "sha256": "e5b1198ea293be54dbf8de8d89a2cc4780836ecb727f3403bad1e63660237374",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0130.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0131.params",
+   "category": "launch_params",
+   "sha256": "cfce20efffd204313cdc914f905eb4a111d2d885b6f7691b38a15373add461e5",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0131.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0132.params",
+   "category": "launch_params",
+   "sha256": "8ecdbc42e121d68fbc46f0b8dcfe204d8aa57a9859eb4fe5548cbaf61fcdff8b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0132.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0133.params",
+   "category": "launch_params",
+   "sha256": "184f2cd30959309cbfeaaa4275b97e43b9670535be64c8bd45d2aaa29d2417a6",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0133.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0134.params",
+   "category": "launch_params",
+   "sha256": "46b1aff806f03b7b2f8c1a82dd50a030ef40d387ff7aae5928e0b3c1a5945262",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0134.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0135.params",
+   "category": "launch_params",
+   "sha256": "bc395409afd2b063e8ab790ba45b64f09611481e13f5edd929dd51a8640fe1f3",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0135.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0136.params",
+   "category": "launch_params",
+   "sha256": "082bf40cbabae63689a35c34ffc34434bbb01f7c06bba154e405302c94b73133",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0136.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0137.params",
+   "category": "launch_params",
+   "sha256": "d32051de7ff4a71134261b1ac1c32ce349f6805ca33e2931632046023d9d8cd1",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0137.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0138.params",
+   "category": "launch_params",
+   "sha256": "4836e50c841963d7e9ce23f1ae167b07099824305d56ce5f04b6cf4e230ae8af",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0138.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0139.params",
+   "category": "launch_params",
+   "sha256": "e25b06a5a936b85c510766f901861becb4ccac698b7fabbe635d2ba65b4d07c8",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0139.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0140.params",
+   "category": "launch_params",
+   "sha256": "4e1e7b4ab8bf52f1341894c6b2c5f1547b8ee13626362964db1d986c4ccc0979",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0140.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0141.params",
+   "category": "launch_params",
+   "sha256": "1ad7429149a50f7f02dfe85cf042c7ff652ed6351cf7ab2b68120a2956966774",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0141.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0142.params",
+   "category": "launch_params",
+   "sha256": "a43b9def3075dfb53068169ada46c7520074d23ed13ed3a66b42a1e94f7e8ace",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0142.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0143.params",
+   "category": "launch_params",
+   "sha256": "bb45d8ef613b817db3f26b8494d08e3ccfeb1cfec3a390bdf4fdca38700c6c27",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0143.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0144.params",
+   "category": "launch_params",
+   "sha256": "ad0341c6df122ab0b60f5121adae4d1ae7eaf7340ac7feddd51adeb0354fb5fa",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0144.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0145.params",
+   "category": "launch_params",
+   "sha256": "5de05ff08bb6f4980d0c472f71ecbb17b870f58d14aa7cabdb9074ea3c4024c2",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0145.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0146.params",
+   "category": "launch_params",
+   "sha256": "803fdf12b585a9fc8a9336aef370ff270a5b0d9307e0f1ad32c3769c9540969b",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0146.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0147.params",
+   "category": "launch_params",
+   "sha256": "0e60e5ec915effcbacf5e89591ad8cc8d0977d6c1cda92e24ee2ece5e2971a31",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0147.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0148.params",
+   "category": "launch_params",
+   "sha256": "6163928bea84316ea626306db2bb241693ebd38a89d4179c7308b79b9a1b0032",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0148.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0149.params",
+   "category": "launch_params",
+   "sha256": "57f3097feaf298ff68dd7a0bc78d2b280acf20c98bb93f8fd33fc293e6a1fde8",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0149.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0150.params",
+   "category": "launch_params",
+   "sha256": "b1db56850d05ef4dfdf25b457cadb15520d1e950a00df0364241e85bff4111ab",
+   "bytes": 88,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0150.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0151.params",
+   "category": "launch_params",
+   "sha256": "d76140ef7524dd75a173c3c308619bb6589d1d7ccb3eba70c6a82d8bf08a8c6c",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0151.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0152.params",
+   "category": "launch_params",
+   "sha256": "726fb779d5200918ad44a9c158c65db5ec8c42bfb383f42155defe7d658b33c2",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0152.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0153.params",
+   "category": "launch_params",
+   "sha256": "e2786550c2b9789de45e84bd071e6dee15bd80b25260b150dd2d30c8d0d44cf7",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0153.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0154.params",
+   "category": "launch_params",
+   "sha256": "9094bddd7685531ef80f7daf3547a9e5d27399b584522a247e32352a6fe205d3",
+   "bytes": 96,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0154.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0155.params",
+   "category": "launch_params",
+   "sha256": "fa1e10e283958702ad6ecda934a1f3c6093ed301a306eb0d6e63416952cf327d",
+   "bytes": 184,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0155.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0156.params",
+   "category": "launch_params",
+   "sha256": "c0cf970a304b6cb03337bcb287b45d71916f3d6fce7082d45d268bb70d42c63d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0156.params"
+   ]
+  },
+  {
+   "repo_path": "params/r02_1440/frame-000/session.launch-0157.params",
+   "category": "launch_params",
+   "sha256": "91d59661253cf02371e11e8d059fb2c6ec3ada2886d040ea9593e65f0050f87e",
+   "bytes": 376,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume15/staging/metadata/R02/frame-000/session.launch-0157.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L101-params.params",
+   "category": "launch_params",
+   "sha256": "6cd83aacbe22493fdad03064108b1fdb96355f7010b213b6c22f4cf56def0ada",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L101-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L102-params.params",
+   "category": "launch_params",
+   "sha256": "874431b17b5b0b0607f4b272fb7c3d6514d7f4efc8c7b58dc55575f6dabf5fb0",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L102-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L103-params.params",
+   "category": "launch_params",
+   "sha256": "939b8d964aa4b92c6d0475af2490f5a0399c29b23c78e78b567c191514b180db",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L103-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L104-params.params",
+   "category": "launch_params",
+   "sha256": "3a3db7cd2a8836070066fe75f32797d41c5879ab768f9ca4b9c663b138d8844f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L104-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L105-params.params",
+   "category": "launch_params",
+   "sha256": "d8817b868432d720961c725af798622267a9dc44a3759d8f979403774baaa178",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L105-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L106-params.params",
+   "category": "launch_params",
+   "sha256": "4eee4e7d05fd3fca230602bf79f4cf265609369123a43cd744ad4efc78217ff7",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L106-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L107-params.params",
+   "category": "launch_params",
+   "sha256": "e254f082864794efa9c6eff61fbad5cb7eeb3846efd3cf45f2fb727063e705cd",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L107-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L108-params.params",
+   "category": "launch_params",
+   "sha256": "ebaff50be036b44e082b4776ca49067baf356bb3abbd74afeafbb17433c3fbfd",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L108-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L109-params.params",
+   "category": "launch_params",
+   "sha256": "4de6f06089b0ce86fd77250f27afb51d9e05df765a61c6e78ef50619bea78feb",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L109-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L110-params.params",
+   "category": "launch_params",
+   "sha256": "5e6555e6e17314deb44c2086636ad5cd99d002691e972a69b042b4558014f362",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L110-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L111-params.params",
+   "category": "launch_params",
+   "sha256": "af88339c9633b075e96f380f092f49681a17690c7da6cf0aa41b7a238cf24c24",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L111-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L112-params.params",
+   "category": "launch_params",
+   "sha256": "81eca12cd93a4e0d191cb72cabdc4f5a8cdb5c7412480181a40d3bb73507947e",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L112-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L113-params.params",
+   "category": "launch_params",
+   "sha256": "a5e1630321c26005272978dbbcd46fb2723dabb0dcb918dea9c1d8c7ab173679",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L113-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L114-params.params",
+   "category": "launch_params",
+   "sha256": "0e44b0a09d35e13e450652358efca8b4f26f29724e72f420109b285d4267a989",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L114-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L115-params.params",
+   "category": "launch_params",
+   "sha256": "b8faec8c5d6954521f9c41e4a8719380cc4fb1c44a8eaab36dc4fd6b7bc91d94",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L115-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L116-params.params",
+   "category": "launch_params",
+   "sha256": "93c0c75b97f7605a7d07e6530b599262b641e197382f3ebce8b4f59cdcb96587",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L116-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L117-params.params",
+   "category": "launch_params",
+   "sha256": "7be50e64348b9702a8fabc6983bdfc76ee8beba87fbf467ab43260b74a35be77",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L117-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L118-params.params",
+   "category": "launch_params",
+   "sha256": "53835db2916f45d94cd6b032f1db8cd32f9ec612492a4cabad1de68b9026829d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L118-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L119-params.params",
+   "category": "launch_params",
+   "sha256": "e8927631ba169bffc1538be8ffc0970e8553bb2141208360d0407a026a679b18",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L119-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L120-params.params",
+   "category": "launch_params",
+   "sha256": "dafa8f6a5dbb01cf20ea660e66cddd008f26d510fd96f7f516cc93bbd2dd4268",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L120-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L121-params.params",
+   "category": "launch_params",
+   "sha256": "c991c0e31d4a56f1f86f5acdf35d866b3485821794f7e57823c038a4c4233ddb",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L121-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L122-params.params",
+   "category": "launch_params",
+   "sha256": "48bc236d773116545ee904fdcb80db00b0f56c5bb65f75223fb04899d9cde394",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L122-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L123-params.params",
+   "category": "launch_params",
+   "sha256": "f7133a18584290cead13ecc6940bb32b5ccb23b0d332fe417d3f6dbb8217f784",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L123-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L124-params.params",
+   "category": "launch_params",
+   "sha256": "e02e3dcbba0fc5533e82239537625712e6746dfcb44fcaa1325f8509f2c65d19",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L124-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L125-params.params",
+   "category": "launch_params",
+   "sha256": "e1ff1fba3413bfc2a766f6b349b2c032b6160502ce92c452f88c9137a6901431",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L125-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L126-params.params",
+   "category": "launch_params",
+   "sha256": "c6606fd00be17c75dc795cffdc0409946ab86e774f128fb4005905938a1a28db",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L126-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L127-params.params",
+   "category": "launch_params",
+   "sha256": "466b549d0d5fd0fdfc0589ac22ad2e924940e4109ab2e1a2dc86b8059ff275c9",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L127-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L128-params.params",
+   "category": "launch_params",
+   "sha256": "e72d91dab9fde5ce84bf04e3a35e361329171d7909ffb4c47feaaa5388cb94c7",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L128-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L129-params.params",
+   "category": "launch_params",
+   "sha256": "b133f587662810687e4dac4b150c90c25e89818d9e157c7cd06795b9d16588c6",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L129-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L130-params.params",
+   "category": "launch_params",
+   "sha256": "5ec25742108f5b290f77c81732a74e034048094994c11998d1182a411a2691eb",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L130-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L131-params.params",
+   "category": "launch_params",
+   "sha256": "34be2a6a3b4438be5f66c27890266c18dd2593e43d8046e92f1c146d068b01c2",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L131-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L25-params.params",
+   "category": "launch_params",
+   "sha256": "14e7bcd5c6044525572396a2f07fe9646be1a2714974bc8230a1aa76cb636776",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L25-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L26-params.params",
+   "category": "launch_params",
+   "sha256": "a88b6f22d411320899250094bb545ec6bfebe2257645afb96965fdc8051eb2e4",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L26-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L27-params.params",
+   "category": "launch_params",
+   "sha256": "0b1c9c9a35fa83e2bba2205bcea28cbd4e12cd8f9232ee2f10a08bea9d87906b",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L27-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L28-params.params",
+   "category": "launch_params",
+   "sha256": "133177a7f6477441d869b8ccd6647f8a55f9fc16fba774e0b4c595c36cbfecee",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L28-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L29-params.params",
+   "category": "launch_params",
+   "sha256": "f991e7882465f2fb0d1a481daa00646cb7040229989b42c533f0703b5cbedc04",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L29-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L30-params.params",
+   "category": "launch_params",
+   "sha256": "ea00f12924b70dd801c15fe735ec0c1c447f81d98042bf615396ab65dc733a2e",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L30-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L31-params.params",
+   "category": "launch_params",
+   "sha256": "7e51033cedc32210229e5c8f2aafdc2c9db6605f471a5141cb71e2f70cc7f2c5",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L31-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L32-params.params",
+   "category": "launch_params",
+   "sha256": "1d9efaccf3f32f625203519b61954a70c0f3cd5d0f7fe90a6279d450d4889e3b",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L32-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L33-params.params",
+   "category": "launch_params",
+   "sha256": "0710cc65bcf7897a7d182c5a616d2cf1da12a8591b71fd045b94a2f6b135ee7d",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L33-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L34-params.params",
+   "category": "launch_params",
+   "sha256": "b7483e3161593b286c4ba4111c5e252cec440302411624695543e56b878fb034",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L34-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L35-params.params",
+   "category": "launch_params",
+   "sha256": "4e84c8f75deeb8aa5dee4f4d5e500bf0f4ac7abc4cab1873739d09fff8181562",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L35-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L36-params.params",
+   "category": "launch_params",
+   "sha256": "3c5cd045fdd5249d1d32bc178d6000558b2d8a87221837c3d9eb7100a0a30085",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L36-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L37-params.params",
+   "category": "launch_params",
+   "sha256": "8ce1408f6c6e4d2cf5564a0a13e04895965594ba683d68189f260d32ff2dda97",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L37-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L38-params.params",
+   "category": "launch_params",
+   "sha256": "593a07f07e8bf63e53386e174e84fc0b654beeb5391975b3aec179fca3ba74fb",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L38-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L39-params.params",
+   "category": "launch_params",
+   "sha256": "0eb79c1be95bcd2944554059f2a9047ff846d9cf2766d1487feb399cf36da12e",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L39-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L40-params.params",
+   "category": "launch_params",
+   "sha256": "10698b05893ff7b80f0ec20edbf4abd5bb92f699be36d36a802d21b19deb5bca",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L40-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L41-params.params",
+   "category": "launch_params",
+   "sha256": "a2793a6886f56965182c5fd4bcf737130b050c3f4dcc443a5c1d8ebb0cfef700",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L41-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L42-params.params",
+   "category": "launch_params",
+   "sha256": "2e862254f66c280c52669563eac231e2e25724458354209f91cf3d9fbed53f65",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L42-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L43-params.params",
+   "category": "launch_params",
+   "sha256": "497f6015481070377231b9647c650d9ba8a788effdd8d6414c852f0c0d9d008f",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L43-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L44-params.params",
+   "category": "launch_params",
+   "sha256": "606ee36332d687443561a089a530c07c9859ba6c50f07b88d1924a3ec44d6a8f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L44-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L45-params.params",
+   "category": "launch_params",
+   "sha256": "25615b6c2145c4a9942272c454277b20f8285dd72a6405e424459a747ddfd745",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L45-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L46-params.params",
+   "category": "launch_params",
+   "sha256": "800ce374083d0400641d4d5b99967945e01556e5bd992f2bcf4eac76e9d4946d",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L46-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L47-params.params",
+   "category": "launch_params",
+   "sha256": "a9c6e67604bd5444d46290440b567902dd6499915b5ff1e659c09a73e2c8bafa",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L47-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L48-params.params",
+   "category": "launch_params",
+   "sha256": "383a75f1a2a98bd95544e83f3306f247d3b8b2087d83d5dddb819e55418201ed",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L48-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L49-params.params",
+   "category": "launch_params",
+   "sha256": "513e4bab8a61a2339ad72fcf911210df3b77ad80d1f56739c3a7f542d7f1eb73",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L49-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L50-params.params",
+   "category": "launch_params",
+   "sha256": "131c05e450ea3232961727d20495c00fcd7e56618b6a11c96a3e5698bdf4a47f",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L50-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L51-params.params",
+   "category": "launch_params",
+   "sha256": "b42392bcfbd2f2839a4e6352cf616cde6b054c3b3451e8b00fa0799be9bc1a6d",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L51-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L52-params.params",
+   "category": "launch_params",
+   "sha256": "12c57fb37d39a4b50c4b42177999f1107cbb78e640a9d28d17ed67d7e9db38ca",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L52-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L53-params.params",
+   "category": "launch_params",
+   "sha256": "8d8c7a2b8face41725da8833256f265221a6549d44ab5ac8852176d83105d2d6",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L53-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L54-params.params",
+   "category": "launch_params",
+   "sha256": "a9e709bdbeaac66b47bbdde2d24c36709f1f9e50e61d5322b637ba3373cc7a77",
+   "bytes": 72,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L54-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L55-params.params",
+   "category": "launch_params",
+   "sha256": "19915888105e8c0be5811d243b8a245db9d3e1543b2f48d6f9a53756f9ef9db3",
+   "bytes": 56,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L55-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L56-params.params",
+   "category": "launch_params",
+   "sha256": "8bd4e17446064a1b76b34da149a53c9f86566a892d006d511a82b552f62c2939",
+   "bytes": 80,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L56-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/split16_bundle/L57-params.params",
+   "category": "launch_params",
+   "sha256": "a7bc49eaaa8550b340e65fd64e530a5e7f9fc8bae0e3b7cd65db2e4342d76685",
+   "bytes": 40,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/assets-chain/mirror/E/dlssnr-cpp-work/chain-split16-r01-codex/bundle/L57-params.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F001/L001.params",
+   "category": "launch_params",
+   "sha256": "78ecc8606e434b4ba0e8bc568d2a460f81d062c80ba29764c152205c5d6338b1",
+   "bytes": 16,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F001/L001.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F001/L002.params",
+   "category": "launch_params",
+   "sha256": "adfd4f0214f40604190591c5e9c5dc2688ba69a7931b6bf6ed0d4b58ecb61270",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F001/L002.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F001/L155.params",
+   "category": "launch_params",
+   "sha256": "3dff627064bdc03717e9393ff8a216b8bd4d837055e758f97aa56ac9ca4fffb8",
+   "bytes": 184,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F001/L155.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F002/L001.params",
+   "category": "launch_params",
+   "sha256": "78ecc8606e434b4ba0e8bc568d2a460f81d062c80ba29764c152205c5d6338b1",
+   "bytes": 16,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F002/L001.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F002/L002.params",
+   "category": "launch_params",
+   "sha256": "f0437f38f5780e68bba93e5f2f68f5c7a6e59acd05ee33a8377869d755288d47",
+   "bytes": 264,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F002/L002.params"
+   ]
+  },
+  {
+   "repo_path": "params/temporal_1440/F002/L155.params",
+   "category": "launch_params",
+   "sha256": "3dff627064bdc03717e9393ff8a216b8bd4d837055e758f97aa56ac9ca4fffb8",
+   "bytes": 184,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-temporal-port-r01-20261013-codex/inputs/F002/L155.params"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/backend_abi.py",
+   "category": "python_runtime",
+   "sha256": "8c964d18fea180da094e21bbb97f318126a6c8dff631c9c3af85d39356fc1573",
+   "bytes": 17015,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/backend_abi.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/backend_abi.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/derived_pins.py",
+   "category": "python_runtime",
+   "sha256": "88f34c34ef4bffc36c06cd751a74c9d161c4fc49bb5013b368bca6f18bc29ee5",
+   "bytes": 3662,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/derived_pins.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/derived_pins.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/entry_assets.py",
+   "category": "python_runtime",
+   "sha256": "a5387d0a0122a1c47767084b6737f54942c0313278c75da47ec249f08999bc67",
+   "bytes": 3289,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/entry_assets.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/entry_assets.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/g0a_runtime.py",
+   "category": "python_runtime",
+   "sha256": "ed6948918d520b7396a19719bbe577667a11a0f147258b06669c1e6ac00c1041",
+   "bytes": 3524,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/repo/cpp/opt/M/g0a_runtime.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/g0b_maps.py",
+   "category": "python_runtime",
+   "sha256": "12646e71ff422d71597d91a9d0daf43e3db27e0b075db4177b642bdf29bbfc6d",
+   "bytes": 4513,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/g0b_maps.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/identity.py",
+   "category": "python_runtime",
+   "sha256": "984ee5d32c06a07c66ae19ab162a8e10d954f4e10d2a1dc25cbf51c3168d84fe",
+   "bytes": 2633,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/identity.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/identity.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/owner_guard.py",
+   "category": "python_runtime",
+   "sha256": "fe411899708b1954f0e87c120ecc2de9e3ac8f5471548cfb8dd6531f6670c48f",
+   "bytes": 2111,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/owner_guard.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/owner_guard.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/plan_runtime_merged.py",
+   "category": "python_runtime",
+   "sha256": "4603563ae0b80c318387b1a533da74eed92552bdef56a0df467beca294a4fb22",
+   "bytes": 2987,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/plan_runtime_merged.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/plan_runtime_merged.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/tail_runtime.py",
+   "category": "python_runtime",
+   "sha256": "0cb657cf793e9d3d64763b29b80545ee2cba1cf3106439d1384d4170c5f4336c",
+   "bytes": 1732,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/tail_runtime.py",
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/repo/cpp/opt/M/tail_runtime.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/M/vit_adapter_c1.py",
+   "category": "python_runtime",
+   "sha256": "f6b069d133b0ebc9eca4f4c5d48e5ce388c193bc6c8e1233118a81b76b522138",
+   "bytes": 11840,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-1440-multiframe-r01-20261017-claude/seal/candidate/repo/cpp/opt/M/vit_adapter_c1.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/outtail_weight_cplus.py",
+   "category": "python_runtime",
+   "sha256": "d3562296138e5f209613698902cd772120589ff778adf77bd244efa2083e58bc",
+   "bytes": 4555,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-opt-g0b-exec-r01-20261011-codex/candidate/outtail_weight_cplus.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/vit_adapter_geometry_padded.py",
+   "category": "python_runtime",
+   "sha256": "bb885c21349acd0e3d65aeaa21e77cd13c774e25aab47aec802522dd8577dbef",
+   "bytes": 12095,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/cpp-merge-next-seal-r01-20261015-codex-resume11/candidate/runtime/vit_adapter_geometry_padded.py"
+   ]
+  },
+  {
+   "repo_path": "runtime/vit_adapter_geometry_padded_zstore.py",
+   "category": "python_runtime",
+   "sha256": "61df497b1e78f36460978f3de55e8e156836bf5959a695b5e38dca8633a82d8b",
+   "bytes": 13800,
+   "transform": "release_form",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/geo2-tin-diagnostic-r01-20261011-codex/resume16/resume16b/c13/attempt-a02/candidate/runtime/vit_adapter_geometry_padded_zstore.py"
+   ]
+  },
+  {
+   "repo_path": "third_party/mlxdlss/tools/extract_dlssnr_weights.py",
+   "category": "python_runtime",
+   "sha256": "3ac15bff829282369e27c7b95cdb8d39731b3f9e5207ebff582a3560fb8e356f",
+   "bytes": 18414,
+   "transform": "none",
+   "whitelist_root": "PAYLOAD",
+   "whitelist_paths": [
+    "/kit/data/dlssnr-biggeom/r01-20261006-codex/repo/research-upstream/python/mlxdlss/tools/extract_dlssnr_weights.py"
+   ]
+  }
+ ]
+}

@@ -1,12 +1,11 @@
 cff-version: 1.2.0
 message: "If you use or build on GlassBox-NR, please cite it as below."
-title: "GlassBox-NR: byte-exact CPU reproduction of a neural rendering inference chain (runnable package)"
+title: "GlassBox-NR: byte-exact CPU reproduction of a neural rendering inference chain (aligned to nvngx_dlssnr.dll 310.8.0.0)"
 type: software
 authors:
   - alias: "Ashley-QwQ"
-version: "0.1.0-preview"
-date-released: "2026-09-17"
-license: AGPL-3.0-or-later
+version: "2.0.0-preview"
+license: Apache-2.0
 repository-code: "https://github.com/Ashley-QwQ/GlassBox-NR"
 keywords:
   - byte-exact

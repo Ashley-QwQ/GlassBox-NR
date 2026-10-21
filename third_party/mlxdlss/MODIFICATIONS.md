@@ -1,3 +1,7 @@
+> v2.0.0-preview: only the unmodified `tools/extract_dlssnr_weights.py` is vendored in HEAD (the weight extractor, a verbatim copy at its
+> v0.1.0-preview location). The modified files `model.py` and `__init__.py` and the unmodified `unpack_dlssnr_weights.py` were
+> removed from HEAD with the v1 toolchain; they remain in the git tag `v0.1.0-preview`, and the change record below is kept for them.
+
 # Modifications to upstream MLX-DLSS (Apache-2.0 License, section 4)
 
 This directory vendors four files from MLX-DLSS:

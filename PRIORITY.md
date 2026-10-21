@@ -80,6 +80,25 @@ and confirm the check is not vacuous by repeating it with a different digest, wh
 **The manifest and the tokens are not published.** They are retained; if the priority claim is ever challenged, the
 manifest and the tokens are produced together and the challenger recomputes the root themselves.
 
+## Where the v1 code commitment is verified (since v2.0.0-preview)
+
+From v2.0.0-preview on, git `HEAD` no longer contains the v1 files `commitment/freeze-code-manifest.json` and
+`commitment/verify_commitment.py`. History was not rewritten: both files, and the whole v1 tree, are unchanged in the tag
+`v0.1.0-preview`, which points at commit `8f951866229d5f4fbe050b9469c82957e691ff43`. The commitment hash
+`freeze_code_sha256 = 83d1a5c274652471487dcc770cfbcba1627e072452cb70551a0b3484c3502c5a` (997 manifest entries) is verified against
+that tag:
+
+```
+git fetch --tags
+git rev-parse "v0.1.0-preview^{commit}"      # must print 8f951866229d5f4fbe050b9469c82957e691ff43
+mkdir v1-commitment
+git archive v0.1.0-preview commitment | tar -x -C v1-commitment
+python -B v1-commitment/commitment/verify_commitment.py    # expect: commitment hash: MATCH ... manifest entries: 997
+```
+
+`git archive` writes only into the new directory and does not touch the working tree. The same lines work in PowerShell 5.1 (`tar`
+ships with Windows 10 and later). The facts in the sections above are historical and are not changed by the v2 release.
+
 ## Ongoing practice
 
 From this point on, each milestone is anchored before it is announced:

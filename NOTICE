@@ -1,43 +1,49 @@
-GlassBox-NR -- byte-exact CPU reimplementation of a proprietary neural
-rendering pipeline (reverse-engineered independently; no vendor source,
-headers, or SDK were used).
+GlassBox-NR v2.0.0-preview -- aligned to nvngx_dlssnr.dll 310.8.0.0.
+An independent CPU C++ reimplementation of the inference chain of that one fixed
+target library (reverse-engineered independently; no vendor source, headers or SDK
+were used). Not applicable to other versions of the library.
 
-This distribution mixes three licensing scopes. Each applies to a
-different, clearly separated part of the tree:
+Licensing scopes
+================
 
-1. Source code written by this project (`glassbox_nr/`, `tools/`,
-   `commitment/verify_commitment.py`, and the offline map-generation
-   helpers under `data/maps/vit_b32_b38/interp/`):
+1. Source code and data written by this project (`cpp/`, `runtime/`, `devkit/`,
+   `params/`, `modules/`, `docs/FILES_MAP_V2.json`, and the release payload):
 
-     SPDX-License-Identifier: AGPL-3.0-or-later
+     SPDX-License-Identifier: Apache-2.0
      Copyright 2026 GlassBox-NR contributors
 
-   Full text: `LICENSE` (AGPL-3.0, unmodified, from
-   https://www.gnu.org/licenses/agpl-3.0.txt).
+   Full text: `LICENSE` (Apache License 2.0, unmodified).
 
-2. Documentation and data files written or derived by this project
-   (`README.md`, `README_ZH.md`, `PRIORITY.md`, everything under `docs/`,
-   every `PROVENANCE.md`, `CHANGELOG`, `CITATION.cff`,
-   `reference/reference_hashes.json`, and the contents of `data/params/`,
-   `data/maps/` (excluding code under `data/maps/vit_b32_b38/interp/`,
-   covered in section 1 above), and `data/tables/`):
+2. Documentation written by this project (`README.md`, `README_ZH.md`, `PRIORITY.md`,
+   `CHANGELOG.md`, `CITATION.cff`, `docs/*.md`): CC-BY-4.0. Full text: `LICENSE-docs`.
 
-     Licensed under CC-BY-4.0.
+3. `third_party/mlxdlss/`: files from the MLX-DLSS project (the weight extractor
+   `tools/extract_dlssnr_weights.py`, a verbatim copy), under MLX-DLSS's own Apache-2.0
+   license -- see `third_party/mlxdlss/LICENSE`, `third_party/mlxdlss/NOTICE` and
+   `third_party/mlxdlss/MODIFICATIONS.md`. Using it in an Apache-2.0 work does not
+   replace its own notice.
 
-   Full text: `LICENSE-docs` (CC-BY-4.0, unmodified, from
-   https://creativecommons.org/licenses/by/4.0/legalcode.txt).
+NVIDIA materials
+================
 
-3. `third_party/mlxdlss/`: files from the MLX-DLSS project, used and in
-   two files (`model.py`, `__init__.py`) modified under its own license.
-   MLX-DLSS keeps its own Apache-2.0 license and notice -- see
-   `third_party/mlxdlss/LICENSE`, `third_party/mlxdlss/NOTICE`, and
-   `third_party/mlxdlss/MODIFICATIONS.md` for the exact changes made.
-   Apache-2.0 code may be incorporated into an AGPLv3-licensed work, but
-   its own license is not replaced by doing so.
+No NVIDIA library, DLL, weights, or any bytes derived from the weight bytes are included
+in this repository or in the release assets. The user must supply their own, lawfully
+obtained copy of `nvngx_dlssnr.dll`; the weight extractor reads it locally and the
+resulting files are never published. NVIDIA and related names are trademarks of their
+owners; this project is not affiliated with or endorsed by NVIDIA.
 
-If you redistribute a modified version of this project, please note that
-it is based on GlassBox-NR.
+Provenance statements
+=====================
 
-Weights, native captures, and any other data that must come from your own
-lawfully obtained copy of the proprietary runtime are never included in
-this distribution (see README.md, "Scope and requirements").
+Output-tail stage (B70 / S157), decision 40: the B70 / S157 tail logic was derived by
+analysing the NVIDIA binary; the code was independently rewritten and verified
+byte-exact against GPU measurements. No program counters, instruction forms or register
+names from that analysis are published.
+
+Release payload, decision 41: two of the files in the payload are named
+`manifest.json` once laid out. They contain internal round names and paths; they are internal
+provenance records, kept unchanged because their sha256 values are pinned elsewhere in
+the release and rewriting them would change those pins.
+
+If you redistribute a modified version of this project, please note that it is based on
+GlassBox-NR.

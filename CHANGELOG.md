@@ -1,5 +1,33 @@
 # Changelog
 
+## v2.0.0-preview (unreleased)
+
+**Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** Claim: measured byte-for-byte equivalence on the listed inputs; formal proof NOT_ESTABLISHED.
+
+- **Independent CPU C++ chain**: all 158 launches of the chain, including the output-tail stage (B70 / S157, independently written C++; provenance statement in `NOTICE` and `docs/B70_S157_STATUS.md`), at 1080p, 1440p and 4K frame 0.
+- **Release seal M2** (release-clean sub-seal of the unified seal M): numeric gates re-run on M2 for 1080p f0, 1440p f0 and 4K L0-L99; 4K L100-L157, 1080p f1-f5 and 1440p f3 are census-only on M2. Evidence from M or its parent seal is labelled as such in the README.
+- **Two-part distribution**: git HEAD holds the C++ sources, Python runtime glue, run driver (`devkit/`), per-launch parameters and compiled modules; everything else is one compressed payload volume, `payload.tar.zst.001` (465,105,242 B), a GitHub Release asset. `devkit/payload_layout.py` lays it out; `docs/FILES_MAP_V2.json` maps repo paths to release-whitelist paths.
+- **Licence change**: code and data Apache-2.0 (was AGPL-3.0-or-later), documentation CC-BY-4.0, `third_party/mlxdlss/` keeps its own Apache-2.0.
+- **v1 toolchain removed from HEAD**: the Python reference package (`glassbox_nr/`, `tools/`, `data/`, `commitment/`, `reference/`, v1 docs) is no longer in HEAD. History is not rewritten; all of it stays reachable through the tag `v0.1.0-preview` (commit `8f951866`).
+- **Cleanup**: derived JSON stripped, instruction-level comments removed, `repack` rewritten as a closed-form address map; the offline interpreter tools are no longer published.
+- **Not in this release**: showcase renders; 4K multi-frame; other DLL versions.
+
+---
+
+## v2.0.0-preview（未发布）
+
+**对齐 `nvngx_dlssnr.dll` 310.8.0.0。** 声明：限于所列输入的实测逐字节等价；形式证明 NOT_ESTABLISHED。
+
+- **独立 CPU C++ 链**：1080p、1440p、4K 帧 0 的全部 158 次 launch，含输出尾段（B70 / S157，独立编写的 C++；出处声明见 `NOTICE` 与 `docs/B70_S157_STATUS.md`）。
+- **发布封存 M2**（统一封存 M 的 release-clean 子封存）：1080p f0、1440p f0、4K L0-L99 的数值门在 M2 上重跑；4K L100-L157、1080p f1-f5、1440p f3 在 M2 上只有配置普查。取自 M 或其父封存的证据在 README 里如实标注。
+- **两部分发布**：git HEAD 放 C++ 源码、Python 运行时胶水、运行驱动（`devkit/`）、逐 launch 参数和编译模块；其余是一个压缩载荷分卷 `payload.tar.zst.001`（465,105,242 B），作为 GitHub Release 附件。`devkit/payload_layout.py` 负责摆放，`docs/FILES_MAP_V2.json` 记录仓库路径到发布白名单路径的映射。
+- **许可变更**：代码与数据改为 Apache-2.0（原 AGPL-3.0-or-later），文档 CC-BY-4.0，`third_party/mlxdlss/` 保留其自身的 Apache-2.0。
+- **v1 工具链移出 HEAD**：Python 参考包（`glassbox_nr/`、`tools/`、`data/`、`commitment/`、`reference/`、v1 文档）不再在 HEAD；历史不改写，全部仍可通过 tag `v0.1.0-preview`（提交 `8f951866`）取得。
+- **清理**：派生 JSON 已剥离，指令级注释已删除，`repack` 重写为闭式地址映射；离线解释器工具不再发布。
+- **本版不含**：展示图；4K 多帧；其他 DLL 版本。
+
+---
+
 ## Unreleased
 
 - **Reference hashes**: `reference/reference_hashes.json` publishes the sha256 of the reference output at all 154 compared exits (77 exits x 2 published samples), with the reference identity (runtime DLL, `WEIGHTS_HT`, capture GPU and architecture). Hashes only; no reference data. `tools/verify_reference_hashes.py` checks a run against it and prints `N/154 MATCH`.

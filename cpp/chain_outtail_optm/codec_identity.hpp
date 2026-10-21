@@ -1,0 +1,2 @@
+#pragma once
+constexpr const char* LG2_MANIFEST_SHA="4255d067e6a618342182a86f44fbf2feceb92a7d148e0dcdfaabe304f8c72138";
