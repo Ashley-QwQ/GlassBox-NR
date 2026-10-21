@@ -1,6 +1,6 @@
 # Changelog
 
-## v2.0.0-preview (unreleased)
+## v2.0.0-preview (2026-10-21)
 
 **Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** Claim: measured byte-for-byte equivalence on the listed inputs; formal proof NOT_ESTABLISHED.
 

@@ -23,7 +23,7 @@
 
 ## 快速开始（Linux x86-64，Python 3.13，numpy，safetensors，zstd >= 1.4）
 
-1. 从 GitHub Release `v2.0.0-preview` 把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
+1. 从 GitHub Release [`v2.0.0-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.0-preview) 把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
 2. 校验分卷：
    ```
    echo "8605a10e01765870befc625c0f15a64f4e17eb27968630b936f7091f5bc1d9cd  payload.tar.zst.001" | sha256sum -c -

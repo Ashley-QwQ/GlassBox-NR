@@ -29,7 +29,7 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 
 ## Quickstart (Linux x86-64, Python 3.13, numpy, safetensors, zstd >= 1.4)
 
-1. From the GitHub Release `v2.0.0-preview` download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
+1. From the GitHub Release [`v2.0.0-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.0-preview) download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
 2. Verify the volume:
    ```
    echo "8605a10e01765870befc625c0f15a64f4e17eb27968630b936f7091f5bc1d9cd  payload.tar.zst.001" | sha256sum -c -
