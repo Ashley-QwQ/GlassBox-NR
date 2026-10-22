@@ -2,10 +2,10 @@
 
 [中文版](README_ZH.md)
 
-**Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** This is an independent CPU C++ reimplementation of the inference chain of that one
+**Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** This is an independent **CPU reference implementation** (C++) of the inference chain of that one
 fixed target library (not of any other version, including 310.9.16). Licence: Apache-2.0 (see `NOTICE`).
 
-The claim of this release is **measured byte-for-byte equivalence** on the listed inputs, configurations and hardware: on
+The claim of this release is **measured bit-exact (byte-for-byte) equivalence** on the listed inputs, configurations and hardware: on
 1080p / 1440p / 4K frame-0 input, the 158-launch chain reproduces the final image of the GPU capture byte for byte. A formal
 equivalence proof is **NOT_ESTABLISHED**; nothing here says "proved".
 
