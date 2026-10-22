@@ -6,7 +6,8 @@
 fixed target library (not of any other version, including 310.9.16). Licence: Apache-2.0 (see `NOTICE`).
 
 The claim of this release is **measured bit-exact (byte-for-byte) equivalence** on the listed inputs, configurations and hardware: on
-1080p / 1440p / 4K frame-0 input, the 158-launch chain reproduces the final image of the GPU capture byte for byte. A formal
+1080p / 1440p / 4K frame 0 (158 launches each), plus the multi-frame chains **1080p f0-f5** and **1440p f0-f3** in both workspace
+fills, the own-CPU chain reproduces the final image of the GPU capture byte for byte. A formal
 equivalence proof is **NOT_ESTABLISHED**; nothing here says "proved".
 
 You must supply your own, lawfully obtained copy of `nvngx_dlssnr.dll`. The DLL, the weights and anything derived from the weight
@@ -71,6 +72,19 @@ Release seal: **M2**, the release-clean sub-seal of the unified seal M (content 
 
 Speed and memory figures in the release notes are small samples (one or two runs each), not statistics. This release contains no
 showcase renders.
+
+## Measured on
+
+One 1080p frame 0 (158 launches); every run below ended with the final image `764e7dd0...`. Each figure is a single run with
+its own threads, load and build, so this is not a benchmark and the rows are not comparable to each other.
+
+| Platform | CPU | Threads | Build | One frame |
+|---|---|---|---|---|
+| X79 | Xeon E5-2667 v2 (8C/16T) | 4 | g++, seal M2 | 2,822 s |
+| Desktop | Core i5-12400F | 12 | MSVC, older seal `ea731776` | 691 s (mean of 8 runs; WSL/GCC 899 s) |
+| Mini PC | Core i5-10600T (WSL) | 6 | g++ | 2,566 s |
+| Laptop | Core i7-1280P (P-cores only) | 12 | MSVC, seal M | 2,522 s, peak 0.83 GiB |
+| Special guest | **Raspberry Pi 3B+** (Cortex-A53, **1 GB RAM**) | - | native g++ 14.2, seal M | **10,283 s (~2.9 h)**, peak RSS **677 MiB**; final image checked, no per-launch gate |
 
 ## Provenance of the output-tail stage
 
