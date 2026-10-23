@@ -6,7 +6,7 @@
 fixed target library (not of any other version, including 310.9.16). Licence: Apache-2.0 (see `NOTICE`).
 
 The claim of this release is **measured bit-exact (byte-for-byte) equivalence** on the listed inputs, configurations and hardware: on
-1080p / 1440p / 4K frame 0 (158 launches each), plus the multi-frame chains **1080p f0-f5** and **1440p f0-f3** in both workspace
+1080p / 1440p / 4K frame 0 (158 launches each), plus the multi-frame chains **1080p f0-f5**, **1440p f0-f3** and **4K f0-f2** in both workspace
 fills, the own-CPU chain reproduces the final image of the GPU capture byte for byte. A formal
 equivalence proof is **NOT_ESTABLISHED**; nothing here says "proved".
 
@@ -67,7 +67,8 @@ Release seal: **M2**, the release-clean sub-seal of the unified seal M (content 
 | User driver, payload only | 1080p f0 | end-to-end from the unpacked payload plus the git files: 158/158 launches match the reference table, final `764e7dd0...` |
 | **Configuration census only** on M2 (no numeric gate) | 4K L100-L157, 1080 f1-f5, 1440 f3 | 1,738 census records identical to M (up to the mapped paths / shas); no numeric re-run on M2 |
 | Evidence carried from **M** (or its parent seal 854a8724), not re-measured on M2 | 4K f0 L0-L157 final `152d6f07...` (with the limits listed in the release notes), 1440p f0-f3, 1080p f0-f5, MSVC build (1080 f0), non-finite line (144/147 held-out finals identical, 3 refused by guard), scene cut f0-f15, 3/3 pre-registered predictions (registered by git commit time, not a third-party timestamp) | |
-| Not covered | 4K multi-frame, 1440p f4/f5, held-out 1440p/4K inputs, other DLL versions, multi-parameter streams beyond the listed ones, formal timing | NOT_RUN |
+| Measured on **M** after the v2.0.0-preview release (2026-10-22) | 4K f0-f2, both fills | one process per fill from reset through 474 launches, own CPU state only: full workspace and six POST match at every observed point, finals f0 `152d6f07...`, f1 `9aa7d914...`, f2 `cc32bdf4...`; f0/f1 reproduced a second run exactly; WR B(i) not evaluated at f0 L0/L1 only (native snapshot gap) |
+| Not covered | 4K f3 and later (no per-launch native capture), 1440p f4/f5, held-out 1440p/4K inputs, other DLL versions, multi-parameter streams beyond the listed ones, formal timing | NOT_RUN |
 | Formal proof of equivalence | | **NOT_ESTABLISHED** |
 
 Speed and memory figures in the release notes are small samples (one or two runs each), not statistics. This release contains no
