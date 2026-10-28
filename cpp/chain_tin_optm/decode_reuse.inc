@@ -102,7 +102,9 @@ uint16_t hmma_cached(const uint16_t* a, const uint16_t* b, const double* av, con
 // Correspondence: cpp/opt/B/tin/primitives.inc:168
     }
 // Correspondence: cpp/opt/B/tin/primitives.inc:169
-    return half_round(std::ldexp(double(total),grid));
+    const uint16_t h=half_round(std::ldexp(double(total),grid));
+    // sm_120 proof sweep A: canonical +0 at half-zero publication (as in seal 49a98a0b).
+    return h==0x8000u?uint16_t(0):h;
 // Correspondence: cpp/opt/B/tin/primitives.inc:170
 }
 

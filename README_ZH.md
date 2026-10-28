@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.0-preview
+# GlassBox-NR v2.0.1-preview
 
 [English](README.md)
 
@@ -19,14 +19,14 @@
 | `modules/` | 编译好的 Python 扩展模块（10 个，`cpython-313-x86_64-linux-gnu`） |
 | `docs/FILES_MAP_V2.json` | 仓库路径 -> 发布白名单路径，`payload_layout.py` 使用 |
 
-其余内容（按路径计约 32 GB，去重后 16.6 GB）是**载荷**：一个压缩分卷 `payload.tar.zst.001`（465,105,242 B），作为 GitHub Release 附件提供。v1 的 Python 工具链（`v0.1.0-preview`）已不在 HEAD，仍可通过 git tag `v0.1.0-preview`（提交 `8f951866`）取得。
+其余内容（按路径计约 32 GB，去重后 16.6 GB）是**载荷**：一个压缩分卷 `payload.tar.zst.001`（462,661,132 B），作为 GitHub Release 附件提供。v1 的 Python 工具链（`v0.1.0-preview`）已不在 HEAD，仍可通过 git tag `v0.1.0-preview`（提交 `8f951866`）取得。
 
 ## 快速开始（Linux x86-64，Python 3.13，numpy，safetensors，zstd >= 1.4）
 
-1. 从 GitHub Release [`v2.0.0-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.0-preview) 把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
+1. 从 GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) 把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
 2. 校验分卷：
    ```
-   echo "8605a10e01765870befc625c0f15a64f4e17eb27968630b936f7091f5bc1d9cd  payload.tar.zst.001" | sha256sum -c -
+   echo "c86119619d0638e7bfa94b6ab84f6dd465bba132aaf9d9b4130c648082455b8c  payload.tar.zst.001" | sha256sum -c -
    ```
 3. 解包（必须带 `--long=27`；约需 16.6 GB 磁盘）：
    ```
@@ -51,6 +51,7 @@
 ## 声明分层
 
 发布封存：**M2**，统一封存 M（内容基底 `9d0a4593...`）的 release-clean 子封存：不含反汇编派生数据，`repack` 重写为闭式地址映射，派生 JSON 已剥离，路径守卫字面量改为 XOR 编码。
+v2.0.1-preview 是 M2 加上 HMMA 零符号修复（见 `CHANGELOG.md`）：改了三个模块和六个 C++ 源文件，载荷随之重钉。v2.0.1 上只重跑了 1080p f0（用户驱动，从新卷端到端：158/158，终图 `764e7dd0...`）；下表其余各行都是在 v2.0.0 的模块上测得的。
 
 | 层 | 范围 | 内容 |
 |---|---|---|

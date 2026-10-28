@@ -2,10 +2,10 @@
  "schema": "GLASSBOX_NR_FILES_MAP/1",
  "release": "v2.0.0-preview",
  "whitelist": {
-  "file": "SHIP_WHITELIST_v2_2.json",
-  "sha256": "82df3cef4deb9020a99f2a9ddb100bae7544b95ed62d66ae4b36a4e5cf29d1c6",
+  "file": "SHIP_WHITELIST_v2_3.json",
+  "sha256": "607d5acbc98ccd68b52620572bc6ddd6b7a2107044908b88684354ca0ce2176e",
   "schema": "SHIP_WHITELIST/2",
-  "revision": "v2.2"
+  "revision": "v2.3"
  },
  "purpose": "repo path -> whitelist path(s). devkit/payload_layout.py uses it (--repo) to place the git-resident files at the canonical payload paths that the devkit configuration expects. cpp_source whitelist paths are relative to root M2SRC, run_driver paths to root DEVKIT, all others are canonical payload paths (root PAYLOAD). Files with the same content under several whitelist paths are stored once.",
  "counts": {
@@ -38,8 +38,8 @@
   {
    "repo_path": "cpp/chain_entry_optm/decode_reuse.inc",
    "category": "cpp_source",
-   "sha256": "d4c579acf819c5fb3f2d891f6c6acab81ec1687cf8bfb5e386fd341037a7de0e",
-   "bytes": 5408,
+   "sha256": "194731369e0f2e3afa204ff4dc981d6b3b744a5d74118e16173fdc3273edc9d8",
+   "bytes": 5545,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -71,8 +71,8 @@
   {
    "repo_path": "cpp/chain_entry_optm/mapexec_base.hpp",
    "category": "cpp_source",
-   "sha256": "0ac19678e7b4a31857434ffda3b250f508c98e76970485b3c70f7948b65eeb60",
-   "bytes": 21678,
+   "sha256": "78264f4c00aa4e3c153e446a63a495b1a1f4b61debcfef415c270d54b1b3aecd",
+   "bytes": 21815,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -236,8 +236,8 @@
   {
    "repo_path": "cpp/chain_outtail_optm/outtail.cpp",
    "category": "cpp_source",
-   "sha256": "b2d807fd1d4fe015eefa234918028709dbb0e98ade3b97145ae8653bd29a2aef",
-   "bytes": 29687,
+   "sha256": "973fab101386117be1441746d156c84eef85f24a0a91a4ee043cbf3efce43965",
+   "bytes": 29710,
    "transform": "edited_m2",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -269,8 +269,8 @@
   {
    "repo_path": "cpp/chain_outtail_optm/primitives.hpp",
    "category": "cpp_source",
-   "sha256": "aad1fe9554d8e25394b49d58cfcc655e5599cbc9529e2c34887bb70a4ce23420",
-   "bytes": 5999,
+   "sha256": "978c1681ca77fc746c7fdf45a898187a6244dc9c7451d21d173097b05369f906",
+   "bytes": 6136,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -346,8 +346,8 @@
   {
    "repo_path": "cpp/chain_split16_optm/scalar_map.hpp",
    "category": "cpp_source",
-   "sha256": "20610eaa92c3bada615647abd5d2ce5989f7186374b83d1aaeb7c4d4dff3a50a",
-   "bytes": 24986,
+   "sha256": "0c8ed8b568b89a4e35cb0c23081bae4c9fd2346efe38aea0289f01082ad65273",
+   "bytes": 25123,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -379,8 +379,8 @@
   {
    "repo_path": "cpp/chain_tin_optm/decode_reuse.inc",
    "category": "cpp_source",
-   "sha256": "d4c579acf819c5fb3f2d891f6c6acab81ec1687cf8bfb5e386fd341037a7de0e",
-   "bytes": 5408,
+   "sha256": "194731369e0f2e3afa204ff4dc981d6b3b744a5d74118e16173fdc3273edc9d8",
+   "bytes": 5545,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -412,8 +412,8 @@
   {
    "repo_path": "cpp/chain_tin_optm/primitives.inc",
    "category": "cpp_source",
-   "sha256": "5e5519dbbe41145146487512337401631ac8342c74f7357ba7ab781219a4c48e",
-   "bytes": 7236,
+   "sha256": "6b3a8e496acf139817a48166adad786ebcdeddb1a6dd7acdd0c02c9e7e5cd1af",
+   "bytes": 7373,
    "transform": "none",
    "whitelist_root": "M2SRC",
    "whitelist_paths": [
@@ -741,7 +741,7 @@
   {
    "repo_path": "modules/dlssnr_chain_entry_optm.cpython-313-x86_64-linux-gnu.so",
    "category": "compiled_module",
-   "sha256": "915c1a62bf80fbe97860876ea49dac96fff40c40d7b449f129bd8834ae207642",
+   "sha256": "80c04374c9008d6b6e477fd9fd8871a04410f0f18c2b14030d7eb097675dcadd",
    "bytes": 482608,
    "transform": "release_form",
    "whitelist_root": "PAYLOAD",
@@ -752,7 +752,7 @@
   {
    "repo_path": "modules/dlssnr_chain_outtail_optm.cpython-313-x86_64-linux-gnu.so",
    "category": "compiled_module",
-   "sha256": "455c74a96425ab1c47e11fbf87fd1e4c7ccec2137a110e40199ad763a8b4ba8c",
+   "sha256": "b3377372ad9d7249f9e4f173f1201e90e55d1a20a3148651233547298fb8dbec",
    "bytes": 502840,
    "transform": "release_form",
    "whitelist_root": "PAYLOAD",
@@ -775,7 +775,7 @@
   {
    "repo_path": "modules/dlssnr_chain_tin_optm.cpython-313-x86_64-linux-gnu.so",
    "category": "compiled_module",
-   "sha256": "70463754e06cfab1bed78a6a363e7faac43a92abb595849ef4eb4461f29bed10",
+   "sha256": "a356620af43773984c0aa14c0b3f95b6d457e73b9b88f0b4a85f3e2d402882bf",
    "bytes": 489752,
    "transform": "none",
    "whitelist_root": "PAYLOAD",
@@ -4490,7 +4490,7 @@
   {
    "repo_path": "runtime/M/derived_pins.py",
    "category": "python_runtime",
-   "sha256": "88f34c34ef4bffc36c06cd751a74c9d161c4fc49bb5013b368bca6f18bc29ee5",
+   "sha256": "69287aedaad56872a214ff751ac933fbc3a662eae867b9e9a78f4edf8f012153",
    "bytes": 3662,
    "transform": "release_form",
    "whitelist_root": "PAYLOAD",

@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.1-preview (2026-10-28)
+
+**HMMA zero-sign restore.** At the end of the HMMA helpers (`hmma_seed`, `hmma_dot`, `hmma_cached`) a half-precision −0 (`0x8000`) is now published as +0, as the GPU does. This canonicalisation was in the historical seal `49a98a0b` but missing from M / M2 and from v2.0.0-preview (`e4a9b42`); on the saved sm_120 sweep it is 480 of 1,380,992 cases (first case 307200). The general hardware rule (v1) stays OPEN.
+
+- **Changed**: 6 C++ sources (7 paths: `chain_entry_optm/{decode_reuse.inc,mapexec_base.hpp}`, `chain_outtail_optm/{outtail.cpp,primitives.hpp}`, `chain_split16_optm/scalar_map.hpp`, `chain_tin_optm/{decode_reuse.inc,primitives.inc}`); modules `entry`, `outtail`, `tin` rebuilt with the M2 recipe (`split16` module bytes unchanged); `runtime/M/derived_pins.py` (derived-map pin).
+- **New payload volume** `payload.tar.zst.001` (462,661,132 B, sha256 `c8611961...`): same 7,522 members and file set; every text member that pinned an old module or source hash was re-pinned in dependency order (4,822 members), binary members untouched. Whitelist revision v2.3. The re-pinned seal and receipt files carry the new hashes but were not re-measured; the v2.0.0-preview volume stays the original evidence.
+- **Gates on v2.0.1**: unit gate on the sm_120 sweep (0 mismatches in all three helpers, was 480 in `hmma_seed`); 1080p f0 end-to-end from the new volume, 158/158 launches, final `764e7dd0...` (unchanged). All other claims are from M2 / M on the v2.0.0 modules and were not re-run.
+
+---
+
 ## v2.0.0-preview (2026-10-21)
 
 **Aligned to `nvngx_dlssnr.dll` 310.8.0.0.** Claim: measured byte-for-byte equivalence on the listed inputs; formal proof NOT_ESTABLISHED.
@@ -11,6 +21,16 @@
 - **v1 toolchain removed from HEAD**: the Python reference package (`glassbox_nr/`, `tools/`, `data/`, `commitment/`, `reference/`, v1 docs) is no longer in HEAD. History is not rewritten; all of it stays reachable through the tag `v0.1.0-preview` (commit `8f951866`).
 - **Cleanup**: derived JSON stripped, instruction-level comments removed, `repack` rewritten as a closed-form address map; the offline interpreter tools are no longer published.
 - **Not in this release**: showcase renders; 4K multi-frame; other DLL versions.
+
+---
+
+## v2.0.1-preview（2026-10-28）
+
+**HMMA 零符号修复。** HMMA 辅助函数（`hmma_seed`、`hmma_dot`、`hmma_cached`）在末端把半精度 −0（`0x8000`）发布为 +0，与 GPU 一致。这一规范化在历史封存 `49a98a0b` 里有，但 M / M2 和 v2.0.0-preview（`e4a9b42`）缺失；在保存的 sm_120 扫描中涉及 1,380,992 例里的 480 例（首例 307200）。一般硬件规则（v1）仍为 OPEN。
+
+- **改动**：6 个 C++ 源文件（7 个路径：`chain_entry_optm/{decode_reuse.inc,mapexec_base.hpp}`、`chain_outtail_optm/{outtail.cpp,primitives.hpp}`、`chain_split16_optm/scalar_map.hpp`、`chain_tin_optm/{decode_reuse.inc,primitives.inc}`）；`entry`、`outtail`、`tin` 三个模块按 M2 配方重编（`split16` 模块字节不变）；`runtime/M/derived_pins.py`（派生映射钉）。
+- **新载荷分卷** `payload.tar.zst.001`（462,661,132 B，sha256 `c8611961...`）：成员数与文件集同为 7,522；凡钉了旧模块或旧源码哈希的文本成员都按依赖顺序重钉（4,822 个），二进制成员不动。白名单修订 v2.3。重钉后的封存与回执文件带的是新哈希，但没有重新测量；v2.0.0-preview 的分卷仍是原始证据。
+- **v2.0.1 上的门**：sm_120 扫描上的单元门（三个函数均 0 不一致，原 `hmma_seed` 480 例）；从新卷端到端跑 1080p f0，158/158 launch，终图 `764e7dd0...`（不变）。其余声明来自 v2.0.0 模块上的 M2 / M，未重跑。
 
 ---
 

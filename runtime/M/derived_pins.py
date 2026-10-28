@@ -14,7 +14,7 @@ import json
 import os
 from pathlib import Path
 
-DERIVED_MAP_SHA256 = '493e3116f726feae47a3c584f04e2ffb9aeb9b03cc9086aa83916fc82e728610'          # filled in at seal time; empty means "no map is expected" (strict mode)
+DERIVED_MAP_SHA256 = '20c54612b575c85b88cf0ff18e02e98880b54da600c7f0b7eb51adc4491ba168'          # filled in at seal time; empty means "no map is expected" (strict mode)
 _STATE = {}
 
 

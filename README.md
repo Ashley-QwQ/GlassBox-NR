@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.0-preview
+# GlassBox-NR v2.0.1-preview
 
 [中文版](README_ZH.md)
 
@@ -25,15 +25,15 @@ bytes are never part of this repository or of the release assets.
 | `docs/FILES_MAP_V2.json` | repo path -> release-whitelist path, used by `payload_layout.py` |
 
 Everything else (about 32 GB when counted per path, 16.6 GB unique) is the **payload**: one compressed volume,
-`payload.tar.zst.001` (465,105,242 B), a GitHub Release asset. The v1 Python toolchain (`v0.1.0-preview`) is no longer in HEAD;
+`payload.tar.zst.001` (462,661,132 B), a GitHub Release asset. The v1 Python toolchain (`v0.1.0-preview`) is no longer in HEAD;
 it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 
 ## Quickstart (Linux x86-64, Python 3.13, numpy, safetensors, zstd >= 1.4)
 
-1. From the GitHub Release [`v2.0.0-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.0-preview) download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
+1. From the GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
 2. Verify the volume:
    ```
-   echo "8605a10e01765870befc625c0f15a64f4e17eb27968630b936f7091f5bc1d9cd  payload.tar.zst.001" | sha256sum -c -
+   echo "c86119619d0638e7bfa94b6ab84f6dd465bba132aaf9d9b4130c648082455b8c  payload.tar.zst.001" | sha256sum -c -
    ```
 3. Extract (the `--long=27` flag is required; about 16.6 GB of disk):
    ```
@@ -60,6 +60,7 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 
 Release seal: **M2**, the release-clean sub-seal of the unified seal M (content base `9d0a4593...`): no data derived from analysis listings of the vendor binary,
 `repack` rewritten as a closed-form address map, derived JSON stripped, path guard literals XOR-encoded.
+v2.0.1-preview is M2 plus the HMMA zero-sign restore (see `CHANGELOG.md`): three modules and six C++ sources changed and the payload was re-pinned. On v2.0.1 only 1080p f0 was re-run (user driver, end-to-end from the new volume: 158/158, final `764e7dd0...`); every other row below was measured on the v2.0.0 modules.
 
 | Tier | Where | What |
 |---|---|---|

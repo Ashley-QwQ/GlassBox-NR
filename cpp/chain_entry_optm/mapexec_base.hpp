@@ -171,7 +171,9 @@ uint16_t hmma_dot(const uint16_t* a, const uint16_t* b) {
         if(!std::isfinite(scaled)||std::abs(scaled)>=double(uint64_t(1)<<52))throw std::domain_error("LOONG HMMA accumulator range");
         total+=int64_t(std::trunc(scaled));
     }
-    return half_round(std::ldexp(double(total),grid));
+    const uint16_t h=half_round(std::ldexp(double(total),grid));
+    // sm_120 proof sweep A: canonical +0 at half-zero publication (as in seal 49a98a0b).
+    return h==0x8000u?uint16_t(0):h;
 }
 #include "../shared/decode_reuse.inc"
 
