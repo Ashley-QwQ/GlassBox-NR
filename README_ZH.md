@@ -46,7 +46,7 @@
    python devkit/run_1080_f0.py --root WORK --payload PAYLOAD_DIR --weights WEIGHTS --tables TABLES_DIR \
        --inputs PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --threads 4
    ```
-   加 `--verify-only` 只做重定位和文件检查，不运行。退出码 0 表示每个 launch 与参考表一致，且终图 sha256 为 `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`。
+   加 `--verify-only` 只做重定位和文件检查，不运行。退出码 0 表示每个 launch 与参考表一致，且终图 sha256 为 `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`；2 表示某个 launch 不一致，3 表示终图不一致，4 表示回执不完整（必须恰好按顺序含 launch 0..stop-after 各一次）。`python devkit/test_run_1080_f0.py` 不需要 payload 即可自测这项比较。
 
 ## 声明分层
 

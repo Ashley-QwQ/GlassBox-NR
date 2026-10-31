@@ -10,7 +10,8 @@
   I        directory with the frozen frame-0 input files (names as in data/manifest.json)
 The driver (1) relocates the configuration files to R, (2) checks every external file by size and sha256, (3) runs
 devkit_worker.py, (4) compares the workspace and texture hashes of every launch and the final image with data/reference_f0.json.
-Exit code 0 = every launch and the final image match.
+Exit code 0 = every launch and the final image match; 2 = a launch differs; 3 = the final image differs;
+4 = the receipt is incomplete (the launches must be exactly 0..stop-after, each once, in order).
 """
 import argparse
 import json
@@ -33,7 +34,7 @@ def main():
     ap.add_argument('--tables', required=True)
     ap.add_argument('--inputs', required=True)
     ap.add_argument('--threads', type=int, default=4)
-    ap.add_argument('--stop-after', type=int, default=157)
+    ap.add_argument('--stop-after', type=int, default=157, choices=range(158), metavar='0..157')
     ap.add_argument('--verify-only', action='store_true')
     a = ap.parse_args()
     root = os.path.abspath(a.root)
@@ -69,18 +70,35 @@ def main():
         print('RUN_FAILED rc=%d (see out/first-failure.json)' % rc)
         return rc
     got = json.load(open(os.path.join(job['output'], 'perlaunch.json')))
-    bad = None
+    result = json.load(open(os.path.join(job['output'], 'result.json')))
+    return compare(got, result, ref, a.stop_after)
+
+
+def compare(got, result, ref, stop_after):
+    """Check a worker receipt against the reference table; returns the exit code and prints the verdict.
+
+    The receipt must hold exactly the launches 0..stop_after, each once and in order, and result.json must count the
+    same number; only then are the per-launch hashes and (for a full run) the final image compared."""
+    expected = list(range(stop_after + 1))
+    seen = [g.get('L') for g in got]
+    if seen != expected or result.get('launches') != len(expected):
+        missing = sorted(set(expected) - set(seen))
+        extra = sorted(set(seen) - set(expected), key=str)
+        repeated = sorted({L for L in seen if seen.count(L) > 1}, key=str)
+        print('INCOMPLETE RECEIPT: expected launches 0..%d once each in order; got %d rows (missing %s, unexpected %s, '
+              'repeated %s, in order: %s); result.json launches=%s'
+              % (stop_after, len(seen), missing[:10], extra[:10], repeated[:10], seen == sorted(seen), result.get('launches')))
+        return 4
     for g in got:
         r = ref['launches'][g['L']]
+        if r['L'] != g['L']:
+            raise RuntimeError('reference table out of order at %d' % g['L'])
         if g['workspace_sha256'] != r['workspace_sha256'] or g['textures'] != r['textures']:
-            bad = g['L']
-            break
-    final = json.load(open(os.path.join(job['output'], 'result.json')))['final_sha256']
-    if bad is not None:
-        print('MISMATCH at launch', bad)
-        return 2
+            print('MISMATCH at launch', g['L'])
+            return 2
     print('ALL %d LAUNCHES MATCH THE REFERENCE TABLE' % len(got))
-    if a.stop_after >= 157:
+    if stop_after >= 157:
+        final = result.get('final_sha256')
         print('FINAL IMAGE', final, 'MATCH' if final == ref['final_sha256'] else 'DIFFERENT')
         return 0 if final == ref['final_sha256'] else 3
     return 0
