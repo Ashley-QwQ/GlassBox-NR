@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased
+## v2.0.2-preview (2026-10-31)
+
+Run-driver fix only. Modules, numeric C++ sources, parameter files and the payload volume are unchanged: use `payload.tar.zst.001` from the [v2.0.1-preview release](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) (462,661,132 B, sha256 `c8611961...`). Nothing was re-measured for this release.
 
 - **Run driver receipt check** (`devkit/run_1080_f0.py`): before comparing hashes, the driver now requires the worker receipt to hold exactly the launches 0..`--stop-after`, each once and in order, with a matching count in `result.json`; otherwise it exits 4 (`INCOMPLETE RECEIPT`). Previously an empty, partial, duplicated or reordered receipt could be reported as `ALL n LAUNCHES MATCH`. `--stop-after` is limited to 0..157. New stdlib-only self-test `devkit/test_run_1080_f0.py` (11 cases). No numeric code, module or payload changed. Reported by an external implementability review (2026-10-31).
 
@@ -27,6 +29,14 @@
 - **v1 toolchain removed from HEAD**: the Python reference package (`glassbox_nr/`, `tools/`, `data/`, `commitment/`, `reference/`, v1 docs) is no longer in HEAD. History is not rewritten; all of it stays reachable through the tag `v0.1.0-preview` (commit `8f951866`).
 - **Cleanup**: derived JSON stripped, instruction-level comments removed, `repack` rewritten as a closed-form address map; the offline interpreter tools are no longer published.
 - **Not in this release**: showcase renders; 4K multi-frame; other DLL versions.
+
+---
+
+## v2.0.2-preview（2026-10-31）
+
+只改运行驱动。模块、数值 C++ 源码、参数文件和载荷卷都没变：载荷用 [v2.0.1-preview release](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) 里的 `payload.tar.zst.001`（462,661,132 B，sha256 `c8611961...`）。本版没有重新测量。
+
+- **运行驱动的回执检查**（`devkit/run_1080_f0.py`）：比较哈希之前，先要求 worker 回执恰好按顺序含 launch 0..`--stop-after` 各一次，且 `result.json` 的计数一致；否则以退出码 4（`INCOMPLETE RECEIPT`）结束。此前空的、缺项的、重复的或乱序的回执都可能被报告为 `ALL n LAUNCHES MATCH`。`--stop-after` 限定为 0..157。新增只依赖标准库的自测 `devkit/test_run_1080_f0.py`（11 个用例）。数值代码、模块和载荷都没改。来自 2026-10-31 的一次外部可实现性审查。
 
 ---
 

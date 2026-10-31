@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.1-preview
+# GlassBox-NR v2.0.2-preview
 
 [中文版](README_ZH.md)
 
@@ -30,7 +30,7 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 
 ## Quickstart (Linux x86-64, Python 3.13, numpy, safetensors, zstd >= 1.4)
 
-1. From the GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) download `payload.tar.zst.001` into the root of this checkout. The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
+1. From the GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) download `payload.tar.zst.001` into the root of this checkout (v2.0.2-preview ships no new volume; it uses this one unchanged). The manifest is in git at `devkit/data/PAYLOAD_MANIFEST.json`.
 2. Verify the volume:
    ```
    echo "c86119619d0638e7bfa94b6ab84f6dd465bba132aaf9d9b4130c648082455b8c  payload.tar.zst.001" | sha256sum -c -
@@ -63,6 +63,7 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
 Release seal: **M2**, the release-clean sub-seal of the unified seal M (content base `9d0a4593...`): no data derived from analysis listings of the vendor binary,
 `repack` rewritten as a closed-form address map, derived JSON stripped, path guard literals XOR-encoded.
 v2.0.1-preview is M2 plus the HMMA zero-sign restore (see `CHANGELOG.md`): three modules and six C++ sources changed and the payload was re-pinned. On v2.0.1 only 1080p f0 was re-run (user driver, end-to-end from the new volume: 158/158, final `764e7dd0...`); every other row below was measured on the v2.0.0 modules.
+v2.0.2-preview changes only the run driver: `devkit/run_1080_f0.py` now rejects an incomplete receipt (exit 4) before comparing hashes. Modules, numeric sources and the payload volume are those of v2.0.1-preview; nothing was re-measured for this release.
 
 | Tier | Where | What |
 |---|---|---|
