@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.1-preview
+# GlassBox-NR v2.0.2-preview
 
 [English](README.md)
 
@@ -23,7 +23,7 @@
 
 ## 快速开始（Linux x86-64，Python 3.13，numpy，safetensors，zstd >= 1.4）
 
-1. 从 GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) 把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
+1. 从 GitHub Release [`v2.0.1-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview)（v2.0.2-preview 没有新的载荷卷，原样沿用这一卷）把 `payload.tar.zst.001` 下载到本仓库根目录。清单已在 git 里：`devkit/data/PAYLOAD_MANIFEST.json`。
 2. 校验分卷：
    ```
    echo "c86119619d0638e7bfa94b6ab84f6dd465bba132aaf9d9b4130c648082455b8c  payload.tar.zst.001" | sha256sum -c -
@@ -52,6 +52,7 @@
 
 发布封存：**M2**，统一封存 M（内容基底 `9d0a4593...`）的 release-clean 子封存：不含反汇编派生数据，`repack` 重写为闭式地址映射，派生 JSON 已剥离，路径守卫字面量改为 XOR 编码。
 v2.0.1-preview 是 M2 加上 HMMA 零符号修复（见 `CHANGELOG.md`）：改了三个模块和六个 C++ 源文件，载荷随之重钉。v2.0.1 上只重跑了 1080p f0（用户驱动，从新卷端到端：158/158，终图 `764e7dd0...`）；下表其余各行都是在 v2.0.0 的模块上测得的。
+v2.0.2-preview 只改了运行驱动：`devkit/run_1080_f0.py` 在比较哈希之前先拒绝不完整的回执（退出码 4）。模块、数值源码和载荷卷都沿用 v2.0.1-preview，本版没有重新测量。
 
 | 层 | 范围 | 内容 |
 |---|---|---|
