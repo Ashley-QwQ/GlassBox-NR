@@ -1,5 +1,15 @@
 # Changelog
 
+## v2.0.3-preview (2026-10-31)
+
+Two-frame driver. Numeric C++ sources, modules, parameter files and the payload volume are unchanged (payload: [v2.0.1-preview](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview)). New release asset `inputs-f1-1080.tar` (24,893,440 B, sha256 `f2d28326...`): the two frame-1 caller uploads.
+
+- **`devkit/run_1080_two_frames.py`**: runs frame 0 and then frame 1 (1080p, fill 00) in one numeric process, keeps the workspace and textures 2/6/9/10 between the frames, replaces only uploads 1/3, and compares every launch with `data/reference_f0.json` and the new `data/reference_f1.json` (158 rows, final `3f1d62eb...`); each frame passes the v2.0.2 receipt-completeness check.
+- **`devkit/relocate.py` / `data/manifest.json`**: the rewrite set covers the frame-1 profiles (330 -> 647 entries); the frame-1 uploads are an optional external role `inputs_f1`, so `run_1080_f0.py` is unchanged for frame-0-only runs; explicit UTF-8 for written JSON.
+- **Gate on v2.0.3**: f0 -> f1 run end to end on the public Linux modules (X79, CPython 3.13, 8 threads): 158/158 and 158/158 launches (full workspace and six textures), both finals match. Frame-1 reference values come from the 2026-10-08 own-state multi-frame chain.
+
+---
+
 ## v2.0.2-preview (2026-10-31)
 
 Run-driver fix only. Modules, numeric C++ sources, parameter files and the payload volume are unchanged: use `payload.tar.zst.001` from the [v2.0.1-preview release](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview) (462,661,132 B, sha256 `c8611961...`). Nothing was re-measured for this release.
@@ -29,6 +39,16 @@ Run-driver fix only. Modules, numeric C++ sources, parameter files and the paylo
 - **v1 toolchain removed from HEAD**: the Python reference package (`glassbox_nr/`, `tools/`, `data/`, `commitment/`, `reference/`, v1 docs) is no longer in HEAD. History is not rewritten; all of it stays reachable through the tag `v0.1.0-preview` (commit `8f951866`).
 - **Cleanup**: derived JSON stripped, instruction-level comments removed, `repack` rewritten as a closed-form address map; the offline interpreter tools are no longer published.
 - **Not in this release**: showcase renders; 4K multi-frame; other DLL versions.
+
+---
+
+## v2.0.3-preview（2026-10-31）
+
+两帧驱动。数值 C++ 源码、模块、参数文件和载荷卷都没变（载荷用 [v2.0.1-preview](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.1-preview)）。新增发布资产 `inputs-f1-1080.tar`（24,893,440 B，sha256 `f2d28326...`），内含帧 1 的两份 caller 上传。
+
+- **`devkit/run_1080_two_frames.py`**：在一个数值进程里先跑帧 0 再跑帧 1（1080p，fill 00），两帧之间保留工作区和纹理 2/6/9/10，只替换上传 1/3；每个 launch 与 `data/reference_f0.json` 和新增的 `data/reference_f1.json`（158 行，终图 `3f1d62eb...`）比对；每帧都过 v2.0.2 的回执完整性检查。
+- **`devkit/relocate.py` / `data/manifest.json`**：重写集合覆盖帧 1 的 profile（330 → 647 项）；帧 1 上传是可选的外部角色 `inputs_f1`，所以只跑帧 0 的 `run_1080_f0.py` 用法不变；写出的 JSON 明确用 UTF-8。
+- **v2.0.3 上的门**：用公开 Linux 模块端到端跑 f0 → f1（X79，CPython 3.13，8 线程）：158/158 与 158/158 个 launch（整片工作区和六纹理）一致，两帧终图一致。帧 1 的参考值来自 2026-10-08 的自有状态多帧链。
 
 ---
 

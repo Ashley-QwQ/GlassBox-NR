@@ -78,8 +78,8 @@
    "root": "DEVKIT",
    "path": "data/manifest.json",
    "category": "run_driver",
-   "sha256": "9eb99bfc72b6d0d134f16f1ae2973d7a1bab71be64e8b8d3fbf817adb5f415da",
-   "bytes": 164728,
+   "sha256": "0ee0a2b684a1f9be3c30ba91f332c812349c714f53e2ae66574e5e8761d90dbc",
+   "bytes": 194439,
    "transform": "new_m2",
    "where": "git",
    "member": null
@@ -118,8 +118,8 @@
    "root": "DEVKIT",
    "path": "relocate.py",
    "category": "run_driver",
-   "sha256": "578f32b9a0f8be31691a02d74671a9dd360118032de1ca77196c8c6a636d818c",
-   "bytes": 11546,
+   "sha256": "8c99a1b871f552ec59e969df795a22a25d1ef05cc853692813561c1daaa7a06e",
+   "bytes": 11881,
    "transform": "new_m2",
    "where": "git",
    "member": null
@@ -131,6 +131,26 @@
    "sha256": "dd40c3a9dd603971e1a8fa251310ef05cbb349711e60eb768774fb8998ffdbbd",
    "bytes": 5695,
    "transform": "new_m2",
+   "where": "git",
+   "member": null
+  },
+  {
+   "root": "DEVKIT",
+   "path": "run_1080_two_frames.py",
+   "category": "run_driver",
+   "sha256": "4c5eda005d0296cc9ef999b1bab01d8cc0f637987286d577cb23132a5b89870e",
+   "bytes": 10820,
+   "transform": "new_v2.0.3",
+   "where": "git",
+   "member": null
+  },
+  {
+   "root": "DEVKIT",
+   "path": "data/reference_f1.json",
+   "category": "run_driver",
+   "sha256": "5f0c11e2fe24cb2248bbd10ec333482702388f8cf4c2a1dc1504387185c43713",
+   "bytes": 87853,
+   "transform": "new_v2.0.3",
    "where": "git",
    "member": null
   },

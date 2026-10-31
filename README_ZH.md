@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.2-preview
+# GlassBox-NR v2.0.3-preview
 
 [English](README.md)
 
@@ -47,12 +47,19 @@
        --inputs PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --threads 4
    ```
    加 `--verify-only` 只做重定位和文件检查，不运行。退出码 0 表示每个 launch 与参考表一致，且终图 sha256 为 `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`；2 表示某个 launch 不一致，3 表示终图不一致，4 表示回执不完整（必须恰好按顺序含 launch 0..stop-after 各一次）。`python devkit/test_run_1080_f0.py` 不需要 payload 即可自测这项比较。
+7. 可选：在同一个进程里先跑帧 0 再跑帧 1（1080p，fill 00）。从 GitHub Release [`v2.0.3-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.3-preview) 下载 `inputs-f1-1080.tar`（24,893,440 B，sha256 `f2d283262ffb7d7fdc05c3e7705f8ec11e9cac7d810c71ebff5f91596e726940`），解到目录 `INPUTS_F1`（里面是帧 1 的颜色与运动向量上传 `caller-id1.bin`、`caller-id3.bin`）。然后在本仓库根目录运行：
+   ```
+   python devkit/run_1080_two_frames.py --repo . --root WORK2 --payload PAYLOAD_DIR --weights WEIGHTS --tables TABLES_DIR \
+       --inputs-f0 PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --inputs-f1 INPUTS_F1 --threads 4
+   ```
+   `WORK2` 必须是尚不存在的目录。两帧之间保留整片工作区和纹理 2/6/9/10，只替换上传 1/3；帧 1 用它自己的 calls、params 和 profile。每个 launch 都与 `devkit/data/reference_f0.json`、`devkit/data/reference_f1.json` 比对；退出码 0 表示 316 个 launch 全部一致，终图分别为 `764e7dd0...`（帧 0）和 `3f1d62eb...`（帧 1）。2026-10-31 在 X79（Linux，CPython 3.13，8 线程）上实测，每帧约 28 分钟。
 
 ## 声明分层
 
 发布封存：**M2**，统一封存 M（内容基底 `9d0a4593...`）的 release-clean 子封存：不含反汇编派生数据，`repack` 重写为闭式地址映射，派生 JSON 已剥离，路径守卫字面量改为 XOR 编码。
 v2.0.1-preview 是 M2 加上 HMMA 零符号修复（见 `CHANGELOG.md`）：改了三个模块和六个 C++ 源文件，载荷随之重钉。v2.0.1 上只重跑了 1080p f0（用户驱动，从新卷端到端：158/158，终图 `764e7dd0...`）；下表其余各行都是在 v2.0.0 的模块上测得的。
 v2.0.2-preview 只改了运行驱动：`devkit/run_1080_f0.py` 在比较哈希之前先拒绝不完整的回执（退出码 4）。模块、数值源码和载荷卷都沿用 v2.0.1-preview，本版没有重新测量。
+v2.0.3-preview 新增两帧驱动 `devkit/run_1080_two_frames.py` 和帧 1 参考表，数值代码和模块不变。v2.0.3 上用公开模块端到端跑了 1080p f0 → f1（fill 00，同一进程）：158/158 + 158/158 个 launch，终图 `764e7dd0...` 和 `3f1d62eb...`。
 
 | 层 | 范围 | 内容 |
 |---|---|---|
