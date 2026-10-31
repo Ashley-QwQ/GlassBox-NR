@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- **Run driver receipt check** (`devkit/run_1080_f0.py`): before comparing hashes, the driver now requires the worker receipt to hold exactly the launches 0..`--stop-after`, each once and in order, with a matching count in `result.json`; otherwise it exits 4 (`INCOMPLETE RECEIPT`). Previously an empty, partial, duplicated or reordered receipt could be reported as `ALL n LAUNCHES MATCH`. `--stop-after` is limited to 0..157. New stdlib-only self-test `devkit/test_run_1080_f0.py` (11 cases). No numeric code, module or payload changed. Reported by an external implementability review (2026-10-31).
+
+---
+
 ## v2.0.1-preview (2026-10-28)
 
 **HMMA zero-sign restore.** At the end of the HMMA helpers (`hmma_seed`, `hmma_dot`, `hmma_cached`) a half-precision −0 (`0x8000`) is now published as +0, as the GPU does. This canonicalisation was in the historical seal `49a98a0b` but missing from M / M2 and from v2.0.0-preview (`e4a9b42`); on the saved sm_120 sweep it is 480 of 1,380,992 cases (first case 307200). The general hardware rule (v1) stays OPEN.

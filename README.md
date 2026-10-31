@@ -54,7 +54,9 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
        --inputs PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --threads 4
    ```
    Add `--verify-only` for the relocation and file checks without running. Exit code 0 means every launch matches the reference
-   table and the final image sha256 is `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`.
+   table and the final image sha256 is `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`; 2 = a launch differs,
+   3 = the final image differs, 4 = the receipt is incomplete (it must hold launches 0..stop-after exactly once, in order).
+   `python devkit/test_run_1080_f0.py` self-tests this comparison without a payload.
 
 ## What is claimed, by tier
 
