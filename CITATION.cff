@@ -4,7 +4,7 @@ title: "GlassBox-NR: byte-exact CPU reproduction of a neural rendering inference
 type: software
 authors:
   - alias: "Ashley-QwQ"
-version: "2.0.2-preview"
+version: "2.0.3-preview"
 license: Apache-2.0
 repository-code: "https://github.com/Ashley-QwQ/GlassBox-NR"
 keywords:

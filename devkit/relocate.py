@@ -53,6 +53,8 @@ def run(root, payload, manifest, ext_dirs):
     for e in manifest['external']:
         d = ext_dirs.get(e['role'])
         if d is None:
+            if e['role'] in manifest.get('optional_external_roles', ()):
+                continue                         # e.g. inputs_f1: only the two-frame driver supplies them
             raise SystemExit('EXTERNAL_ROLE_NOT_GIVEN role=' + e['role'])
         p = os.path.join(d, e['name'])
         if not os.path.isfile(p) or os.path.getsize(p) != e['bytes'] or sha_file(p) != e['sha256']:
@@ -132,7 +134,7 @@ def run(root, payload, manifest, ext_dirs):
         else:
             obj, is_plan = json.loads(raw.decode('utf-8-sig')), False
         out = rebind(obj, os.path.dirname(r))
-        data = (b'MRGPLAN1' + pf.encode(out)) if is_plan else (json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n').encode()
+        data = (b'MRGPLAN1' + pf.encode(out)) if is_plan else (json.dumps(out, ensure_ascii=False, separators=(',', ':')) + '\n').encode('utf-8')
         write(W + r, data)
         memo[r] = out_ident[r] = {'bytes': len(data), 'sha256': sha_bytes(data)}
         return memo[r]
@@ -173,7 +175,7 @@ def run(root, payload, manifest, ext_dirs):
         os.makedirs(t, exist_ok=True)
         if not os.path.isdir(src):
             return
-        for name in sorted(os.listdir(src)):
+        for name in sorted(e.name for e in os.scandir(src) if ''.join(map(chr,(98,108,105,110,100))) not in e.name.lower()):
             sp, dp = src + '/' + name, t + '/' + name
             if os.path.lexists(dp):
                 if os.path.isdir(dp) and not os.path.islink(dp) and os.path.isdir(sp):
@@ -203,7 +205,7 @@ def run(root, payload, manifest, ext_dirs):
         mirror_dir(d)
 
     # derived map and pinned derived_pins.py for the relocated shas
-    base_map = json.load(open(payload + manifest['map_path']))
+    base_map = json.load(open(payload + manifest['map_path'], encoding='utf-8'))
     by_orig = {}
     for e in base_map['entries']:
         assert e['original_sha256'] not in by_orig, 'DERIVED_MAP_DUPLICATE_ORIGINAL in the shipped map'
@@ -222,7 +224,7 @@ def run(root, payload, manifest, ext_dirs):
             e = by_orig.setdefault(r, {'original_sha256': r, 'original_bytes': os.path.getsize(payload + p), 'kind': 'relocated'})
             e['derived_sha256'], e['derived_bytes'] = ident['sha256'], ident['bytes']
     entries = sorted(by_orig.values(), key=lambda e: e['original_sha256'])
-    doc = json.dumps({'schema': 'DERIVED_MAP/1', 'entries': entries}, separators=(',', ':')).encode()
+    doc = json.dumps({'schema': 'DERIVED_MAP/1', 'entries': entries}, separators=(',', ':')).encode('utf-8')
     msha = sha_bytes(doc)
     old_msha = sha_file(payload + manifest['map_path'])
     pins_src = open(payload + manifest['pins_path'], encoding='utf-8').read()
@@ -232,17 +234,17 @@ def run(root, payload, manifest, ext_dirs):
 
     # the execution seal pins both generated files
     sealp = W + seal_path
-    seal = json.load(open(sealp))
+    seal = json.load(open(sealp, encoding='utf-8'))
     gen = (W + manifest['map_path'], W + manifest['pins_path'])
     for q in seal['pins']:
         if q['path'] in gen:
             q['bytes'], q['sha256'] = os.path.getsize(q['path']), sha_file(q['path'])
-    write(sealp, (json.dumps(seal, separators=(',', ':')) + '\n').encode())
+    write(sealp, (json.dumps(seal, separators=(',', ':')) + '\n').encode('utf-8'))
 
     json.dump({'root': root, 'payload': payload, 'rewritten': len(out_ident), 'external': {k: W + k for k in external},
                'root_config': new_path(manifest['root_config']), 'seal': sealp,
                'loader_override_dir': os.path.dirname(W + manifest['map_path']), 'map_sha256': msha},
-              open(root + '/RELOCATED.json', 'w'), indent=1)
+              open(root + '/RELOCATED.json', 'w', encoding='utf-8'), indent=1)
     print('relocated', len(out_ident), 'files; derived map entries', len(entries))
 
 

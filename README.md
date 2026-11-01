@@ -1,4 +1,4 @@
-# GlassBox-NR v2.0.2-preview
+# GlassBox-NR v2.0.3-preview
 
 [中文版](README_ZH.md)
 
@@ -57,6 +57,17 @@ it stays reachable through the git tag `v0.1.0-preview` (commit `8f951866`).
    table and the final image sha256 is `764e7dd0d8f440b5afeb36e72fea3d8bc137bef891e8f09dc3476b6fef8d34ef`; 2 = a launch differs,
    3 = the final image differs, 4 = the receipt is incomplete (it must hold launches 0..stop-after exactly once, in order).
    `python devkit/test_run_1080_f0.py` self-tests this comparison without a payload.
+7. Optional, frame 0 then frame 1 in one process (1080p, fill 00): from the GitHub Release [`v2.0.3-preview`](https://github.com/Ashley-QwQ/GlassBox-NR/releases/tag/v2.0.3-preview) download
+   `inputs-f1-1080.tar` (24,893,440 B, sha256 `f2d283262ffb7d7fdc05c3e7705f8ec11e9cac7d810c71ebff5f91596e726940`) and unpack it into a directory `INPUTS_F1`
+   (it holds `caller-id1.bin` and `caller-id3.bin`, the frame-1 colour and motion uploads). Then, from the root of this checkout:
+   ```
+   python devkit/run_1080_two_frames.py --repo . --root WORK2 --payload PAYLOAD_DIR --weights WEIGHTS --tables TABLES_DIR \
+       --inputs-f0 PAYLOAD_DIR/kit/data/video-multiframe-r01-20261006-codex/resume2-20261007/chain_port/chain-input-only-v2/frame-000 --inputs-f1 INPUTS_F1 --threads 4
+   ```
+   `WORK2` must not exist yet. The workspace and textures 2/6/9/10 are kept between the frames and only the uploads 1/3 are
+   replaced; frame 1 uses its own calls, params and profile. Every launch is compared with `devkit/data/reference_f0.json` and
+   `devkit/data/reference_f1.json`; exit code 0 means all 316 launches match and the final images are `764e7dd0...` (frame 0)
+   and `3f1d62eb...` (frame 1). Measured on 2026-10-31 on X79 (Linux, CPython 3.13, 8 threads): about 28 minutes per frame.
 
 ## What is claimed, by tier
 
@@ -64,6 +75,7 @@ Release seal: **M2**, the release-clean sub-seal of the unified seal M (content 
 `repack` rewritten as a closed-form address map, derived JSON stripped, path guard literals XOR-encoded.
 v2.0.1-preview is M2 plus the HMMA zero-sign restore (see `CHANGELOG.md`): three modules and six C++ sources changed and the payload was re-pinned. On v2.0.1 only 1080p f0 was re-run (user driver, end-to-end from the new volume: 158/158, final `764e7dd0...`); every other row below was measured on the v2.0.0 modules.
 v2.0.2-preview changes only the run driver: `devkit/run_1080_f0.py` now rejects an incomplete receipt (exit 4) before comparing hashes. Modules, numeric sources and the payload volume are those of v2.0.1-preview; nothing was re-measured for this release.
+v2.0.3-preview adds the two-frame driver `devkit/run_1080_two_frames.py` and the frame-1 reference table; numeric code and modules are unchanged. On v2.0.3 the 1080p f0 -> f1 chain (fill 00, one process) was run end to end on the public modules: 158/158 + 158/158 launches, finals `764e7dd0...` and `3f1d62eb...`.
 
 | Tier | Where | What |
 |---|---|---|
