@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="556" viewBox="0 0 980 556" font-family="Segoe UI, Helvetica, Arial, sans-serif">
+<title>The 158-launch inference chain of nvngx_dlssnr.dll 310.8.0.0 at 1080p, reproduced byte for byte on the CPU by GlassBox-NR</title>
+<rect width="980" height="556" rx="14" fill="#ffffff"/>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b616b"/></marker></defs>
+<text x="490.0" y="38" text-anchor="middle" font-size="20" font-weight="600" fill="#1f2328">One 1080p frame = 158 GPU kernel launches</text>
+<text x="490.0" y="62" text-anchor="middle" font-size="13.5" fill="#57606a">nvngx_dlssnr.dll 310.8.0.0 · every launch reproduced byte for byte on the CPU by GlassBox-NR</text>
+<g transform="translate(0,30)">
+<rect x="40" y="90" width="150" height="74" rx="9" fill="#8a8f98" fill-opacity="0.13" stroke="#8a8f98" stroke-width="1.6"/>
+<text x="115.0" y="112" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">Preparation</text>
+<text x="115.0" y="130" text-anchor="middle" font-size="12" fill="#57606a">L0–L1</text>
+<text x="115.0" y="152" text-anchor="middle" font-size="13" font-weight="600" fill="#8a8f98">2 launches</text>
+<rect x="215" y="90" width="150" height="74" rx="9" fill="#c9772b" fill-opacity="0.13" stroke="#c9772b" stroke-width="1.6"/>
+<text x="290.0" y="112" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">Input (B0)</text>
+<text x="290.0" y="130" text-anchor="middle" font-size="12" fill="#57606a">L2 · B0</text>
+<text x="290.0" y="152" text-anchor="middle" font-size="13" font-weight="600" fill="#c9772b">1 launch</text>
+<rect x="615" y="90" width="150" height="74" rx="9" fill="#c9772b" fill-opacity="0.13" stroke="#c9772b" stroke-width="1.6"/>
+<text x="690.0" y="112" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">Temporal (B70)</text>
+<text x="690.0" y="130" text-anchor="middle" font-size="12" fill="#57606a">L155 · B70</text>
+<text x="690.0" y="152" text-anchor="middle" font-size="13" font-weight="600" fill="#c9772b">1 launch</text>
+<rect x="790" y="90" width="150" height="74" rx="9" fill="#8a8f98" fill-opacity="0.13" stroke="#8a8f98" stroke-width="1.6"/>
+<text x="865.0" y="112" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">Output</text>
+<text x="865.0" y="130" text-anchor="middle" font-size="12" fill="#57606a">L156–L157</text>
+<text x="865.0" y="152" text-anchor="middle" font-size="13" font-weight="600" fill="#8a8f98">2 launches</text>
+<line x1="190" y1="127" x2="213" y2="127" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="765" y1="127" x2="788" y2="127" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<rect x="215" y="200" width="190" height="74" rx="9" fill="#2f7fc1" fill-opacity="0.13" stroke="#2f7fc1" stroke-width="1.6"/>
+<text x="310.0" y="222" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">TIN encoder</text>
+<text x="310.0" y="240" text-anchor="middle" font-size="12" fill="#57606a">L3–L24 · B1–B22</text>
+<text x="310.0" y="262" text-anchor="middle" font-size="13" font-weight="600" fill="#2f7fc1">22 launches</text>
+<rect x="215" y="305" width="190" height="74" rx="9" fill="#2a9d8f" fill-opacity="0.13" stroke="#2a9d8f" stroke-width="1.6"/>
+<text x="310.0" y="327" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">split16 encoder</text>
+<text x="310.0" y="345" text-anchor="middle" font-size="12" fill="#57606a">L25–L57 · B23–B30</text>
+<text x="310.0" y="367" text-anchor="middle" font-size="13" font-weight="600" fill="#2a9d8f">33 launches</text>
+<rect x="395" y="410" width="190" height="70" rx="9" fill="#7b5cc4" fill-opacity="0.13" stroke="#7b5cc4" stroke-width="1.6"/>
+<text x="490.0" y="432" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">ViT bottleneck</text>
+<text x="490.0" y="450" text-anchor="middle" font-size="12" fill="#57606a">L58–L99 · B31–B38</text>
+<text x="490.0" y="468" text-anchor="middle" font-size="13" font-weight="600" fill="#7b5cc4">42 launches</text>
+<rect x="575" y="305" width="190" height="74" rx="9" fill="#2a9d8f" fill-opacity="0.13" stroke="#2a9d8f" stroke-width="1.6"/>
+<text x="670.0" y="327" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">split16 decoder</text>
+<text x="670.0" y="345" text-anchor="middle" font-size="12" fill="#57606a">L101–L132 · B40–B47</text>
+<text x="670.0" y="367" text-anchor="middle" font-size="13" font-weight="600" fill="#2a9d8f">32 launches</text>
+<rect x="575" y="200" width="190" height="74" rx="9" fill="#2f7fc1" fill-opacity="0.13" stroke="#2f7fc1" stroke-width="1.6"/>
+<text x="670.0" y="222" text-anchor="middle" font-size="14" font-weight="600" fill="#1f2328">TIN decoder</text>
+<text x="670.0" y="240" text-anchor="middle" font-size="12" fill="#57606a">L133–L154 · B48–B69</text>
+<text x="670.0" y="262" text-anchor="middle" font-size="13" font-weight="600" fill="#2f7fc1">22 launches</text>
+<rect x="608" y="418" width="124" height="44" rx="8" fill="#c9772b" fill-opacity="0.13" stroke="#c9772b" stroke-width="1.6"/>
+<text x="670" y="437" text-anchor="middle" font-size="12.5" font-weight="600" fill="#1f2328">Decoder bridge</text>
+<text x="670" y="454" text-anchor="middle" font-size="11.5" fill="#57606a">L100 · B39 · 1 launch</text>
+<line x1="290" y1="164" x2="290" y2="198" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="310" y1="274" x2="310" y2="303" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="330" y1="379" x2="420" y2="408" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="585" y1="445" x2="606" y2="442" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="670" y1="418" x2="670" y2="381" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="670" y1="305" x2="670" y2="276" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="690" y1="200" x2="690" y2="166" stroke="#5b616b" stroke-width="1.6" marker-end="url(#a)"/>
+<line x1="405" y1="237" x2="573" y2="237" stroke="#5b616b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<path d="M 405 342 L 470 342 L 616 415" fill="none" stroke="#5b616b" stroke-width="1.6" stroke-dasharray="5 4" marker-end="url(#a)"/>
+<text x="489" y="229" text-anchor="middle" font-size="11.5" fill="#57606a">skips (per resolution tier)</text>
+<text x="470" y="334" text-anchor="middle" font-size="11.5" fill="#57606a">skip into the bridge</text>
+<path d="M 865 88 L 865 72 L 290 72 L 290 86" fill="none" stroke="#c9772b" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#a)"/>
+<path d="M 690 72 L 690 86" fill="none" stroke="#c9772b" stroke-width="1.5" stroke-dasharray="4 4" marker-end="url(#a)"/>
+<text x="578" y="66" text-anchor="middle" font-size="11.5" fill="#c9772b">history texture carried to the next frame (read by B0 and B70)</text>
+</g>
+<text x="40" y="538" font-size="12" fill="#57606a">Arithmetic inside: FP8 E4M3 and FP16 matrix products with the GPU's own accumulation order, flush-to-zero, and table-exact special functions (RCP / RSQ / EX2 / LG2).</text>
+</svg>

@@ -2,6 +2,14 @@
 
 [English](README.md)
 
+**这是什么**：一个普通的 C++ 程序，用从你自己那份库里提取的权重，逐字节复现一个已发布的 GPU 神经渲染器（`nvngx_dlssnr.dll` 310.8.0.0）的 158 次 launch 推理链。<br>
+**难在哪**：GPU 用 FP8（E4M3）和 FP16 计算，有自己的累加顺序、flush-to-zero 规则和查表实现的特殊函数；每一项都要精确吻合，任何一处差一点，输出就会变掉比特。<br>
+**为什么值得关注**：有了逐位一致的 CPU 参考，不用 GPU 也能检查、移植和研究这个网络。在列出的输入上，终图与 GPU 捕获逐字节一致（有逐 launch 捕获的地方，每个 launch 也一致）；这条 C++ 链甚至在树莓派 3B+（1 GB 内存）上跑完了一帧 1080p，用时 2.9 小时，终图相同。
+
+![一帧 1080p 是 158 次 GPU kernel launch：准备、输入 B0、TIN 编码器、split16 编码器、ViT 瓶颈、解码桥、split16 解码器、TIN 解码器、时域 B70、输出](docs/img/chain-158.svg)
+
+内部怎么算、每一层的证据：**[GlassBox-NR Anatomy](https://github.com/Ashley-QwQ/GlassBox-NR-Anatomy-public)**（中文、英文）。
+
 **对齐 `nvngx_dlssnr.dll` 310.8.0.0。** 这是针对该固定目标库推理链的独立 **CPU 参考实现**（CPU reference implementation，C++），不覆盖其他版本（包括 310.9.16）。许可：Apache-2.0（见 `NOTICE`）。
 
 本版的声明是**实测逐字节等价（bit-exact）**，限于所列输入、配置与硬件：1080p / 1440p / 4K 的帧 0（各 158 次 launch），以及多帧链 **1080p f0–f5**、**1440p f0–f3** 与 **4K f0–f2**（两种工作区填充）上，CPU 自有链都复现了 GPU 采集的终图，逐字节相同。形式等价证明 **NOT_ESTABLISHED**，本仓库任何地方都不写"已证明"。
