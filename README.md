@@ -2,14 +2,23 @@
 
 [中文版](README_ZH.md)
 
-**What it is.** A plain C++ program that reproduces, byte for byte, the 158-launch inference chain of a shipped GPU
-neural renderer, `nvngx_dlssnr.dll` 310.8.0.0, using weights extracted from your own copy of the library.<br>
+**What it is.** GlassBox-NR runs DLSS5NR, NVIDIA's neural renderer (exactly the shipped `nvngx_dlssnr.dll` 310.8.0.0,
+no other version), on an ordinary CPU in plain C++, and its output is the same as the GPU's byte for byte: not similar
+colours, the identical bytes.<br>
+**What was checked.** Each final image below matched the GPU capture in every byte (RGBA16F, 8 bytes per pixel):
+
+| Resolution | One output image | Frames checked, final image byte-identical |
+|---|---:|---|
+| 1080p (1920×1080) | 16,588,800 B | f0–f5 in both workspace fills; a sealed 32-frame sequence never seen during development, 32/32 |
+| 1440p (2560×1440) | 29,491,200 B | f0–f3 in both workspace fills |
+| 4K (3840×2160) | 66,355,200 B | f0–f2 in both workspace fills |
+
+Where launches were captured, every one of the 158 launches matches as well. Which build produced which row is in
+[What is claimed, by tier](#what-is-claimed-by-tier).<br>
 **Why it is hard.** The GPU computes in FP8 (E4M3) and FP16 with its own accumulation order, flush-to-zero rules and
 table-driven special functions; each of them has to be matched exactly, because being off anywhere changes output bits.<br>
-**Why it matters.** A bit-exact CPU reference lets anyone check, port and study the network without the GPU. On the
-listed inputs the final image matches the GPU capture byte for byte (and every launch does, where launches were
-captured), and the C++ chain has even finished a 1080p frame
-on a Raspberry Pi 3B+ (1 GB RAM), in 2.9 hours, with the same final image.
+**Why it matters.** A bit-exact CPU reference lets anyone check, port and study the network without the GPU. The C++
+chain has even finished a 1080p frame on a Raspberry Pi 3B+ (1 GB RAM), in 2.9 hours, with the same final image.
 
 ![One 1080p frame is 158 GPU kernel launches: preparation, input B0, TIN encoder, split16 encoder, ViT bottleneck, decoder bridge, split16 decoder, TIN decoder, temporal B70, output](docs/img/chain-158.svg)
 
